@@ -1,7 +1,7 @@
 require "lib/custom_markdown"
 
 SIZES = CustomMarkdown::SIZES
-
+BASE_URL = "https://matsimitsu.com".freeze
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -119,6 +119,10 @@ helpers do
 
   def days_in_words(start_date, end_date)
     (Date.parse(end_date) - Date.parse(start_date)).to_i
+  end
+
+  def base_url
+    BASE_URL
   end
 end
 
