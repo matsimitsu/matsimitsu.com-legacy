@@ -1,0 +1,41 @@
+.Header {
+  background: var(--bg);
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  position: relative;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: var(--border)
+}
+
+.Header a {
+  text-decoration: none
+}
+
+.Header > * {
+  flex: 1;
+}
+
+.Header .BreadCrumbs {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+}
+
+.Header .BreadCrumbs li + li {
+  margin-left: 1rem
+}
+
+.Header .BreadCrumbs li + li:before {
+  content: "—";
+  margin-right: 1rem;
+  opacity: 0.2
+}
+.Header img {
+  margin-right: 1rem
+}

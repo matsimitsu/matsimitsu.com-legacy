@@ -1,0 +1,48 @@
+.Button {
+  background: var(--yellow);
+  padding: 0.5rem 1rem;
+  border-radius: var(--br);
+  cursor: pointer;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--white);
+  white-space: nowrap;
+  border: 0;
+  font-weight: bold;
+  transition: all 0.3s;
+  color: rgba(0,0,0,0.8)
+}
+
+.Button + .Button {
+  margin-left: 1rem
+}
+
+.Button.secondary {
+  background: none;
+  border: var(--border);
+  color: currentColor;
+}
+
+.Button.secondary:hover {
+  border: 1px solid currentColor;
+}
+
+.Button.destructive {
+  background: var(--red);
+  color: var(--white);
+}
+
+.Button.small {
+  padding: 0.5rem 0.75rem;
+}
+
+.Button.large {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+}
+
+.Button.white {
+  background: var(--white);
+  color: var(--dark)
+}

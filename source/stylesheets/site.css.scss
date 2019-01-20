@@ -1,0 +1,290 @@
+@import 'reset.css';
+
+:root {
+  --darkest:               #171C24;
+  --dark:                  #222936;
+  --white:                 #fff;
+  --light:                 #EEEEEE;
+  --medium:                #555;
+  --medium-light:          #bdbdbd;
+
+  --green:                 #4CAF50;
+  --yellow:                #FFC107;
+  --red:                   #E60027;
+  --blue:                  #2979FF;
+  --purple:                #9C27B0;
+  --orange:                #FF6D00;
+
+  --bg:                    var(--white);
+  --bg-shade:              var(--light);
+  --bg-invert:             var(--darkest);
+
+  --color:                 var(--dark);
+  --color-shade:           var(--medium);
+  --color-invert:          var(--white);
+  --color-link:            var(--darkest);
+
+  --border-color:          var(--light);
+  --border-color-invert:   var(--dark);
+
+  --border:                1px solid var(--border-color);
+  --border-invert:         1px solid var(--border-color-invert);
+  --br:                    5px;
+
+  --shadow:                0 2px 5px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.1);
+
+  --font:                  "Circular Std", "Proxima Nova", sans-serif;
+
+  --header-height:         3rem;
+}
+
+body.dark {
+  --bg:                    var(--darkest);
+  --bg-shade:              var(--dark);
+  --bg-invert:             var(--white);
+
+  --color:                 var(--white);
+  --color-shade:           var(--light);
+  --color-invert:          var(--dark);
+  --color-link:            var(--white);
+
+  --border-color:          var(--dark);
+  --border-color-invert:   var(--light);
+  --border:                1px solid var(--border-color);
+  --border-invert:         1px solid var(--border-color-invert);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  font-family: var(--font);
+  font-weight: 300;
+  background: var(--bg);
+  color: var(--color);
+  padding-top: var(--header-height);
+}
+
+input,
+textarea,
+button {
+  font-family: var(--font);
+  font-size: 0.75rem
+}
+
+h1, h2, h3, h4, h5, h6, .title, .Title, [class^="H-"] {
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-link);
+}
+
+.H-Small {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: lighter;
+}
+
+.H-Normal   { font-size: 1rem; }
+.H-Medium   { font-size: 1.5rem; }
+.H-Large    { font-size: 3rem; }
+
+/* Paragraphs */
+.T-Small    { font-size: 0.5rem; }
+.T-Normal   { font-size: 0.75rem; }
+.T-Medium   { font-size: 1rem; }
+.T-Large    { font-size: 1.25rem; }
+
+/* Colors */
+.C-Green    { color: var(--green); }
+.C-Blue     { color: var(--blue); }
+.C-Red      { color: var(--red); }
+.C-Orange   { color: var(--orange); }
+.C-Purple   { color: var(--purple); }
+.C-Yellow   { color: var(--yellow); }
+
+
+.Columns {
+  display: flex;
+}
+
+.Column {
+  flex: 1;
+}
+
+.Centered {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Container {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Container.full {
+  width: 100%;
+  max-width: 100%;
+}
+
+.Container.padded {
+  padding: 2rem;
+}
+
+.Container.narrow {
+  max-width: 40rem;
+}
+
+.Container.tiny {
+  max-width: 30rem;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+.PostPage {
+  padding-bottom: 0.1rem;
+}
+
+.PostSections {
+  padding-top: 4rem;
+}
+
+.Hero {
+  padding: 2rem 0;
+}
+
+.Hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+}
+
+.PostBody .Container {
+  padding: 4rem 0;
+}
+
+.PostBody .Container + .Container {
+  padding-top: 0;
+}
+
+.PostBody {
+  padding-top: 4rem;
+  font-size: 1rem;
+}
+
+.PostBody > * {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.PostBody h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.PostBody p {
+  padding: 2rem;
+  max-width: 40rem;
+}
+
+.PostBody ul {
+  list-style: square;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.PostBody li p {
+  margin-bottom: 0.5rem;
+}
+
+.ScaledImage {
+  background: var(--bg-invert);
+  background-size: 4rem;
+}
+
+.ScaledImage img {
+  height: 100%;
+  width: 100%;
+}
+
+.ScaledImage.cover img {
+  object-fit: cover;
+}
+
+.Dates {
+  display: block;
+  margin-bottom: 1rem;
+  z-index: 900;
+}
+
+.Dates .DateRange {
+  font-size: 1rem;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.Dates .fa {
+  margin: 0 0.5rem;
+  opacity: 0.4;
+}
+
+.TripOverview {
+  background: var(--bg-shade);
+  padding-bottom: .1rem;
+}
+
+.TripOverviewHeader {
+  text-align: center;
+  padding: 4rem;
+}
+
+.TripOverviewHeader hgroup {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.TripOverviewHeader .trip-title,
+.TripHeader .trip-intro {
+  max-width: 40rem
+}
+
+@import 'photo-row.css';
+@import 'header.css';
+@import 'button.css';
+
+@import 'post-header.css';
+@import 'post-navigation.css';
+@import 'trip-card.css';
+@import 'post-card.css';
+
+@import 'homepage.css';
+@import 'fonts.css';

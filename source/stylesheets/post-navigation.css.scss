@@ -1,0 +1,20 @@
+.PostNavigation {
+  margin-top: 4rem;
+  padding: 4rem 0 0;
+  background: var(--bg-shade);
+  text-align: center;
+}
+
+.PostNavigation .Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.PostNavigation > h1 {
+  margin-bottom: 3rem;
+}
+
+.PostNavigation div + div {
+  margin-left: 2rem;
+}

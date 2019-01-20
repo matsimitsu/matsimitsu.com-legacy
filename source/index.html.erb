@@ -1,0 +1,80 @@
+---
+---
+
+<header class="TripOverviewHeader">
+    <h1 class="H-Large post-title">Robert Beekman</h1>
+    <div class="Container narrow">
+      <p class="T-Medium post-intro">Software developer at <a href="https://appsignal.com" target="_blank">AppSignal.com</a>.</p>
+    </div>
+</header>
+
+<section class="Homepage Container narrow">
+  <ul>
+    <li>
+      <a href="https://github.com/matsimitsu" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/matsimitsu" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a href="mailto:hello@matsimitsu.nl">
+        <i class="fas fa-at"></i>
+      </a>
+    </li>
+
+  </ul>
+</section>
+
+
+<section class="Homepage Articles">
+  <header class="TripOverviewHeader">
+      <h1 class="H-Medium post-title">From the Blog</h1>
+  </header>
+  <section class="Container tiny">
+    <% blog("blog").articles.each do |article| %>
+      <article>
+        <h1>
+          <a href="<%= article.url %>">
+            <small><time><%= article.date.strftime('%b %e %Y') %></time> - </small>
+            <%= article.title %>
+          </a>
+        </h1>
+        <%= article.data.summary %>
+      </article>
+    <% end %>
+  </section>
+</section>
+<% if !build?  %>
+  <header class="TripOverviewHeader">
+    <h1 class="H-Medium post-title">During my travels</h1>
+  </header>
+
+  <%- data[:trips].each do |trip|%>
+    <div class="TripCard">
+      <div class="Container">
+        <header>
+          <h1>
+            <a href="<%= trip_url(trip[:slug]) %>">
+              Japan 2018
+              <small>
+                <%= days_in_words(trip[:start], trip[:end])%> days
+                —
+                <%= trip_articles(trip[:slug]).length %> posts
+                —
+                <%= trip[:photo_count] %> photos
+              </small>
+            </a>
+          </h1>
+          <p>Solo in Tokyo</p>
+          <a class="Button large secondary" href="<%= trip_url(trip[:slug]) %>">
+            View trip
+          </a>
+        </header>
+      </div>
+    </div>
+  <% end %>
+<% end %>

@@ -1,0 +1,50 @@
+.PostCard {
+  margin-bottom: 4rem;
+  border-radius: var(--br);
+  background: var(--bg);
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.PostCard a {
+  display: flex;
+  text-decoration: none
+}
+
+.PostCard figure {
+  min-height: 20rem;
+  width: 50%;
+  border-radius: var(--br) 0 0 var(--br);
+  overflow: hidden;
+}
+
+.PostCard hgroup {
+  padding: 2rem;
+  width: 50%;
+}
+
+.PostCard img {
+  display: block;
+}
+
+/* Small PostCard */
+
+.PostCard.small {
+  max-width: 20rem;
+  text-align: center;
+}
+
+.PostCard.small a {
+  display: block;
+}
+
+.PostCard.small figure {
+  height: 12rem;
+  min-height: auto;
+  width: auto;
+  border-radius: var(--br) var(--br) 0 0;
+}
+
+.PostCard.small hgroup {
+  width: auto;
+}

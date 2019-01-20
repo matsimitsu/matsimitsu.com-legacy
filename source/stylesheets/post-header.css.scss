@@ -1,0 +1,45 @@
+.PostHeader {
+  height: 70vh;
+  position: relative;
+  color: var(--white);
+  background: var(--dark);
+}
+
+.PostHeader figure {
+  width: 100%;
+  height: 100%;
+}
+
+.PostHeader hgroup {
+  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+.PostHeader img {
+  mix-blend-mode: exclusion;
+}
+
+.PostHeader .post-title,
+.PostHeader .post-intro {
+  max-width: 40rem;
+}
+
+.PostHeader.trip{
+  margin-bottom: -8rem;
+  height: 60vh
+}
+
+.PostHeader.trip hgroup {
+  justify-content: flex-start;
+}

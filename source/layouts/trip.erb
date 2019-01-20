@@ -1,0 +1,34 @@
+<% wrap_layout :layout do %>
+  <article class="Post">
+    <section class="PostHeader">
+      <%= scaled_image(current_article.data[:image], "Header image", "cover") %>
+      <hgroup>
+          <div class="Dates">
+      <span class="DateRange">2018-10-31<i class="fa fa-angle-right"></i>2018-11-01</span>
+    </div>
+
+      <h1 class="H-Large post-title"><%= current_article.title %></h1>
+      <p class="T-Large post-intro"><%= current_article.data[:subtitle] %></p>
+      </hgroup>
+    </section>
+    <section class="PostBody">
+      <%= yield %>
+    </section>
+  </article>
+  <% if trip_article?(current_article, current_article.article_previous) || trip_article?(current_article, current_article.article_next)%>
+    <div class="PostNavigation">
+      <h1 class="H-Large">
+        More posts from <%= current_trip[:title] %>
+      </h1>
+      <div class="Container">
+        <% if current_article.article_previous %>
+          <%= partial :post_card, :locals => {:article => current_article.article_previous, :next_or_prev => "previous"} %>
+        <% end %>
+        <% if current_article.article_next %>
+          <%= partial :post_card, :locals => {:article => current_article.article_next, :next_or_prev => "next"} %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+<% end %>
+

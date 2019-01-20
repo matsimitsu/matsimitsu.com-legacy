@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+  </head>
+  <body>
+    <nav class="Header">
+      <ul class="BreadCrumbs">
+        <li><a href="/">Matsimitsu</a></li>
+        <%- if current_article %>
+          <%- if current_article.data[:trip] %>
+            <li><a href="<%= trip_url(current_article.data[:trip]) %>"><%= current_article.data[:trip] %></a></li>
+          <%- end %>
+
+          <li><a href="<%= current_article.url %>"><%= current_article.title %></a></li>
+        <%- elsif current_page %>
+          <%- title = current_page.data[:title] || current_page.locals.try(:[], :trip).try(:[], :title) %>
+          <% if title %>
+            <li><a href="<%= current_page.url %>"><%= title  %></a></li>
+          <% end %>
+        <%- end %>
+      </ul>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

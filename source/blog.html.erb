@@ -1,0 +1,21 @@
+---
+title: Blog
+blog: blog
+---
+
+<header class="TripOverviewHeader">
+    <h1 class="H-Large post-title">Blog</h1>
+</header>
+<section class="Container narrow">
+  <% blog("blog").articles.each do |article| %>
+    <article>
+      <h1>
+        <a href="<%= article.url %>">
+          <small><time><%= article.date.strftime('%b %e %Y') %></time> - </small>
+          <%= article.title %>
+        </a>
+      </h1>
+      <%= article.data.summary %>
+    </article>
+  <% end %>
+</section>
