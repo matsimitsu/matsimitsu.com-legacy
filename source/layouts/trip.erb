@@ -15,16 +15,16 @@
       <%= yield %>
     </section>
   </article>
-  <% if trip_article?(current_article, current_article.article_previous) || trip_article?(current_article, current_article.article_next)%>
+  <% if trip_article?(current_article, current_article.article_previous) || trip_article?(current_article, current_article.article_next) %>
     <div class="PostNavigation">
       <h1 class="H-Large">
         More posts from <%= current_trip[:title] %>
       </h1>
       <div class="Container">
-        <% if current_article.article_previous %>
+        <% if trip_article?(current_article, current_article.article_previous) %>
           <%= partial :post_card, :locals => {:article => current_article.article_previous, :next_or_prev => "previous"} %>
         <% end %>
-        <% if current_article.article_next %>
+        <% if trip_article?(current_article, current_article.article_next) %>
           <%= partial :post_card, :locals => {:article => current_article.article_next, :next_or_prev => "next"} %>
         <% end %>
       </div>

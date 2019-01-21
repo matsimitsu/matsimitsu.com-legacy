@@ -105,7 +105,7 @@ helpers do
   end
 
   def date_range(start_date, end_date = nil, separator = "-")
-    date_string = start_date.to_s
+    date_string = "#{start_date}"
     if end_date.present? && start_date != end_date
       date_string << " #{separator} #{end_date}"
     end

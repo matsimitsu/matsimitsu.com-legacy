@@ -1,8 +1,90 @@
--
-  title: Asia 2017
-  subtitle: Solo in Tokyo
-  excerpt: In February 2018 I went on a two week trip to Rwanda and Tanzania with a group of friends. We visited Rwanda for silverback mountain gorilla trekking in Volcanoes National Park then flew to Tanzania to go on various safari game drives in both the Northern and Southern Serengeti.
-  start: 10-10-2010
-  end: 20-10-2010
+---
+- title: USA2011
+  subtitle: Roadtrip!
+  excerpt: ''
+  start: '2011-07-04'
+  end: '2011-07-25'
   layout: trip_overview
-  slug: asia2017
+  slug: usa2011
+  photo_count: 86
+- title: USA 2012
+  subtitle: On the road again
+  excerpt: ''
+  start: '2012-06-04'
+  end: '2012-06-25'
+  layout: trip_overview
+  slug: usa-2012
+  photo_count: 88
+- title: Asia 2014
+  subtitle: My first trip to South East Asia
+  excerpt: ''
+  start: '2014-05-15'
+  end: '2014-06-05'
+  layout: trip_overview
+  slug: asia-2014
+  photo_count: 451
+- title: USA 2014
+  subtitle: Visiting the south-east of the USA
+  excerpt: ''
+  start: '2014-10-06'
+  end: '2014-10-20'
+  layout: trip_overview
+  slug: usa-2014
+  photo_count: 104
+- title: Asia 2015
+  subtitle: Exploring south-east Asia
+  excerpt: ''
+  start: '2015-05-05'
+  end: '2015-05-31'
+  layout: trip_overview
+  slug: asia-2015
+  photo_count: 359
+- title: Japan 2015
+  subtitle: Exploring Tokyo
+  excerpt: ''
+  start: '2015-11-05'
+  end: '2015-11-25'
+  layout: trip_overview
+  slug: japan-2015
+  photo_count: 351
+- title: Asia 2016
+  subtitle: Exploring South East Asia (again).
+  excerpt: ''
+  start: '2016-05-13'
+  end: '2016-06-10'
+  layout: trip_overview
+  slug: asia-2016
+  photo_count: 502
+- title: Asia 2017
+  subtitle: Hong Kong, Macau, Singapore, Indonesia, Brunei and Japan
+  excerpt: ''
+  start: '2017-05-05'
+  end: '2017-06-15'
+  layout: trip_overview
+  slug: asia-2017
+  photo_count: 745
+- title: Korea 2017
+  subtitle: After a quick 2-day visit a couple of years ago we decided to explore
+    Korea a bit more. In these two weeks we visit Seoul, Busan and Jeju.
+  excerpt: ''
+  start: '2017-11-01'
+  end: '2017-11-14'
+  layout: trip_overview
+  slug: korea-2017
+  photo_count: 267
+- title: China 2018
+  subtitle: Land of dragons and emperors
+  excerpt: ''
+  start: '2018-05-01'
+  end: '2018-05-23'
+  layout: trip_overview
+  slug: china-2018
+  photo_count: 349
+- title: Japan 2018
+  subtitle: Solo in Tokyo
+  excerpt: ''
+  start: '2018-11-01'
+  end: '2018-11-15'
+  layout: trip_overview
+  slug: japan-2018
+  photo_count: 212
