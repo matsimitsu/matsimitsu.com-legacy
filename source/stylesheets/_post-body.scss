@@ -1,0 +1,48 @@
+.PostPage {
+  padding-bottom: 0.1rem;
+}
+
+.PostSections {
+  padding-top: 4rem;
+}
+
+.PostBody .Container {
+  padding: 4rem 0;
+}
+
+.PostBody .Container + .Container {
+  padding-top: 0;
+}
+
+.PostBody {
+  padding-top: 4rem;
+  font-size: 1rem;
+}
+
+.PostBody > * {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.PostBody h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.PostBody p {
+  padding: 2rem;
+  max-width: 40rem;
+}
+
+.PostBody ul {
+  list-style: square;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.PostBody li p {
+  margin-bottom: 0.5rem;
+}
+

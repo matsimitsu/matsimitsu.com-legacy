@@ -165,125 +165,19 @@ figure {
   margin: 0;
 }
 
-.PostPage {
-  padding-bottom: 0.1rem;
-}
-
-.PostSections {
-  padding-top: 4rem;
-}
-
-.Hero {
-  padding: 2rem 0;
-}
-
-.Hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 0;
-}
-
-.PostBody .Container {
-  padding: 4rem 0;
-}
-
-.PostBody .Container + .Container {
-  padding-top: 0;
-}
-
-.PostBody {
-  padding-top: 4rem;
-  font-size: 1rem;
-}
-
-.PostBody > * {
-  width: 80vw;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.PostBody h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-.PostBody p {
-  padding: 2rem;
-  max-width: 40rem;
-}
-
-.PostBody ul {
-  list-style: square;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-}
-
-.PostBody li p {
-  margin-bottom: 0.5rem;
-}
-
-.ScaledImage {
-  background: var(--bg-invert);
-  background-size: 4rem;
-}
-
-.ScaledImage img {
-  height: 100%;
-  width: 100%;
-}
-
-.ScaledImage.cover img {
-  object-fit: cover;
-}
-
-.Dates {
-  display: block;
-  margin-bottom: 1rem;
-  z-index: 900;
-}
-
-.Dates .DateRange {
-  font-size: 1rem;
-  text-transform: uppercase;
-  opacity: 0.6;
-}
-
-.Dates .fa {
-  margin: 0 0.5rem;
-  opacity: 0.4;
-}
-
 .TripOverview {
   background: var(--bg-shade);
   padding-bottom: .1rem;
 }
 
-.TripOverviewHeader {
-  text-align: center;
-  padding: 4rem;
-}
-
-.TripOverviewHeader hgroup {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-.TripOverviewHeader .trip-title,
-.TripHeader .trip-intro {
-  max-width: 40rem
-}
-
-
+@import '_generic-header';
+@import '_dates';
+@import '_scaled-image';
 @import '_photo-row';
 @import '_header';
 @import '_button';
 
+@import '_post-body';
 @import '_post-header';
 @import '_post-navigation';
 @import '_post-card';

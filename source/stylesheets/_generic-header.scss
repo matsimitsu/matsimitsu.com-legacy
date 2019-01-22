@@ -1,0 +1,16 @@
+.GenericHeader {
+  text-align: center;
+  padding: 4rem;
+}
+
+.GenericHeader hgroup {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.GenericHeader .trip-title,
+.TripHeader .trip-intro {
+  max-width: 40rem
+}
