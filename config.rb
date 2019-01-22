@@ -94,6 +94,12 @@ helpers do
       .sort_by(&:date)
   end
 
+  def trip_image_groups(trip)
+    articles = trip_articles(trip)
+    res = articles.each_slice((articles.length / 2).floor).to_a.first(2)
+    res
+  end
+
   def current_trip
     return nil unless current_article && current_article.data[:trip]
     data[:trips].find { |t| t[:slug] == current_article.data[:trip] }
