@@ -24,7 +24,7 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
     :tables => true,
     :disable_indented_code_blocks => true
   }.freeze
-  SIZES = %w(360 720 1200 2200).freeze
+  SIZES = [360, 720, 1200, 2200].freeze
 
   # Initialize with correct config.
   # Does not get config from `set :markdown` from `config.rb`
@@ -32,6 +32,8 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
     super(options.merge(OPTIONS))
   end
 
+  # Override the default image tag to emit a <figure>
+  # with a srcset containing SIZES sizes
   def image(url, flex, type_and_alt)
     type, alt = type_and_alt.split("|")
 

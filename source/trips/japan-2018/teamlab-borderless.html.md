@@ -21,7 +21,7 @@ As I made my way over to the park (about an hour by train) it started to rain an
 
 Totally off-topic, but my hotel looks out over a bus depot and it's fun to see how they mange to jam-pack the lot with busses every evening.
 
-Aaanyway this morning the weather was a lot better, not that it mattered, my activities for today were all indoors. I managed to get tickets to an exhibition called [teamlab Borderless](https://borderless.teamlab.art/). 
+Aaanyway this morning the weather was a lot better, not that it mattered, my activities for today were all indoors. I managed to get tickets to an exhibition called [teamlab Borderless](https://borderless.teamlab.art/).
 
 ![5be2b3652a86927dd442312b](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b36b2a86927dd442312c.jpg "1.5")
 
@@ -33,7 +33,7 @@ Pretty much every wall inside has some kind of art projected on it. Some things 
 
 ![hero|5be2b4692a86927dd4423140](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b4692a86927dd4423140.jpg "1.5")
 
-My favorite was this cubic room with 200+ movable spotlights that generated all kinds of (interactive) shapes in the room with matching music. 
+My favorite was this cubic room with 200+ movable spotlights that generated all kinds of (interactive) shapes in the room with matching music.
 
 ![hero|5be2b42c2a86927dd4423134](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b42c2a86927dd4423134.jpg "1.643")
 
@@ -64,13 +64,10 @@ You can download an app and controll these lights, or use the tabled hidden in a
 
 ![5be2b5932a86927dd442315a](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b59b2a86927dd442315c.jpg "1.153")
 
-All in all it kept me busy for more then four hours, exploring many rooms twice or just staying there for a while just to see what happened next. 
+All in all it kept me busy for more then four hours, exploring many rooms twice or just staying there for a while just to see what happened next.
 
 Since I was in Odaiba for this exhibition, they changed the Giant Gundam I visited last time i was there, so here's the new one :)
 
 ![5be2b61f2a86927dd4423162](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b6322a86927dd4423166.jpg "1.5")
 
 Time for a late lunch and some more shoe shopping in the nearby malls (shoes are very cheap).
-
-![5be2b62b2a86927dd4423165](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b6382a86927dd4423167.jpg "1.777")
-

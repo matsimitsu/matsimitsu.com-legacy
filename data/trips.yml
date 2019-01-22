@@ -7,6 +7,7 @@
   layout: trip_overview
   slug: usa2011
   photo_count: 86
+  countries: [US]
 - title: USA 2012
   subtitle: On the road again
   excerpt: ''
@@ -15,6 +16,7 @@
   layout: trip_overview
   slug: usa-2012
   photo_count: 88
+  countries: [US]
 - title: Asia 2014
   subtitle: My first trip to South East Asia
   excerpt: ''
@@ -23,6 +25,7 @@
   layout: trip_overview
   slug: asia-2014
   photo_count: 451
+  countries: [CN, KR, JP]
 - title: USA 2014
   subtitle: Visiting the south-east of the USA
   excerpt: ''
@@ -31,6 +34,7 @@
   layout: trip_overview
   slug: usa-2014
   photo_count: 104
+  countries: [US]
 - title: Asia 2015
   subtitle: Exploring south-east Asia
   excerpt: ''
@@ -39,6 +43,7 @@
   layout: trip_overview
   slug: asia-2015
   photo_count: 359
+  countries: [SG, MY, VN, HK, CN]
 - title: Japan 2015
   subtitle: Exploring Tokyo
   excerpt: ''
@@ -47,6 +52,7 @@
   layout: trip_overview
   slug: japan-2015
   photo_count: 351
+  countries: [JP]
 - title: Asia 2016
   subtitle: Exploring South East Asia (again).
   excerpt: ''
@@ -55,6 +61,7 @@
   layout: trip_overview
   slug: asia-2016
   photo_count: 502
+  countries: [TW, KH, LA, TH]
 - title: Asia 2017
   subtitle: Hong Kong, Macau, Singapore, Indonesia, Brunei and Japan
   excerpt: ''
@@ -63,6 +70,7 @@
   layout: trip_overview
   slug: asia-2017
   photo_count: 745
+  countries: [HK, MO, SG, ID, BN, JP]
 - title: Korea 2017
   subtitle: After a quick 2-day visit a couple of years ago we decided to explore
     Korea a bit more. In these two weeks we visit Seoul, Busan and Jeju.
@@ -72,14 +80,19 @@
   layout: trip_overview
   slug: korea-2017
   photo_count: 267
+  countries: [KR]
 - title: China 2018
   subtitle: Land of dragons and emperors
-  excerpt: ''
+  excerpt: |
+    On our very first Asia trip we had a 71 hour layover in Beijing and a few years after that we visited Shanghai on a similar transfer visa.
+    We really enjoyed the food and the country, so we decided to visit it for real this time
+    with an epic journey from the south to the north by car, bus, boat, train and plane.
   start: '2018-05-01'
   end: '2018-05-23'
   layout: trip_overview
   slug: china-2018
   photo_count: 349
+  countries: [HK, CN]
 - title: Japan 2018
   subtitle: Solo in Tokyo
   excerpt: ''
@@ -88,3 +101,4 @@
   layout: trip_overview
   slug: japan-2018
   photo_count: 212
+  countries: [JP]

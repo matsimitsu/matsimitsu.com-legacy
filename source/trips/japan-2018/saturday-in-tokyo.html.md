@@ -16,8 +16,6 @@ In most previous trips I started the day early and was tired around dinner, but 
 ![5bde7bab2a86927dd442303e](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7baf2a86927dd442303f.jpg "1.5")
 ![5bde7bb02a86927dd4423040](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7bb12a86927dd4423041.jpg "0.91")
 
-![5bde7e272a86927dd4423089](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7e312a86927dd442308b.jpg "1.777")
-
 After lunch I headed to a nearby park to relax a bit and enjoy the sun.
 
 ![5bde7bc12a86927dd4423043](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7bd72a86927dd4423048.jpg "1.5")
@@ -35,7 +33,7 @@ I wasn't the only one :)
 ![5bde7c012a86927dd4423055](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7c1c2a86927dd442305f.jpg "1.5")
 ![5bde7c012a86927dd4423056](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7c272a86927dd4423061.jpg "1.5")
 
-Near the park you could hear music in the distance and I decided to check it out. It was a small festival with traditional musicians playing modern music. 
+Near the park you could hear music in the distance and I decided to check it out. It was a small festival with traditional musicians playing modern music.
 
 ![5bde7c0b2a86927dd4423059](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7c182a86927dd442305c.jpg "1.5")
 
@@ -66,8 +64,3 @@ Working up an apetite for myself I headed back to "my station" to try out a loca
 ![5bde7cf22a86927dd4423081](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7cf82a86927dd4423083.jpg "1.5")
 
 ![5bde7cfb2a86927dd4423084](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7d092a86927dd4423086.jpg "1.5")
-
-mmmm noodles
-
-![5bde7e522a86927dd442308c](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7e5a2a86927dd442308d.jpg "1.777")
-

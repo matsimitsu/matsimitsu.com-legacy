@@ -11,13 +11,9 @@ locations:
   lng: 139.77082530000007
 ---
 
-I packed super light for this trip, only a couple of t-shirts and one pair of pants with the intention to buy new clothes here, so today I'm heading to the Ginza shopping district. Home of every expensive brand you can think of and also the UNIQLO store for cheap clothes :) 
+I packed super light for this trip, only a couple of t-shirts and one pair of pants with the intention to buy new clothes here, so today I'm heading to the Ginza shopping district. Home of every expensive brand you can think of and also the UNIQLO store for cheap clothes :)
 
 ![5bdedfb42a86927dd4423099](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/nighttime-ginza/5bdee00c2a86927dd442309a.jpg "1.5")
-
-Time for food, noodles again :)~
-
-![5bdee16e2a86927dd44230bf](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/nighttime-ginza/5bdee1932a86927dd44230c1.jpg "1.777")
 
 After dinner it was already getting dark and the slight drizzle became a bit worse, this weather makes for great nighttime shots.
 

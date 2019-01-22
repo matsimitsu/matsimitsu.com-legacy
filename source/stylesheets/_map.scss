@@ -1,0 +1,14 @@
+.Map {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.Map svg {
+  margin: 0px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.Map svg path {
+  fill: var(--medium-light)
+}

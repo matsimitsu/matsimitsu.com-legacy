@@ -1,5 +1,6 @@
 <div class="PostCard small">
-  <a href="<%= locals[:article].url %>">
+  <link rel="prefetch" href="<%= locals[:article].url %>" />
+  <a rel="prefetch" href="<%= locals[:article].url %>">
     <figure class="ScaledImage cover">
       <%= scaled_image(locals[:article].data[:image], "Trip header", "cover") %>
     </figure>

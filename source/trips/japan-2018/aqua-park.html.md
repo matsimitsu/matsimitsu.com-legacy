@@ -38,7 +38,7 @@ From there you entered a "Jungle" area with losts of lizzardy creatures.
 
 ![5be9364c2a86927dd4423287](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/aqua-park/5be936512a86927dd4423288.jpg "1.5")
 
-Finally there was a tunnel where you could walk through a tank filled with.. fish. 
+Finally there was a tunnel where you could walk through a tank filled with.. fish.
 
 ![5be936532a86927dd4423289](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/aqua-park/5be9365a2a86927dd442328c.jpg "1.5")
 
@@ -46,6 +46,3 @@ Time to get some dinner.
 
 ![5be9366c2a86927dd442328e](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/aqua-park/5be936722a86927dd4423291.jpg "1.5")
 ![5be9366c2a86927dd442328f](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/aqua-park/5be936712a86927dd4423290.jpg "1.5")
-
-![5be956812a86927dd4423294](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/aqua-park/5be956862a86927dd4423295.jpg "1.777")
-

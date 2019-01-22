@@ -28,7 +28,6 @@ There was only once place to get out of the rain in the entire park, so that's w
 I didn't have had any Sushi yet, so time to fix that. This was a very nice place near my hotel and they had a laminated piece of paper explaining the etiquette and how to order custom items, that was very nice!
 
 ![5be6aaaa2a86927dd44231ea](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/institute-for-nature-study/5be6aaaf2a86927dd44231ec.jpg "1.777")
-![5be6aaaa2a86927dd44231eb](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/institute-for-nature-study/5be6aaaf2a86927dd44231ed.jpg "1.777")
 
 After dinner I did a quick lap around the local shopping street and headed back to the hotel.
 

@@ -12,6 +12,11 @@
     </div>
     </hgroup>
   </section>
+  <%- if trip[:countries] && trip[:countries].any? %>
+    <section class="Container Map">
+      <%= map("world", trip[:countries]) %>
+    </section>
+  <%- end %>
   <section class="Container">
     <%- trip_articles(trip[:slug]).each do |article| %>
       <div class="PostCard">
