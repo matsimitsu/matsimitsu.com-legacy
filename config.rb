@@ -60,7 +60,12 @@ activate :directory_indexes
 set :markdown_engine, :redcarpet
 set :markdown, CustomMarkdown::OPTIONS.merge(:renderer => CustomMarkdown)
 
+## Rss Feed
 page "/feed.xml", :layout => false
+
+
+# CSS
+set :css_dir, "stylesheets"
 
 # Reload the browser automatically whenever files change
 # configure :development do
