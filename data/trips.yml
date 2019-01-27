@@ -1,7 +1,8 @@
 ---
 - title: USA2011
   subtitle: Roadtrip!
-  excerpt: ''
+  excerpt: |
+    My very first roadtrip across the USA. We started in New York and ended up in San Francisco, but we also visited San Diego and Portland, all in four weeks.
   start: '2011-07-04'
   end: '2011-07-25'
   layout: trip_overview
@@ -10,7 +11,8 @@
   countries: [US]
 - title: USA 2012
   subtitle: On the road again
-  excerpt: ''
+  excerpt: |
+    My second roadtrip across the USA, almost the same route, but different company.
   start: '2012-06-04'
   end: '2012-06-25'
   layout: trip_overview
@@ -19,7 +21,11 @@
   countries: [US]
 - title: Asia 2014
   subtitle: My first trip to South East Asia
-  excerpt: ''
+  excerpt: |
+    The first trip, of what eventually became many, to Asia.
+    I visted Beijing in China on a 72 hour transfer visum
+    before hading to Japan to travel the country by their high-speed train called the Shinkansen.
+    We ended the trip with a nice stopover in Seoul, South Korea.
   start: '2014-05-15'
   end: '2014-06-05'
   layout: trip_overview
@@ -28,7 +34,8 @@
   countries: [CN, KR, JP]
 - title: USA 2014
   subtitle: Visiting the south-east of the USA
-  excerpt: ''
+  excerpt: |
+    Still not done with the USA, on this trip I explored the southern states by a roadtrip from Miami, Florida to Houston, Texas.
   start: '2014-10-06'
   end: '2014-10-20'
   layout: trip_overview
@@ -37,7 +44,11 @@
   countries: [US]
 - title: Asia 2015
   subtitle: Exploring south-east Asia
-  excerpt: ''
+  excerpt: |
+    On this trip I traveled to South East Asia again to discover great food in Singapore and
+    beautiful nature near Kuala Lumur, Malaysia, before traversing Vietnam from south to north, stopping in Da Nang and Sapa long the way.
+    I ended the trip with a visum-free 72 hour layover in Shanghai, China.
+
   start: '2015-05-05'
   end: '2015-05-31'
   layout: trip_overview
@@ -46,7 +57,9 @@
   countries: [SG, MY, VN, HK, CN]
 - title: Japan 2015
   subtitle: Exploring Tokyo
-  excerpt: ''
+  excerpt: |
+    My firt solo trip where I tried to figure out if working abroad was feasible.
+    I stayed in Tokyo for three weeks where I explored the city and it's surroundings.
   start: '2015-11-05'
   end: '2015-11-25'
   layout: trip_overview
@@ -55,7 +68,10 @@
   countries: [JP]
 - title: Asia 2016
   subtitle: Exploring South East Asia (again).
-  excerpt: ''
+  excerpt: |
+    Returning to Asia to discover even more countries.
+    On this trip I explored the city of Taipei in Taiwan, the Ankor Wat temples in Cambodia and beautiful waterfalls near Vientale, Laos.
+    "Home base" for this trip was Bangkok, Thailand and I ended the trip with a few relaxing days on Ao Nang Beach, Krabi, Thailand.
   start: '2016-05-13'
   end: '2016-06-10'
   layout: trip_overview
@@ -64,7 +80,14 @@
   countries: [TW, KH, LA, TH]
 - title: Asia 2017
   subtitle: Hong Kong, Macau, Singapore, Indonesia, Brunei and Japan
-  excerpt: ''
+  excerpt: |
+    With so many trips to South East Asia, I had to do a "Greatest Hits" trip,
+    with a few new additions on a six-week journey.
+    Highlights visited this trip were HongKong and Singapore, from where we flew to Yogyakarta, Indonesia to travel the rest of the island by Train.
+
+
+    During this trip we saw amazing temples, beautiful vista's and two volcanos. From the southern end of the island we took a plane to Bruneï where we experienced this state during Ramadan.
+    To end the journey we flew to Tokyo, Japan and traveled the country to Osaka.
   start: '2017-05-05'
   end: '2017-06-15'
   layout: trip_overview
@@ -74,7 +97,8 @@
 - title: Korea 2017
   subtitle: After a quick 2-day visit a couple of years ago we decided to explore
     Korea a bit more. In these two weeks we visit Seoul, Busan and Jeju.
-  excerpt: ''
+  excerpt: |
+    I've only seen Seoul for a couple of days during a previous trip. Time to explore this country in greater detail. We started in Seoul and took the high-speed train to Busan, from where few flew to Jeju Island.
   start: '2017-11-01'
   end: '2017-11-14'
   layout: trip_overview
@@ -95,7 +119,8 @@
   countries: [HK, CN]
 - title: Japan 2018
   subtitle: Solo in Tokyo
-  excerpt: ''
+  excerpt: |
+    Time to revisit one of my favorite countries. Japan has it all, great public transport, food and scenery. This time I spent two weeks in and around Tokyo.
   start: '2018-11-01'
   end: '2018-11-15'
   layout: trip_overview

@@ -12,9 +12,13 @@
     </div>
     </hgroup>
   </section>
-  <%- if trip[:countries] && trip[:countries].any? %>
+  <%- if trip[:map]  %>
     <section class="Container Map">
-      <%= map("world", trip[:countries]) %>
+      <%= svg_map(trip[:map]) %>
+    </section>
+  <%- elsif trip[:countries] && trip[:countries].any? %>
+    <section class="Container Map">
+      <%= svg_map("world", trip[:countries]) %>
     </section>
   <%- end %>
   <section class="Container">

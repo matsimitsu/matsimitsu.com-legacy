@@ -136,7 +136,7 @@ helpers do
     BASE_URL
   end
 
-  def map(wanted, highlight)
+  def svg_map(wanted, highlight = [])
     svg = File.read("./data/#{wanted}.svg")
     hightlight_selectors = Array(highlight).map do |hl|
       ".Map svg path.sm_state_#{hl}"
