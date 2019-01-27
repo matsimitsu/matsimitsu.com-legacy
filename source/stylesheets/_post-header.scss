@@ -3,6 +3,9 @@
   position: relative;
   color: var(--white);
   background: var(--dark);
+  @media (max-width: 800px) {
+    height: 40vh;
+  }
 }
 
 .PostHeader figure {

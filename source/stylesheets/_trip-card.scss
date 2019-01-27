@@ -8,7 +8,6 @@
   border-top: var(--border);
 }
 
-
 .TripCard .Container {
   display: flex;
   position: relative;
@@ -16,13 +15,21 @@
 
 .TripCard Header {
   max-width: 60%;
+  @media (max-width: 800px) {
+    max-width: 100%;
+  }
+
 }
 
 .TripCard .images {
   position: absolute;
   margin-left: calc(60% + 5rem);
   top: 50%;
-  transform: translateY(-50%)
+  transform: translateY(-50%);
+  @media (max-width: 800px) {
+    display: none;
+  }
+
 }
 
 .TripCard a {

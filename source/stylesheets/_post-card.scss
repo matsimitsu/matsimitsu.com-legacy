@@ -8,7 +8,10 @@
 
 .PostCard a {
   display: flex;
-  text-decoration: none
+  text-decoration: none;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 }
 
 .PostCard figure {
@@ -16,11 +19,19 @@
   width: 50%;
   border-radius: var(--br) 0 0 var(--br);
   overflow: hidden;
+  @media (max-width: 800px) {
+    width: 100%;
+    min-height: initial;
+    border-radius: var(--br) var(--br) 0 0 ;
+  }
 }
 
 .PostCard hgroup {
   padding: 2rem;
   width: 50%;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 }
 
 .PostCard img {

@@ -1,6 +1,10 @@
 .GenericHeader {
   text-align: center;
   padding: 4rem;
+
+  @media (max-width: 800px) {
+    padding: 4rem 0;
+  }
 }
 
 .GenericHeader hgroup {
