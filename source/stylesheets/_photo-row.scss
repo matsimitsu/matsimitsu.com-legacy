@@ -4,6 +4,9 @@
 
 .PhotoRow + .PhotoRow {
   margin-top: -3.5rem;
+  @media (max-width: 800px) {
+    margin-top: -1.5rem;
+  }
 }
 
 .PhotoRow figure {

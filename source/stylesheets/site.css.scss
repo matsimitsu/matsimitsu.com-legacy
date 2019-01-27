@@ -62,6 +62,9 @@ body.dark {
 
 html {
   font-size: 20px;
+  @media (max-width: 800px) {
+    font-size: 15px;
+  }
 }
 
 body {
@@ -104,7 +107,13 @@ a {
 
 .H-Normal   { font-size: 1rem; }
 .H-Medium   { font-size: 1.5rem; }
-.H-Large    { font-size: 3rem; }
+.H-Large    {
+  font-size: 3rem;
+  @media (max-width: 800px) {
+    font-size: 2rem;
+  }
+}
+
 
 /* Paragraphs */
 .T-Small    { font-size: 0.5rem; }

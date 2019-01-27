@@ -43,6 +43,10 @@
 .PostCard.small {
   max-width: 20rem;
   text-align: center;
+  @media (max-width: 1100px) {
+    margin: 0 auto 2rem;
+    width: 20rem;
+  }
 }
 
 .PostCard.small a {
