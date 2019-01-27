@@ -9,7 +9,7 @@
 
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Matsimitsu" %></title>
-    <meta name="description" content="<%= current_page.data[:summary] || current_page.data[:subtitle] %>"/>
+    <meta name="description" content="<%= current_page.data[:summary] || current_page.data[:subtitle] || current_page.locals.try(:[], :trip).try(:[], :excerpt) %>"/>
 
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
