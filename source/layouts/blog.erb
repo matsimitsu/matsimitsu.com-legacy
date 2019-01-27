@@ -4,11 +4,11 @@
       <hgroup>
         <h1 class="H-Large post-title"><%= current_article.title %></h1>
         <div class="Dates">
-          <span class="DateRange"><%= current_article.data[:date] %></span>
+          <span class="DateRange"><%= current_article.date.strftime("%Y-%m-%d") %></span>
         </div>
       </hgroup>
     </section>
-    <section class="PostBody">
+    <section class="BlogPostBody">
       <%= yield %>
     </section>
   </article>

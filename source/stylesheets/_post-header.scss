@@ -30,7 +30,7 @@
 }
 
 .PostHeader img {
-  mix-blend-mode: exclusion;
+  mix-blend-mode: var(--mix-blend-mode);
 }
 
 .PostHeader .post-title,

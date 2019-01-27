@@ -36,6 +36,7 @@
   --font:                  "Circular Std", "Proxima Nova", sans-serif;
 
   --header-height:         3rem;
+  --mix-blend-mode:        exclusion;
 }
 
 body.dark {
@@ -52,6 +53,7 @@ body.dark {
   --border-color-invert:   var(--light);
   --border:                1px solid var(--border-color);
   --border-invert:         1px solid var(--border-color-invert);
+  --mix-blend-mode:        normal;
 }
 
 *,
@@ -194,4 +196,5 @@ figure {
 @import '_map';
 
 @import '_homepage';
+@import '_blog';
 @import '_fonts';

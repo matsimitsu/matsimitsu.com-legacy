@@ -1,0 +1,48 @@
+.BlogPostBody {
+  font-size: 1rem;
+  padding-bottom: 4rem;
+}
+
+.BlogPostBody > * {
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media (max-width: 800px) {
+    width: 90vw;
+  }
+}
+
+.BlogPostBody h2 {
+  font-size: 2rem;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.BlogPostBody h3 {
+  font-size: 1.5rem;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.BlogPostBody p {
+  padding: 1rem;
+  max-width: 40rem;
+}
+
+.BlogPostBody ul {
+  list-style: square;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.BlogPostBody li p {
+  margin-bottom: 0.5rem;
+}
+
+.BlogPostBody .Container {
+  padding: 4rem 0;
+  @media (max-width: 800px) {
+    padding: 2rem 0;
+  }
+}
+
