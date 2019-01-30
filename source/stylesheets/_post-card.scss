@@ -18,11 +18,13 @@
   min-height: 20rem;
   width: 50%;
   border-radius: var(--br) 0 0 var(--br);
-  overflow: hidden;
   @media (max-width: 800px) {
     width: 100%;
     min-height: initial;
     border-radius: var(--br) var(--br) 0 0 ;
+  }
+  img {
+    border-radius: var(--br) 0 0 var(--br);
   }
 }
 
