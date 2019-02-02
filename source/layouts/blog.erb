@@ -12,5 +12,8 @@
       <%= yield %>
     </section>
   </article>
+
+  <%= partial "article_list", :locals => {:limit => 99, :title => "More from the blog"} %>
+
 <% end %>
 

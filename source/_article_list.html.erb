@@ -1,0 +1,18 @@
+<section class="Homepage Articles">
+  <header class="GenericHeader">
+      <h1 class="H-Medium post-title"><%= locals[:title] %></h1>
+  </header>
+  <section class="Container tiny">
+    <% blog("blog").articles.first(locals[:limit]).each do |article| %>
+      <article>
+        <h1>
+          <a href="<%= article.url %>">
+            <small><time><%= article.date.strftime('%b %e %Y') %></time> - </small>
+            <%= article.title %>
+          </a>
+        </h1>
+        <p><%= article.data.summary %></p>
+      </article>
+    <% end %>
+  </section>
+</section>
