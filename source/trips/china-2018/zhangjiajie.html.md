@@ -15,7 +15,7 @@ If you've seen the movie Avatar, you probably noticed the giant spikey mountains
 
 ![5af98fe02a869202150354ad](https://d3khpbv2gxh34v.cloudfront.net/p/china-2018/zhangjiajie/5af98fe42a869202150354ae.jpg "1.945")
 
-The day starts with an hour-long bus ride to the national park. You can see the entrance above. Once in the park you have access to free busses that take you to certain areas. Other transportation means such as cable cars and elevators are not free. 
+The day starts with an hour-long bus ride to the national park. You can see the entrance above. Once in the park you have access to free busses that take you to certain areas. Other transportation means such as cable cars and elevators are not free.
 
 ![5af990212a869202150354b0](https://d3khpbv2gxh34v.cloudfront.net/p/china-2018/zhangjiajie/5af990252a869202150354b1.jpg "1.5")
 
@@ -23,6 +23,8 @@ We started by taking the bus to the elevator that takes you right to the top of 
 
 ![5af990a02a869202150354bc](https://d3khpbv2gxh34v.cloudfront.net/p/china-2018/zhangjiajie/5af990a72a869202150354bf.jpg "0.734")
 ![5af990a32a869202150354bd](https://d3khpbv2gxh34v.cloudfront.net/p/china-2018/zhangjiajie/5af990a72a869202150354be.jpg "1.5")
+
+>[hero|elevator video](https://d3khpbv2gxh34v.cloudfront.net/v/china-2018/zhangjiajie/elevator.mp4 "1.78")
 
 ![5af990452a869202150354b8](https://d3khpbv2gxh34v.cloudfront.net/p/china-2018/zhangjiajie/5af990492a869202150354b9.jpg "1.5")
 
@@ -55,7 +57,7 @@ We got off at a random stop and after a couple of meters of walking we got more 
 
 ![5af9922f2a869202150354e7](https://d3khpbv2gxh34v.cloudfront.net/p/china-2018/zhangjiajie/5af992312a869202150354e8.jpg "1.5")
 
-At this point it was starting to get late and we were still on top of a mountain with no idea how to get down. After asking around it turned out the fastest way was to get down a hiking trail, that would take an hour. It turned out it was actualy a 3800 steps long set of stairs. 
+At this point it was starting to get late and we were still on top of a mountain with no idea how to get down. After asking around it turned out the fastest way was to get down a hiking trail, that would take an hour. It turned out it was actualy a 3800 steps long set of stairs.
 
 ![5af992ce2a869202150354ec](https://d3khpbv2gxh34v.cloudfront.net/p/china-2018/zhangjiajie/5af992d32a869202150354ed.jpg "1.5")
 

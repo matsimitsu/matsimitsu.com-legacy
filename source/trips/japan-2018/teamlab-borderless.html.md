@@ -33,16 +33,21 @@ Pretty much every wall inside has some kind of art projected on it. Some things 
 
 ![hero|5be2b4692a86927dd4423140](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b4692a86927dd4423140.jpg "1.5")
 
+>[video of wall](https://d3khpbv2gxh34v.cloudfront.net/v/japan-2018/teamlab-borderless/wall.mp4)
+
 My favorite was this cubic room with 200+ movable spotlights that generated all kinds of (interactive) shapes in the room with matching music.
 
 ![hero|5be2b42c2a86927dd4423134](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b42c2a86927dd4423134.jpg "1.643")
 
 ![5be2b42b2a86927dd4423133](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b4402a86927dd4423138.jpg "1.5")
 
+>[hero|video of wall](https://d3khpbv2gxh34v.cloudfront.net/v/japan-2018/teamlab-borderless/lights.mp4 "1.78")
+
 ![5be2b4f12a86927dd4423147](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b5062a86927dd4423149.jpg "1.5")
 ![5be2b4f72a86927dd4423148](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b5092a86927dd442314a.jpg "0.667")
 
 ![5be2b4a92a86927dd4423142](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b4d92a86927dd4423144.jpg "1.5")
+
 
 Some rooms were hidden and took a while to find, mainly by seeing people suddenly appear out of nowhere from a secret entrance/exit, others were more obvious.
 

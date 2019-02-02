@@ -55,8 +55,33 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
     img
   end
 
+  def preprocess(txt)
+    txt.lines.map do |line|
+      line.gsub(/>\[(.+)\]\((\S+)(\s".*")?\)/i) { |_| video($1, $2, $3) }
+    end.join
+  end
+
+  def video(type_and_alt, filename, flex)
+    ext = File.extname(filename)
+    base_url = filename.gsub(ext, "")
+    type, alt = type_and_alt.split("|")
+    flex = flex ? flex.tr('"', "").strip : "1.5"
+
+    video = %(<figure class="ScaledImage" style="flex: #{flex} 1 0%;">
+      <video alt="#{alt}" width="100%" poster="#{base_url}.jpg" playsinline autoplay muted loop">
+        <source src="#{base_url}.mp4" type="video/mp4" />
+        <source src="#{base_url}.ogv" type="video/ogg" />
+        <source src="#{base_url}.webm" type="video/webm" />
+      </video>
+    </figure>)
+
+    return %(<div class="Hero Container full">#{video}</div>) if type == "hero"
+
+    video
+  end
+
   def paragraph(text)
-    if text.start_with?("<div")
+    if text.strip.start_with?("<div")
       text
     elsif text.start_with?("<figure")
       %(<div class="PhotoRow Container">#{text}</div>)
