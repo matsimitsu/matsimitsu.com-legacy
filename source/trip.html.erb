@@ -21,7 +21,7 @@
       <%= svg_map("world", trip[:countries]) %>
     </section>
   <%- end %>
-  <%- if trip_articles(trip[:slug]).length == 1%>
+  <%- if trip[:kind] == "single" %>
     <div class="white-bg">
       <article class="Container padded">
         <section class="BlogPostBody">

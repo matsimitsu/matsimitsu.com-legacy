@@ -5,7 +5,7 @@
     My very first roadtrip across the USA. We started in New York and ended up in San Francisco, but we also visited San Diego and Portland, all in four weeks.
   start: '2011-07-04'
   end: '2011-07-25'
-  layout: trip_overview
+  kind: collection
   slug: usa2011
   photo_count: 86
   countries: [US]
@@ -15,7 +15,7 @@
     My second roadtrip across the USA, almost the same route, but different company.
   start: '2012-06-04'
   end: '2012-06-25'
-  layout: trip_overview
+  kind: collection
   slug: usa-2012
   photo_count: 88
   countries: [US]
@@ -25,7 +25,7 @@
     A relaxing week in southern Spain with friends.
   start: '2013-10-02'
   end: '2013-10-09'
-  layout: trip_overview
+  kind: single
   slug: spain-2013
   photo_count: 25
   countries: [ES]
@@ -38,7 +38,7 @@
     We ended the trip with a nice stopover in Seoul, South Korea.
   start: '2014-05-15'
   end: '2014-06-05'
-  layout: trip_overview
+  kind: collection
   slug: asia-2014
   photo_count: 451
   countries: [CN, KR, JP]
@@ -48,7 +48,7 @@
     Still not done with the USA, on this trip I explored the southern states by a roadtrip from Miami, Florida to Houston, Texas.
   start: '2014-10-06'
   end: '2014-10-20'
-  layout: trip_overview
+  kind: collection
   slug: usa-2014
   photo_count: 104
   countries: [US]
@@ -61,7 +61,7 @@
 
   start: '2015-05-05'
   end: '2015-05-31'
-  layout: trip_overview
+  kind: collection
   slug: asia-2015
   photo_count: 359
   countries: [SG, MY, VN, HK, CN]
@@ -72,7 +72,7 @@
     I stayed in Tokyo for three weeks where I explored the city and it's surroundings.
   start: '2015-11-05'
   end: '2015-11-25'
-  layout: trip_overview
+  kind: collection
   slug: japan-2015
   photo_count: 351
   countries: [JP]
@@ -84,7 +84,7 @@
     "Home base" for this trip was Bangkok, Thailand and I ended the trip with a few relaxing days on Ao Nang Beach, Krabi, Thailand.
   start: '2016-05-13'
   end: '2016-06-10'
-  layout: trip_overview
+  kind: collection
   slug: asia-2016
   photo_count: 502
   countries: [TW, KH, LA, TH]
@@ -100,7 +100,7 @@
     To end the journey we flew to Tokyo, Japan and traveled the country to Osaka.
   start: '2017-05-05'
   end: '2017-06-15'
-  layout: trip_overview
+  kind: collection
   slug: asia-2017
   photo_count: 745
   countries: [HK, MO, SG, ID, BN, JP]
@@ -111,7 +111,7 @@
     I've only seen Seoul for a couple of days during a previous trip. Time to explore this country in greater detail. We started in Seoul and took the high-speed train to Busan, from where few flew to Jeju Island.
   start: '2017-11-01'
   end: '2017-11-14'
-  layout: trip_overview
+  kind: collection
   slug: korea-2017
   photo_count: 267
   countries: [KR]
@@ -123,7 +123,7 @@
     with an epic journey from the south to the north by car, bus, boat, train and plane.
   start: '2018-05-01'
   end: '2018-05-23'
-  layout: trip_overview
+  kind: collection
   slug: china-2018
   photo_count: 349
   countries: [HK, CN]
@@ -133,7 +133,7 @@
     Time to revisit one of my favorite countries. Japan has it all, great public transport, food and scenery. This time I spent two weeks in and around Tokyo.
   start: '2018-11-01'
   end: '2018-11-15'
-  layout: trip_overview
+  kind: collection
   slug: japan-2018
   photo_count: 212
   countries: [JP]

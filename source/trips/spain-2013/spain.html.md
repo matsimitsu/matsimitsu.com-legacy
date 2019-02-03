@@ -8,6 +8,7 @@ trip: spain-2013
 ---
 
 Last week I spent a very relaxing week in Tarifa, Spain with a couple of friends. The week consisted of heading to the beach and BBQ-ing at our <a href="https://www.airbnb.com/rooms/7213297" target="_blank">villa</a>.
+
 ![](https://d3khpbv2gxh34v.cloudfront.net/p/spain-2016/DSC04852.jpg "1.5")
 
 ![](https://d3khpbv2gxh34v.cloudfront.net/p/spain-2016/DSC04849.jpg "1.5")

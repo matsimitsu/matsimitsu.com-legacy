@@ -56,15 +56,21 @@ summary: "Personal weblog of developer Robert Beekman covering Technology and Ph
           View trip
         </a>
       </header>
-      <div class="images">
-        <%- trip_image_groups(trip[:slug]).each do |group| %>
-          <div>
-            <%- group.each do |article| %>
-              <%= scaled_image(article.data[:image], article.data[:title])%>
-            <%- end %>
-          </div>
-        <%- end %>
-      </div>
+      <%- if trip_image_groups(trip[:slug]).any? %>
+        <div class="images">
+          <%- trip_image_groups(trip[:slug]).each do |group| %>
+            <div>
+              <%- group.each do |article| %>
+                <%= scaled_image(article.data[:image], article.data[:title])%>
+              <%- end %>
+            </div>
+          <%- end %>
+        </div>
+      <%- else %>
+        <div class="image">
+          <%= scaled_image(trip_articles(trip[:slug]).first.data[:image], trip_articles(trip[:slug]).first.data[:title])%>
+        </div>
+      <%- end %>
     </div>
   </div>
 <% end %>

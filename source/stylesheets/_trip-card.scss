@@ -20,7 +20,7 @@
   }
 }
 
-.TripCard .images {
+.TripCard .images, .TripCard .image {
   position: absolute;
   margin-left: calc(60% + 5rem);
   top: 50%;
@@ -76,4 +76,3 @@
   display: block;
   border-radius: calc(var(--br) / 2)
 }
-

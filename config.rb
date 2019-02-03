@@ -101,8 +101,7 @@ helpers do
 
   def trip_image_groups(trip)
     articles = trip_articles(trip)
-    return [] if articles.length == 0
-    return [[articles.first]] if articles.length == 1
+    return [] if articles.length <= 1
     res = articles.each_slice((articles.length / 2).floor).to_a.first(2)
     res
   end
