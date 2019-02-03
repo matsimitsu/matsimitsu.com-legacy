@@ -160,7 +160,7 @@ a {
 }
 
 .Container.padded {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .Container.narrow {
@@ -169,6 +169,10 @@ a {
 
 .Container.tiny {
   max-width: 30rem;
+}
+
+.white-bg {
+  background: var(--bg)
 }
 
 figure {

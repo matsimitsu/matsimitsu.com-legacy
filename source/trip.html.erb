@@ -21,19 +21,29 @@
       <%= svg_map("world", trip[:countries]) %>
     </section>
   <%- end %>
-  <section class="Container">
-    <%- trip_articles(trip[:slug]).each do |article| %>
-      <div class="PostCard">
-        <a href="<%= article.url %>">
-          <%= scaled_image(article.data[:image], "#{article.data[:title]} image", "cover") %>
-          <hgroup>
-            <%= date_range(article.data[:date], article.data[:end_date]) %>
-            <h1 class="H-Medium"><%= article.data[:title] %></h1>
-            <p class="T-Medium"><%= article.data[:subtitle] %></p>
-            <span class="Button secondary">View post</span>
-          </hgroup>
-        </a>
-      </div>
-    <%- end %>
-  </section>
+  <%- if trip_articles(trip[:slug]).length == 1%>
+    <div class="white-bg">
+      <article class="Container padded">
+        <section class="BlogPostBody">
+          <%= trip_articles(trip[:slug]).first.body %>
+        </section>
+      </article>
+    </div>
+  <%- else %>
+    <section class="Container">
+      <%- trip_articles(trip[:slug]).each do |article| %>
+        <div class="PostCard">
+          <a href="<%= article.url %>">
+            <%= scaled_image(article.data[:image], "#{article.data[:title]} image", "cover") %>
+            <hgroup>
+              <%= date_range(article.data[:date], article.data[:end_date]) %>
+              <h1 class="H-Medium"><%= article.data[:title] %></h1>
+              <p class="T-Medium"><%= article.data[:subtitle] %></p>
+              <span class="Button secondary">View post</span>
+            </hgroup>
+          </a>
+        </div>
+      <%- end %>
+    </section>
+  <%- end %>
 </div>

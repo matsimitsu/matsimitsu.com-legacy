@@ -19,6 +19,16 @@
   slug: usa-2012
   photo_count: 88
   countries: [US]
+- title: Spain 2013
+  subtitle: Beach and Sun in southern Spain
+  excerpt: |
+    A relaxing week in southern Spain with friends.
+  start: '2013-10-02'
+  end: '2013-10-09'
+  layout: trip_overview
+  slug: spain-2013
+  photo_count: 25
+  countries: [ES]
 - title: Asia 2014
   subtitle: My first trip to South East Asia
   excerpt: |
