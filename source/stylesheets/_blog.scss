@@ -34,10 +34,17 @@
   padding: 1rem 0;
 }
 
+.BlogPostBody object {
+  max-width: 40rem;
+  margin: 0 auto;
+  width: 100%;
+
+}
 .BlogPostBody ul {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem;
   list-style: square;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
 }
 
 .BlogPostBody li p {
