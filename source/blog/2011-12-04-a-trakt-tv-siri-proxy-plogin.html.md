@@ -37,6 +37,6 @@ In the generate_calendar_response i create a new view and add every episode i ge
 
 The video below shows the result.
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/Utu9o5WG1d0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Utu9o5WG1d0" frameborder="0" allowfullscreen></iframe>
 
 As always the code can be found on [GitHub](https://github.com/matsimitsu/SiritTrakt)
