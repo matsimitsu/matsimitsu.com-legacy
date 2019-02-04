@@ -10,6 +10,7 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Matsimitsu" %></title>
     <meta name="description" content="<%= current_page.data[:summary] || current_page.data[:subtitle] || current_page.locals.try(:[], :trip).try(:[], :excerpt) %>"/>
+    <meta name="google-site-verification" content="RAuW_ocX_H8rkhEzePDpKWk_GgzEXJ48rG1fvncuqnA" />
 
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
