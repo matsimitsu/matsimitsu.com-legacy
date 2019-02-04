@@ -1,6 +1,6 @@
 ---
 title: Day Eleven
-subtitle: 
+subtitle:
 date: '2015-05-15'
 end_date: '2015-05-15'
 image: https://d3khpbv2gxh34v.cloudfront.net/p/asia-2015/day-eleven/59f467162a86923bc672c794.jpg
@@ -95,3 +95,4 @@ We hung around for a bit before we attempted our next crossing back to our hotel
 
 ![59f4685a2a86923bc672c7ee](https://d3khpbv2gxh34v.cloudfront.net/p/asia-2015/day-eleven/59f4685d2a86923bc672c7ef.jpg "1.5")
 
+>[vietnam video](https://d3khpbv2gxh34v.cloudfront.net/v/asia-2015/vietnam.mp4 "1.78")

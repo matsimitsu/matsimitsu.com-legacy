@@ -71,7 +71,7 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
     flex = flex ? flex.tr('"', "").strip : "1.5"
 
     video = %(<figure class="ScaledImage" style="flex: #{flex} 1 0%;">
-      <video alt="#{alt}" width="100%" poster="#{base_url}.jpg" playsinline autoplay muted loop">
+      <video alt="#{alt}" width="100%" poster="#{base_url}.jpg" playsinline autoplay muted loop>
         <source src="#{base_url}.mp4" type="video/mp4" />
         <source src="#{base_url}.ogv" type="video/ogg" />
         <source src="#{base_url}.webm" type="video/webm" />
