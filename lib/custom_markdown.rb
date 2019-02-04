@@ -39,7 +39,10 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
 
     srcset = SIZES.map do |size|
       ext = File.extname(url)
-      "#{url.gsub(ext, "-#{size}#{ext}")} #{size}w"
+      regex = Regexp.new "(-#{SIZES.join("|-")})?#{ext}"
+      new_url = url
+        .gsub(regex, "-#{size}#{ext}")
+      "#{new_url} #{size}w"
     end
 
     img = %(<figure class="ScaledImage" style="flex: #{flex || "1.5"} 1 0%;">

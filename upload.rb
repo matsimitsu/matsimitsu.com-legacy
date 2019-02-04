@@ -25,7 +25,7 @@ photos.each do |photo|
   width, height = FastImage.size(photo)
   ratio = (width.to_f / height.to_f).round(2)
 
-  url = File.join(PUBLIC_URL, remote_path, filename)
+  url = File.join(PUBLIC_URL, remote_path, filename.gsub(".jpg", "-360.jpg"))
   #obj = s3.bucket(BUCKET).object(object_name)
   #obj.upload_file(photo)
   puts %{![#{filename}](#{url} "#{ratio}") \n\n}
