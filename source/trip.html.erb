@@ -22,13 +22,11 @@
     </section>
   <%- end %>
   <%- if trip[:kind] == "single" %>
-    <div class="white-bg">
-      <article class="Container padded">
-        <section class="BlogPostBody">
-          <%= trip_articles(trip[:slug]).first.body %>
-        </section>
-      </article>
-    </div>
+    <article class="SingleTrip">
+      <section class="BlogPostBody">
+        <%= trip_articles(trip[:slug]).first.body %>
+      </section>
+    </article>
   <%- else %>
     <section class="Container">
       <%- trip_articles(trip[:slug]).each do |article| %>

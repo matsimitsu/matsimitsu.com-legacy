@@ -19,6 +19,16 @@
   slug: usa-2012
   photo_count: 88
   countries: [US]
+- title: USA 2013
+  subtitle: A company road-trip
+  excerpt: |
+    A company road-trip along both coasts of the USA, starting at New York City and driving up to Boston. From there we flew to San Fransisco and drove up to Portland, covering both coasts of the USA.
+  start: "2013-05-02"
+  end: "2013-04-14"
+  kind: single
+  slug: usa-2013
+  photo_count: 76
+  countries: [US]
 - title: Spain 2013
   subtitle: Beach and Sun in southern Spain
   excerpt: |

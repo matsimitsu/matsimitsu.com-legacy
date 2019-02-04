@@ -16,3 +16,7 @@ gem "pry"
 
 # Temp for import
 gem "graphql-client"
+
+# Upload
+gem "aws-sdk-s3"
+gem "fastimage"
