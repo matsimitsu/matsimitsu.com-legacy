@@ -1,7 +1,7 @@
 ---
 title: Usa 2013
-date: 2013-05-02
-end_date: 2013-04-14
+date: 2013-04-14
+end_date: 2013-05-02
 summary: A company road-trip along both coasts of the USA
 image: 'https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/_DSC0338.jpg'
 trip: usa-2013
