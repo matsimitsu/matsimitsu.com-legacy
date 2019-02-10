@@ -25,12 +25,26 @@ From there we took the Subway into Brooklyn.
 
 ![_DSC0193.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/_DSC0193-360.jpg "1.51")
 
+Where we visted the Transit museum, an abandoned Subway station where they showcase old subway cars.
+
+![IMG_1886.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/IMG_1886-360.jpg)
+
+![IMG_1875.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/IMG_1875-360.jpg)
+![IMG_1878.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/IMG_1878-360.jpg)
+
+![IMG_1881.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/IMG_1881-360.jpg)
+![IMG_1882.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/IMG_1882-360.jpg)
+
+![IMG_1899.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/IMG_1899-360.jpg)
+
+From the transit museum we walked to the riverfront.
+
 ![hero|_DSC0066-Edit.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/_DSC0066-Edit-360.jpg "2.92")
 
 ![_DSC0092.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/_DSC0092-360.jpg "1.51")
 ![_DSC0097.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/_DSC0097-360.jpg "0.66")
 
-And walked back to Manhattan.
+And over the bridge back to Manhattan.
 
 ![_DSC0116.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/_DSC0116-360.jpg "1.51")
 
@@ -46,6 +60,8 @@ And walked back to Manhattan.
 ## Boston
 
 After getting a rental car, we drove up to Boston to visit [thoughtbot](https://thoughtbot.com/). What was supposed to be a fun visit, quickly deteriorated was we were in Boston right at the time when the manhut for the Boston Marathon Bombers was in full force. We heard sirens everywhere and were told to stay in the hotel.
+
+![IMG_1964.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/IMG_1964-360.jpg)
 
 The next day things had calmed down and we could explore the city center.
 
@@ -64,7 +80,11 @@ The next day we headed to the airport to fly to San Fransisco (I wasn't using th
 
 ## San Fransisco
 
+![IMG_1979.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/IMG_1979-360.jpg)
+
 Colleagues wanted to visit Alcatraz, so we booked tickes and hopped on the boat to the famous island.
+
+![IMG_1992.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/IMG_1992-360.jpg)
 
 ![hero|_DSC0392.jpg](https://d3khpbv2gxh34v.cloudfront.net/p/usa-2013/_DSC0392-360.jpg "1.51")
 
