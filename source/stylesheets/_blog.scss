@@ -14,13 +14,13 @@
 
 .BlogPostBody h2 {
   font-size: 2rem;
-  padding: 2rem 0 1rem 0;
+  padding: 4rem 0 1rem 0;
   text-align: center;
 }
 
 .BlogPostBody h3 {
   font-size: 1.5rem;
-  padding: 2rem 0 1rem 0;
+  padding: 4rem 0 1rem 0;
   text-align: center;
 }
 
@@ -47,14 +47,28 @@
   list-style: square;
 }
 
+.BlogPostBody div.highlight {
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  font-size: 0.75rem;
+  margin: 1rem auto;
+  max-width: 40rem;
+  overflow-x: auto;
+}
+
+.BlogPostBody p code {
+  background: var(--bg-shade);
+  padding: 2px 4px;
+}
+
 .BlogPostBody li p {
   margin-bottom: 0.5rem;
 }
 
 .BlogPostBody .Container {
-  padding: 4rem 0;
+  padding: 2rem 0;
   @media (max-width: 800px) {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 }
 

@@ -1,0 +1,244 @@
+---
+layout: false
+---
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
+    <script>
+      (() => {
+        const application = Stimulus.Application.start()
+
+        application.register("dropzone", class extends Stimulus.Controller {
+          static get targets() {
+            return ["polaroidList", "baseUrl"]
+          }
+
+          acceptDrop(ev) {
+            ev.preventDefault();
+            this.element.classList.add("dropzone--dropping");
+          }
+
+          leaveDrop(ev) {
+            ev.preventDefault();
+            this.element.classList.remove("dropzone--dropping");
+          }
+
+          handleDrop(ev) {
+            ev.preventDefault()
+            this.element.classList.remove("dropzone--dropping");
+
+            if (ev.dataTransfer.items) {
+              // Use DataTransferItemList interface to access the file(s)
+              for (var i = 0; i < ev.dataTransfer.items.length; i++) {
+                // If dropped items aren't files, reject them
+                if (ev.dataTransfer.items[i].kind === 'file') {
+                  var file = ev.dataTransfer.items[i].getAsFile();
+                  this.addImage(file)
+                }
+              }
+            } else {
+              // Use DataTransfer interface to access the file(s)
+              for (var i = 0; i < ev.dataTransfer.files.length; i++) {
+                this.addImage(ev.dataTransfer.files[i]);
+              }
+            }
+          }
+
+          // Gets called on drop, creates a FileReader and reads the file.
+          // When loaded it calls renderImage
+          addImage(file) {
+            var reader = new FileReader();
+            reader.onload = (event =>  this.renderImage(file, event) );
+            reader.readAsDataURL(file);
+          }
+
+          // Gets called when FileReader is done reading
+          // Clones the template and fills the fields,
+          // rending an image with input containing a markdown image tag.
+          renderImage(file, event) {
+            var template = document.querySelector('#polaroid-template');
+
+            // Clone template and fill the values
+            var clone = document.importNode(template.content, true);
+
+            // Set the image source and data attributes from the FileReader
+            var img = clone.querySelectorAll("img")[0];
+            img.src = event.target.result;
+            img.setAttribute("data-filename", file.name);
+            img.setAttribute("data-url", this.baseUrlTarget.value + file.name);
+
+            this.polaroidListTarget.appendChild(clone);
+          }
+        })
+
+        application.register("polaroid", class extends Stimulus.Controller {
+          static get targets() {
+            return ["source", "image"]
+          }
+
+          copy(ev) {
+            ev.preventDefault();
+            this.sourceTarget.select();
+            document.execCommand("copy");
+            this.element.classList.add("polaroid--copied");
+          }
+
+          connect() {
+            if (document.queryCommandSupported("copy")) {
+              this.element.classList.add("polaroid--supported");
+            }
+
+            // Set the input value, generates a Markdown image tag
+            // We do this on connect, so we know the image is there
+            // if we did this in the FileReader callback,
+            // there's a chance the image hasn't rendered yet, yielding a NaN for the ratio.
+            var input = this.sourceTarget;
+            var img = this.imageTarget;
+            var ratio = Math.round(img.naturalWidth / img.naturalHeight * 1000) / 1000;
+
+            // Sets a markdown image tag: ![filename](url, ratio)
+            input.value = "![" + img.getAttribute("data-filename") + "](" + img.getAttribute("data-url") + " \"" + ratio + "\")"
+          }
+        })
+      })()
+    </script>
+    <style type="text/css">
+      *, :after, :before {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      }
+
+      .dropzone {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+      }
+      header {
+        padding: 40px 0 20px;
+      }
+      header input {
+        width: 40vw;
+        font-size: inherit;
+        border: 0;
+        outline: 0;
+        border-bottom: 1px solid;
+        border-color: #bdbdbd;
+        background: transparent;
+      }
+
+      .dropzone--dropping {
+        background: #f0f0f0;
+      }
+
+      .dropzone .polaroid-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+      }
+
+      .polaroid {
+        background: white;
+        position: relative;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px 0px, rgba(0, 0, 0, 0.1) 0px 4px 10px 0px;
+        margin: 10px;
+      }
+      .polaroid img {
+        height: 360px;
+        width: 360px;
+        object-fit: cover;
+        border-radius: 4px 4px 0 0;
+      }
+      .polaroid-button {
+        display: none;
+      }
+      .polaroid--supported .polaroid-button {
+        display: initial;
+      }
+      .polaroid--copied .polaroid-copied {
+        display: flex;
+      }
+      .polaroid-copied {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        padding: 4px;
+        border-radius: 10px 0 0 10px;
+        background-color:#29cc29;
+        color: white;
+      }
+      .polaroid-copied svg {
+        stroke: white;
+        fill: white;
+        height: 1.1rem;
+        margin-left: 4px
+      }
+      .copy-elements svg {
+        fill: black;
+        stroke: black;
+        width: 1rem;
+        height: 1rem;
+      }
+      .copy-elements {
+        display: flex;
+        vertical-align: middle;
+        padding: 10px;
+      }
+      .copy-elements input {
+        width: 100%;
+        margin-right: 5px;
+      }
+    </style>
+  <head>
+
+  <body>
+    <div data-controller="dropzone" class="dropzone" data-action="dragover->dropzone#acceptDrop drop->dropzone#handleDrop dragleave->dropzone#leaveDrop">
+      <header>
+        Base url: <input data-target="dropzone.baseUrl" type="text" value="https://d3khpbv2gxh34v.cloudfront.net/p/">
+      </header>
+
+      <ul data-target="dropzone.polaroidList" class="polaroid-list">
+      </ul>
+      </div>
+    </div>
+
+    <template id="polaroid-template">
+      <li data-controller="polaroid" class="polaroid">
+        <img src="" data-target="polaroid.image" />
+
+        <span class="polaroid-copied" data-target="polaroid.copied">
+          <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="check-circle"
+            class="svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z">
+            </path>
+          </svg>
+        </span>
+
+        <div class="copy-elements">
+          <input data-target="polaroid.source" type="text" value="" readonly>
+          <a href="#" data-action="polaroid#copy" class="polaroid-button">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="copy" class="svg-inline--fa fa-copy fa-w-14"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </li>
+    </template>
+  </body>
+</html>
