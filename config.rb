@@ -78,6 +78,11 @@ set :css_dir, "stylesheets"
 #   activate :livereload
 # end
 
+# Netlify Redirects
+ready do
+  proxy "_redirects", "netlify-redirects", :ignore => true
+end
+
 # Methods defined in the helpers block are available in templates
 helpers do
   def trip_url(trip)
