@@ -1,6 +1,6 @@
 ---
 title: "Creating a small Stimulus.js app to handle Markdown Images"
-date: 2019-01-27 10:00:00 UTC
+date: 2019-02-14 10:00:00 UTC
 tags:
 summary: Markdown is great, but not so much when you have dozens of images in a file and don't know what is what. This little app helps me sort through the images.
 ---
