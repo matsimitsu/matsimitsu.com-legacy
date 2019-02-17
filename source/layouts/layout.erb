@@ -7,10 +7,28 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="canonical" href="<%= base_url %><%= current_page.url%>" />
 
-    <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Matsimitsu" %></title>
-    <meta name="description" content="<%= current_page.data[:summary] || current_page.data[:subtitle] || current_page.locals.try(:[], :trip).try(:[], :excerpt) %>"/>
+    <title><%= current_page.data.title || current_page.locals.try(:[], :trip).try(:[], :title)%> | Matsimitsu</title>
     <meta name="google-site-verification" content="RAuW_ocX_H8rkhEzePDpKWk_GgzEXJ48rG1fvncuqnA" />
+
+    <meta name="author"      content="Robert Beekman" />
+    <meta name="publisher"   content="Matsimitsu" />
+    <meta name="copyright"   content="<%= Date.today.year %> AppSignal" />
+    <meta name="host"        content="<%= base_url %>" />
+    <meta name="generator"   content="Middleman App" />
+    <meta name="description" content="<%= current_page.data[:summary] || current_page.data[:subtitle] || current_page.locals.try(:[], :trip).try(:[], :excerpt) %>"/>
+
+    <meta property="twitter:site"        content="@matsimitsu" />
+    <meta property="twitter:creator"     content="@matsimitsu" />
+    <meta property="twitter:title"       content="<%= current_page.data.title || current_page.locals.try(:[], :trip).try(:[], :title) %> | Matsimitsu" />
+    <meta property="twitter:description" content="<%= current_page.data[:summary] || current_page.data[:subtitle] || current_page.locals.try(:[], :trip).try(:[], :excerpt) %>"/>
+    <meta property="twitter:url"         content="<%= base_url %><%= current_page.url%>" />
+
+    <%- if current_article && current_article.data.image %>
+      <meta property="twitter:image" content="<%= sized_image(current_article.data.image, 720) %>" />
+      <meta property="twitter:card" content="summary_large_image" />
+    <%- else %>
+      <meta property="twitter:card" content="summary" />
+    <%- end %>
 
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>

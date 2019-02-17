@@ -103,6 +103,11 @@ helpers do
     </figure>)
   end
 
+  def sized_image(url, size)
+    ext = File.extname(url)
+    "#{url.gsub(ext, "-#{size}#{ext}")}"
+  end
+
   def trip_articles(trip)
     blog("trips")
       .articles
