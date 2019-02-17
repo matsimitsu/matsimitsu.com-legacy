@@ -2,76 +2,85 @@
 title: "Personal weblog of Robert Beekman"
 summary: "Personal weblog of developer Robert Beekman covering Technology and Photography"
 ---
+<div class="Homepage">
+  <header class="GenericHeader">
+      <h1 class="H-Large post-title">Robert Beekman</h1>
+      <div class="Container narrow">
+        <p class="T-Medium post-intro">Software developer at <a href="https://appsignal.com" target="_blank">AppSignal.com</a>.</p>
+      </div>
+  </header>
 
-<header class="GenericHeader">
-    <h1 class="H-Large post-title">Robert Beekman</h1>
-    <div class="Container narrow">
-      <p class="T-Medium post-intro">Software developer at <a href="https://appsignal.com" target="_blank">AppSignal.com</a>.</p>
-    </div>
-</header>
-
-<section class="Homepage Container narrow">
-  <ul>
-    <li>
-      <a href="https://github.com/matsimitsu" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://twitter.com/matsimitsu" target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </li>
-    <li>
-      <a href="mailto:hello@matsimitsu.nl">
-        <i class="fas fa-at"></i>
-      </a>
-    </li>
-  </ul>
-</section>
-
-<%= partial "article_list", :locals => {:limit => 2, :title => "From the blog"} %>
-
-<header class="GenericHeader">
-  <h1 class="H-Medium post-title">During my travels</h1>
-</header>
-
-<%- data[:trips].reverse.each do |trip|%>
-  <div class="TripCard">
-    <div class="Container">
-      <header>
-        <h1>
-          <a href="<%= trip_url(trip[:slug]) %>">
-            <%= trip[:title] %>
-            <small>
-              <%= days_in_words(trip[:start], trip[:end])%> days
-              —
-              <%= trip_articles(trip[:slug]).length %> posts
-              —
-              <%= trip[:photo_count] %> photos
-            </small>
-          </a>
-        </h1>
-        <p><%= trip[:subtitle] %></p>
-        <a class="Button large secondary" href="<%= trip_url(trip[:slug]) %>">
-          View trip
+  <section class="Container narrow">
+    <ul>
+      <li>
+        <a href="https://github.com/matsimitsu" target="_blank">
+          <i class="fab fa-github"></i>
         </a>
-      </header>
-      <%- if trip_image_groups(trip[:slug]).any? %>
-        <div class="images">
-          <%- trip_image_groups(trip[:slug]).each do |group| %>
-            <div>
-              <%- group.each do |article| %>
-                <%= scaled_image(article.data[:image], article.data[:title])%>
+      </li>
+      <li>
+        <a href="https://twitter.com/matsimitsu" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:hello@matsimitsu.nl">
+          <i class="fas fa-at"></i>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="Container full contrast">
+    <header class="GenericHeader">
+        <h1 class="H-Medium post-title">From the blog</h1>
+    </header>
+
+    <%= partial "article_list", :locals => {:limit => 2, :title => "From the blog"} %>
+  </section>
+
+  <section>
+    <header class="GenericHeader">
+      <h1 class="H-Medium post-title">During my travels</h1>
+    </header>
+
+    <%- data[:trips].reverse.each do |trip|%>
+      <div class="TripCard">
+        <div class="Container">
+          <header>
+            <h1>
+              <a href="<%= trip_url(trip[:slug]) %>">
+                <%= trip[:title] %>
+                <small>
+                  <%= days_in_words(trip[:start], trip[:end])%> days
+                  —
+                  <%= trip_articles(trip[:slug]).length %> posts
+                  —
+                  <%= trip[:photo_count] %> photos
+                </small>
+              </a>
+            </h1>
+            <p><%= trip[:subtitle] %></p>
+            <a class="Button large secondary" href="<%= trip_url(trip[:slug]) %>">
+              View trip
+            </a>
+          </header>
+          <%- if trip_image_groups(trip[:slug]).any? %>
+            <div class="images">
+              <%- trip_image_groups(trip[:slug]).each do |group| %>
+                <div>
+                  <%- group.each do |article| %>
+                    <%= scaled_image(article.data[:image], article.data[:title])%>
+                  <%- end %>
+                </div>
               <%- end %>
+            </div>
+          <%- else %>
+            <div class="image">
+              <%= scaled_image(trip_articles(trip[:slug]).first.data[:image], trip_articles(trip[:slug]).first.data[:title])%>
             </div>
           <%- end %>
         </div>
-      <%- else %>
-        <div class="image">
-          <%= scaled_image(trip_articles(trip[:slug]).first.data[:image], trip_articles(trip[:slug]).first.data[:title])%>
-        </div>
-      <%- end %>
-    </div>
-  </div>
-<% end %>
+      </div>
+    <% end %>
+  </section>
+</div>

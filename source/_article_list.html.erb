@@ -1,8 +1,5 @@
-<section class="Homepage Articles">
-  <header class="GenericHeader">
-      <h1 class="H-Medium post-title"><%= locals[:title] %></h1>
-  </header>
-  <section class="Container tiny">
+<section class="Container tiny ">
+  <div class="Articles">
     <% blog("blog").articles.first(locals[:limit]).each do |article| %>
       <article>
         <h1>
@@ -14,5 +11,5 @@
         <p><%= article.data.summary %></p>
       </article>
     <% end %>
-  </section>
+  </div>
 </section>

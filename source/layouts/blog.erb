@@ -13,7 +13,12 @@
     </section>
   </article>
 
-  <%= partial "article_list", :locals => {:limit => 99, :title => "More from the blog"} %>
+  <section class="Container full contrast">
+    <header class="GenericHeader">
+    <h1 class="H-Medium post-title">More from the blog</h1>
+    </header>
 
+    <%= partial "article_list", :locals => {:limit => 99, :title => "More from the blog"} %>
+  </section>
 <% end %>
 

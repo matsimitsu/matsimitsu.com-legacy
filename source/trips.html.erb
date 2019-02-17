@@ -1,0 +1,44 @@
+
+<header class="GenericHeader">
+  <h1 class="H-Medium post-title">During my travels</h1>
+</header>
+
+<%- data[:trips].reverse.each do |trip|%>
+  <div class="TripCard">
+    <div class="Container">
+      <header>
+        <h1>
+          <a href="<%= trip_url(trip[:slug]) %>">
+            <%= trip[:title] %>
+            <small>
+              <%= days_in_words(trip[:start], trip[:end])%> days
+              —
+              <%= trip_articles(trip[:slug]).length %> posts
+              —
+              <%= trip[:photo_count] %> photos
+            </small>
+          </a>
+        </h1>
+        <p><%= trip[:subtitle] %></p>
+        <a class="Button large secondary" href="<%= trip_url(trip[:slug]) %>">
+          View trip
+        </a>
+      </header>
+      <%- if trip_image_groups(trip[:slug]).any? %>
+        <div class="images">
+          <%- trip_image_groups(trip[:slug]).each do |group| %>
+            <div>
+              <%- group.each do |article| %>
+                <%= scaled_image(article.data[:image], article.data[:title])%>
+              <%- end %>
+            </div>
+          <%- end %>
+        </div>
+      <%- else %>
+        <div class="image">
+          <%= scaled_image(trip_articles(trip[:slug]).first.data[:image], trip_articles(trip[:slug]).first.data[:title])%>
+        </div>
+      <%- end %>
+    </div>
+  </div>
+<% end %>

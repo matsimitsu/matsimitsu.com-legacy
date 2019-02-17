@@ -12,12 +12,6 @@
   }
 }
 
-.Homepage.Articles {
-  margin: 4em 0;
-  padding-bottom: 4em;
-  background: var(--bg-shade);
-}
-
-.Homepage.Articles article {
-  padding-bottom: 4em;
+.Homepage > section {
+  margin-bottom: 4rem;
 }
