@@ -1,0 +1,14 @@
+<% wrap_layout :layout do %>
+  <article class="Container">
+    <section class="GenericHeader">
+      <hgroup>
+        <h1 class="H-Large post-title"><%= current_page.data[:title] %></h1>
+        <p class="T-large"><%= current_page.data[:subtitle] %></p>
+      </hgroup>
+    </section>
+    <section class="BlogPostBody">
+      <%= yield %>
+    </section>
+  </article>
+<% end %>
+

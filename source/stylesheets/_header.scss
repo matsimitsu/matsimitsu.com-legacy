@@ -1,41 +1,39 @@
 .Header {
   background: var(--bg);
   padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: var(--header-height);
   position: relative;
   z-index: 1000;
-  position: fixed;
   top: 0;
   width: 100%;
   border-bottom: var(--border)
 }
+.Header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-footer-height);
+}
 
 .Header a {
-  text-decoration: none
+  text-decoration: none;
+}
+.Header a.active {
+  font-weight: bold;
+}
+.Header a:hover {
+  text-decoration: underline;
 }
 
-.Header > * {
-  flex: 1;
-}
-
-.Header .BreadCrumbs {
-  flex: 4;
+.Header h1 {
+  margin-bottom: 0;
+  font-size: 1.2rem;
   display: flex;
-  justify-content: center;
 }
 
-.Header .BreadCrumbs li + li {
-  margin-left: 1rem
+.Header .NavigationItems {
+  display: flex;
 }
 
-.Header .BreadCrumbs li + li:before {
-  content: "—";
-  margin-right: 1rem;
-  opacity: 0.2
-}
-.Header img {
-  margin-right: 1rem
+.Header .NavigationItems li + li {
+  margin-left: 1.2rem
 }

@@ -35,22 +35,19 @@
   </head>
   <body>
     <nav class="Header">
-      <ul class="BreadCrumbs">
-        <li><a href="/">Matsimitsu</a></li>
-        <%- if current_article %>
-          <%- if current_article.data[:trip] %>
-            <li><a href="<%= trip_url(current_article.data[:trip]) %>"><%= current_article.data[:trip] %></a></li>
-          <%- end %>
-
-          <li><a href="<%= current_article.url %>"><%= current_article.title %></a></li>
-        <%- elsif current_page %>
-          <%- title = current_page.data[:title] || current_page.locals.try(:[], :trip).try(:[], :title) %>
-          <% if title %>
-            <li><a href="<%= current_page.url %>"><%= title  %></a></li>
-          <% end %>
-        <%- end %>
+      <div class="Container">
+      <h1><a href="/">Matsimitsu</a></h1>
+      <ul class="NavigationItems">
+        <li><a href="/blog" class="<%= current_path.start_with?("blog") ? "active" : nil -%>">Blog</a></li>
+        <li><a href="/trips" class="<%= current_path.start_with?("trips") ? "active" : nil -%>">Trips</a></li>
+        <li><a href="/about" class="<%= current_path.start_with?("about") ? "active" : nil -%>">About</a></li>
       </ul>
+      </div>
     </nav>
     <%= yield %>
+    <footer class="Container">
+      <p>&copy; Robert Beekman</p>
+      <%= partial "social" %>
+    </footer>
   </body>
 </html>

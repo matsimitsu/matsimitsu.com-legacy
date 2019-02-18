@@ -35,7 +35,7 @@
 
   --font:                  "Circular Std", "Proxima Nova", sans-serif;
 
-  --header-height:         3rem;
+  --header-footer-height:  3rem;
   --mix-blend-mode:        exclusion;
 }
 
@@ -76,7 +76,6 @@ body {
   font-weight: 300;
   background: var(--bg);
   color: var(--color);
-  padding-top: var(--header-height);
 }
 
 input,
@@ -190,6 +189,31 @@ figure {
   padding-bottom: .1rem;
 }
 
+footer {
+  height: var(--header-footer-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: var(--border);
+  > * + *:before {
+    content: "—";
+    margin-right: 1rem;
+    opacity: 0.2
+  }
+
+  p {
+    margin: 0 1rem 0 0;
+  }
+  .Social {
+    li {
+      font-size: 1rem;
+      a {
+        padding: .5rem;
+      }
+    }
+  }
+}
+
 @import '_generic-header';
 @import '_dates';
 @import '_scaled-image';
@@ -209,3 +233,4 @@ figure {
 @import '_fonts';
 @import '_pygments';
 @import '_articles';
+@import '_social';
