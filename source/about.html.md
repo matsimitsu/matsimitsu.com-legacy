@@ -5,4 +5,4 @@ summary: "About me, Robert Beekman"
 layout: page
 ---
 
-This is text about me..
+I develop software at [AppSignal](https://appsignal.com) and in my spare time I like to [travel](/trips).
