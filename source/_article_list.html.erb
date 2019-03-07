@@ -3,7 +3,11 @@
     <% blog("blog").articles.first(locals[:limit]).each do |article| %>
       <article>
         <h1>
-          <a href="<%= article.url %>">
+          <%- if article.data[:appsignal] %>
+            <a title="Article appeared on the AppSignal blog" href="<%= article.data[:appsignal] %>" class="appsignal">
+          <%- else %>
+            <a href="<%= article.url %>">
+          <%- end %>
             <small><time><%= article.date.strftime('%b %e %Y') %></time> - </small>
             <%= article.title %>
           </a>
