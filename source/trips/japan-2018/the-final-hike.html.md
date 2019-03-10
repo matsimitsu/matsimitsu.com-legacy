@@ -6,6 +6,35 @@ end_date: '2018-11-14'
 image: https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/the-final-hike/5bebeeca2a86927dd4423317.jpg
 trip: japan-2018
 locations: []
+flights:
+  HEL-AMS:
+    company: Finnair
+    duration: 02:35
+    number: AY1305
+    aircraft: Airbus 321
+    from:
+      code: HEL
+      name: Helsinki
+      time: 2018-11-15 16:40
+    to:
+      code: AMS
+      name: Amsterdam
+      time: 2018-11-15 18:15
+
+  NRT-HEL:
+    company: Japan Airlines
+    duration: 10:30
+    number: JL0413
+    aircraft: Boeing 787
+    from:
+      code: NRT
+      name: Tokyo Narita
+      time: 2018-11-15 11:30
+    to:
+      code: HEL
+      name: Helsinki
+      time: 2018-11-15 15:00
+
 ---
 
 It's the last day already on this trip and with a beautiful day forecasted I headed to the edge of the city again, this time to do a [3-mountain hike](https://en.japantravel.com/saitama/hiwada-takashi-monomi-mtn-trail/8541).
@@ -58,3 +87,10 @@ Eventually the trail took me down the mountains and I ended up a station over fr
 
 ![5bebeea52a86927dd4423313](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/the-final-hike/5bebeeb42a86927dd4423316.jpg "1.5")
 
+The next day I took the Narita Sky Access hi-speed train back to Narita airport.
+
+[flight: NRT-HEL]
+
+After a great flight it was just a short layover on the old part of Helsinki Airport (that was very cramped and overcrowded) and on to my final flight back to Amsterdam.
+
+[flight: HEL-AMS]

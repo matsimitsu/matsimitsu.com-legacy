@@ -61,7 +61,46 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
   def preprocess(txt)
     txt.lines.map do |line|
       line.gsub(/>\[(.+)\]\((\S+)(\s".*")?\)/i) { |_| video($1, $2, $3) }
+      line.gsub(/^\[flight: ([A-Z-]+)\]/i) { |_| flight($1) }
     end.join
+  end
+
+  def flight(from_to)
+    flight = @options[:context].current_article.data[:flights][from_to]
+    return unless flight
+
+    from = flight["from"]
+    to = flight["to"]
+    duration = Time.at(flight.duration).utc
+
+    %(<div class="Flight Container narrow">
+      <div class="row">
+        <h2 class="row">
+          <span>
+            #{flight.company}
+            <small>flight</small>
+            #{flight.number}
+          </span>
+          <small class="aircraft">
+          #{flight.aircraft}
+        </small>
+        </h2>
+
+      </div>
+      <div class="row">
+        <div class="from">
+          <h3 class="H-Large">#{from.code}</h3>
+          <p>#{from.name}</p>
+          <small>#{Time.parse(from.time).strftime("%H:%M")}</small>
+        </div>
+        <div class="duration"><time>#{duration.strftime("%H:%M")}</time></div>
+        <div class="to">
+          <h3 class="H-Large">#{to.code}</h3>
+          <p>#{to.name}</p>
+          <small>#{Time.parse(to.time).strftime("%H:%M")}</small>
+        </div>
+      </div>
+    </div>)
   end
 
   def video(type_and_alt, filename, flex)
