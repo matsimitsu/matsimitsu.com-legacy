@@ -20,6 +20,13 @@
   max-height: 360px;
   object-fit: cover;
   border-radius: var(--br) 0 0 var(--br);
+  @media (max-width: 800px) {
+    max-width: 150px;
+    max-height: 250px;
+  }
+  @media (max-width: 450px) {
+    display: none;
+  }
 }
 
 .Hotel a > div {
