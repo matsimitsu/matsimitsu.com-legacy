@@ -37,6 +37,7 @@
 
   --header-footer-height:  3rem;
   --mix-blend-mode:        exclusion;
+  --narrow:                40rem;
 }
 
 body.dark {
@@ -163,7 +164,7 @@ a {
 }
 
 .Container.narrow {
-  max-width: 40rem;
+  max-width: var(--narrow);
 }
 
 .Container.tiny {
@@ -235,3 +236,4 @@ footer {
 @import '_articles';
 @import '_social';
 @import '_flight';
+@import '_hotel';

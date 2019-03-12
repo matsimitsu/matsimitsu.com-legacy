@@ -1,0 +1,66 @@
+-
+  name: My Hotel Bishkek
+  address: Grazhdanskaya 29, 720001 Bishkek, Kyrgyzstan
+  image: https://t-ec.bstatic.com/images/hotel/max500/183/183953395.jpg
+  url: https://www.booking.com/hotel/kg/my-hotel-bishkek.en-gb.html?aid=939121
+  description: Featuring free WiFi throughout the property, My Hotel Bishkek offers
+    accommodation in Bishkek. Guests can enjoy the on-site restaurant.
+  price: 39.00
+  lat: 74.63122684
+  lng: 42.87587166
+
+-
+  name: Minor Hotel
+  address: M. Kakhkharov Str. Юнусабадский район, 100052 Tashkent, Uzbekistan
+  image: https://t-ec.bstatic.com/images/hotel/max500/184/184121025.jpg
+  url: https://www.booking.com/hotel/uz/minor.en-gb.html?aid=939121
+  description: Located in Tashkent, Minor Hotel has barbecue facilities, garden and
+    terrace. Featuring a restaurant, the property also has a shared lounge.
+  price: 45.00
+  lat: 69.28884029
+  lng: 41.32350728
+
+-
+  name: Bibikhanum Hotel
+  address: Tashkent street 10, 140101 Samarkand, Uzbekistan
+  image: https://t-ec.bstatic.com/images/hotel/max500/177/177062417.jpg
+  url: https://www.booking.com/hotel/uz/bibikhanum.en-gb.html?aid=939121
+  description: Bibikhanum Hotel in Samarkand features a terrace and a bar. All rooms
+    feature a flat-screen TV with satellite channels and a private bathroom.
+  price: 66.00
+  lat: 66.98039187
+  lng: 39.65982466
+
+-
+  name: Hotel Fatima Boutique
+  address: Baydukova Street, 3, 200118 Bukhara, Uzbekistan
+  image: https://t-ec.bstatic.com/images/hotel/max500/205/20571497.jpg
+  url: https://www.booking.com/hotel/uz/fatima.en-gb.html?aid=939121
+  description: Located in the historical city centre of Bukhara, Hotel FATIMA features
+    an on-site restaurant and free WiFi.
+  price: 59.00
+  lat: 64.42124248
+  lng: 39.77258843
+
+-
+  name: Zukhro Boutique Hotel
+  address: 53 St. A. Boltayev, 220900 Khiva, Uzbekistan
+  image: https://t-ec.bstatic.com/images/hotel/max500/962/96250690.jpg
+  url: https://www.booking.com/hotel/uz/zukhro-boutique.en-gb.html?aid=939121
+  description: Featuring free WiFi throughout the property, Zukhro Boutique Hotel
+    offers accommodation in Khiva, within a 5-minute walk from Ichan Kala complex.
+  price: 40.00
+  lat: 60.35831918,
+  lng: 41.37993373
+
+-
+  name: HUA HOTEL
+  address: Яккасарайский район, Массив Кушбеги дом 11 4-х этажное здание, 100022 Tashkent,
+    Uzbekistan
+  image: https://t-ec.bstatic.com/images/hotel/max500/179/179295484.jpg
+  url: https://www.booking.com/hotel/uz/hua.en-gb.html?aid=939121
+  description: Set in Tashkent, HUA HOTEL offers 3-star accommodation with a fitness
+    centre and a terrace.
+  price: 57.00
+  lat: 69.24752300,
+  lng: 41.26842800

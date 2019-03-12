@@ -1,0 +1,41 @@
+.Hotel {
+  padding: 0;
+  margin-bottom: 4rem;
+  border-radius: var(--br);
+  background: var(--bg);
+  box-shadow: var(--shadow);
+  position: relative;
+  max-width: var(--narrow);
+  font-size: 0.8rem;
+  max-height: 360px;
+}
+
+.Hotel a {
+  display: flex;
+  text-decoration: none;
+}
+
+.Hotel img {
+  width: 360px;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: var(--br) 0 0 var(--br);
+}
+
+.Hotel a > div {
+  padding: 20px;
+  text-align: left;
+}
+
+.Hotel h2 {
+  text-align: left;
+}
+.Hotel p {
+  margin-top: 10px;
+  padding: 0;
+}
+.Hotel small {
+  color: var(--medium);
+  font-weight: normal;
+  font-size: 0.8rem;
+}

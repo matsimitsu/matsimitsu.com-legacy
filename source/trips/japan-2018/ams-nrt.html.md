@@ -48,6 +48,8 @@ It's 07:00 when my alarm goes of, time to get up and head to the airport where I
 
 After arriving in Narita airport a good 15 hours later, I headed to my hotel and set out to get the basic trip supplies such as a data simcard and coffee in Ikebekuro a few train stops away from my hotel.
 
+[hotel: Smile Hotel Sugamo]
+
 ![5bdad4ff2a86927dd4422fef](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/ams-nrt/5bdad5042a86927dd4422ff2.jpg "1.5")
 ![5bdad4ff2a86927dd4422ff0](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/ams-nrt/5bdad50a2a86927dd4422ff3.jpg "0.667")
 ![5bdad52d2a86927dd4422ffe](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/ams-nrt/5bdad53c2a86927dd4422fff.jpg "1.5")
