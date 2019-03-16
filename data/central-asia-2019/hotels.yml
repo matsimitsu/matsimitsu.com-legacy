@@ -7,6 +7,7 @@
     accommodation in Bishkek. Guests can enjoy the on-site restaurant.
   lat: 42.8758717
   lng: 74.6312268
+  price: 39.00
 -
   name: Minor Hotel
   address: M. Kakhkharov Str. Юнусабадский район, 100052 Tashkent, Uzbekistan
@@ -16,6 +17,7 @@
     terrace. Featuring a restaurant, the property also has a shared lounge.
   lat: 41.3235073
   lng: 69.2888403
+  price: 45.00
 -
   name: Bibikhanum Hotel
   address: Tashkent street 10, 140101 Samarkand, Uzbekistan
@@ -25,6 +27,7 @@
     feature a flat-screen TV with satellite channels and a private bathroom.
   lat: 39.6598247
   lng: 66.9803919
+  price: 66.00
 -
   name: Hotel Fatima Boutique
   address: Baydukova Street, 3, 200118 Bukhara, Uzbekistan
@@ -34,6 +37,7 @@
     an on-site restaurant and free WiFi.
   lat: 39.7725884
   lng: 64.4212425
+  price: 59.00
 -
   name: Zukhro Boutique Hotel
   address: 53 St. A. Boltayev, 220900 Khiva, Uzbekistan
@@ -43,6 +47,7 @@
     offers accommodation in Khiva, within a 5-minute walk from Ichan Kala complex.
   lat: 41.3799337
   lng: 60.3583192
+  price: 40.00
 -
   name: HUA HOTEL
   address: Яккасарайский район, Массив Кушбеги дом 11 4-х этажное здание, 100022 Tashkent,
@@ -53,3 +58,4 @@
     centre and a terrace.
   lat: 41.2680651
   lng: 69.2444653
+  price: 57.00
