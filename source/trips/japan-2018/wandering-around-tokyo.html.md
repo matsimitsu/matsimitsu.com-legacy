@@ -5,7 +5,13 @@ date: '2018-11-02'
 end_date: '2018-11-02'
 image: https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/wandering-around-tokyo/5bdd3c962a86927dd442300d.jpg
 trip: japan-2018
-locations: []
+locations:
+- title: 'Tokyo Station, Tōkyō, Japan'
+  address: 'Tōkyō, Marunouchi Central Plaza, 1-chome, Chiyoda, Tokyo 100-0005, Japan'
+  country: JP
+  lat: 35.6810912
+  lng: 139.7671861
+
 ---
 
 Late last night I discovered that I had forgotten to bring a converter plug and a usb charger, meaning I had no way to charge either my Macbook, Phone or Camera so today's mission was to sort this issue out.
@@ -19,6 +25,7 @@ This is some kind of vertical factory where they recycle cartboard and paper, th
 
 ![5bdd3d292a86927dd4423017](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/wandering-around-tokyo/5bdd3d422a86927dd442301f.jpg "1.5")
 
+[location: Tokyo Station, Tōkyō, Japan]
 Meanwhile it was lunchtime and the office towers surrounding Tokyo station emptied out into the streets with people looking for food.
 
 ![5bdd3d4c2a86927dd4423022](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/wandering-around-tokyo/5bdd3d582a86927dd4423024.jpg "1.5")

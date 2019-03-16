@@ -6,9 +6,17 @@ end_date: '2018-11-03'
 image: https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7d142a86927dd4423087.jpg
 trip: japan-2018
 locations:
-- title: Koishikawa Botanical Garden, 3 Chome-7-7番１号 Hakusan, Bunkyō, Tokyo, Japan
+-
+  title: Koishikawa Botanical Garden
+  addresss: Koishikawa Botanical Garden, 3 Chome-7-7番１号 Hakusan, Bunkyō, Tokyo, Japan
   lat: 35.719029
   lng: 139.74559049999993
+- title: 'Ueno Station'
+  address: 'Ueno, Ueno Station, Taito, Tokyo 110-0007, Japan'
+  country: JP
+  lat: 35.7117877
+  lng: 139.7760958
+
 ---
 
 In most previous trips I started the day early and was tired around dinner, but this time I want to explore the city by night more so I took it easy today and set out around lunch, which was a sandwich and coffee at Doutor, a cafe chain.
@@ -16,6 +24,7 @@ In most previous trips I started the day early and was tired around dinner, but 
 ![5bde7bab2a86927dd442303e](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7baf2a86927dd442303f.jpg "1.5")
 ![5bde7bb02a86927dd4423040](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7bb12a86927dd4423041.jpg "0.91")
 
+[location: Koishikawa Botanical Garden]
 After lunch I headed to a nearby park to relax a bit and enjoy the sun.
 
 ![5bde7bc12a86927dd4423043](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7bd72a86927dd4423048.jpg "1.5")
@@ -37,6 +46,7 @@ Near the park you could hear music in the distance and I decided to check it out
 
 ![5bde7c0b2a86927dd4423059](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7c182a86927dd442305c.jpg "1.5")
 
+[location: Ueno Station]
 Around four-ish I headed back to the hotel to process some photo's before heading out to Ueno station in the evening where I walked along the train tracks.
 
 ![5bde7c2a2a86927dd4423062](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/saturday-in-tokyo/5bde7c3e2a86927dd4423067.jpg "1.5")

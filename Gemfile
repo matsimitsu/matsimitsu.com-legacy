@@ -21,3 +21,7 @@ gem "graphql-client"
 # Upload
 gem "aws-sdk-s3"
 gem "fastimage"
+
+# Countries
+gem "countries"
+gem "airports"

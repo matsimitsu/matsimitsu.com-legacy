@@ -6,11 +6,14 @@ end_date: '2018-11-10'
 image: https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/showa-kinen-park/5be6af562a86927dd442325f.jpg
 trip: japan-2018
 locations:
-- title: Showa Kinen Park, ３１７３ Midoricho, Tachikawa, Tokyo, Japan
+-
+  title: Showa Kinen Park, Tachikawa, Japan
+  address: Showa Kinen Park, ３１７３ Midoricho, Tachikawa, Tokyo, Japan
   lat: 35.7033599
   lng: 139.4078879
 ---
 
+[location: Showa Kinen Park, Tachikawa, Japan]
 The second attempt at visiting this park, as last Wednesday I had to turn around due to the excessive rain, luckily this time it was different.
 
 ![5be6ac5d2a86927dd44231f3](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/showa-kinen-park/5be6ac662a86927dd44231f5.jpg "1.5")

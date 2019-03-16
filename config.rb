@@ -153,6 +153,10 @@ helpers do
     BASE_URL
   end
 
+  def country(short)
+    ISO3166::Country[short]
+  end
+
   def svg_map(wanted, highlight = [])
     svg = File.read("./data/#{wanted}.svg")
     hightlight_selectors = Array(highlight).map do |hl|
@@ -162,6 +166,93 @@ helpers do
       #{svg}
       <style>#{hightlight_selectors.join(", ")} { fill: var(--medium); }</style>
     )
+  end
+
+  def trip_data(name)
+    data[current_trip.slug][name] || []
+  end
+
+  def post_data(name)
+    current_article.data[name] || []
+  end
+
+  def location(title)
+    location = post_data(:locations).find { |h| h.title == title } ||
+      trip_data(:locations).find { |h| h.title == title }
+    return unless location
+
+    <<~HTML
+      <div class="Location">
+        <h2>
+          <span>#{location.title}</span>
+          <i class="fas fa-map-marked-alt"></i>
+        </h2>
+      </div>
+    HTML
+  end
+
+  def hotel(name)
+    hotel = trip_data(:hotels).find { |h| h.name == name }
+    return unless hotel
+
+    formatted_price = format("%.2f", hotel.price).tr(".", ",")
+    <<~HTML
+      <div class="Hotel">
+        <a href="#{hotel.url}">
+          <img src="#{hotel.image}"/>
+          <div>
+            <h2>#{hotel.name}</h2>
+            <small>#{hotel.address}</small>
+            <p>#{current_trip.solo ? "I" : "We"} paid: <strong>&euro; #{formatted_price}</strong> per night</p>
+            <p>#{hotel.description.strip}</p>
+            <div class="Button secondary">View on Booking.com</div>
+          </div>
+        </a>
+      </div>
+    HTML
+  end
+
+  def flight(from_to)
+    flight = trip_data(:flights).find { |f| f.name == from_to }
+    return unless flight
+
+    from_airport = Airports.find_by_iata_code(flight.from.code)
+    from_time = Time.parse(flight.from.time).strftime("%H:%M")
+
+    to_airport = Airports.find_by_iata_code(flight.to.code)
+    to_time = Time.parse(flight.to.time).strftime("%H:%M")
+
+    duration = Time.at(flight.duration).utc.strftime("%H:%M")
+
+    <<~HTML
+      <div class="Flight Container narrow">
+        <div class="row">
+          <h2 class="row">
+            <span>
+              #{flight.company}
+              <small>flight</small>
+              #{flight.number}
+            </span>
+            <small class="aircraft">
+            #{flight.aircraft}
+          </small>
+          </h2>
+        </div>
+        <div class="row">
+          <div class="from">
+            <h3 class="H-Large">#{from_airport.iata}</h3>
+            <p>#{from_airport.city}</p>
+            <small>#{from_time}</small>
+          </div>
+          <div class="duration"><time>#{duration}</time></div>
+          <div class="to">
+            <h3 class="H-Large">#{to_airport.iata}</h3>
+            <p>#{to_airport.city}</p>
+            <small>#{to_time}</small>
+          </div>
+        </div>
+      </div>
+    HTML
   end
 end
 

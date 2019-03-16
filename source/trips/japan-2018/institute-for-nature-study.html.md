@@ -5,12 +5,19 @@ date: '2018-11-09'
 end_date: '2018-11-09'
 image: https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/institute-for-nature-study/5be6a9f32a86927dd44231e9.jpg
 trip: japan-2018
-locations: []
+locations:
+  - title: 'Institute for Nature Study'
+    country: JP
+    lat: 35.636007
+    lng: 139.721312
+
 ---
 
 Today's program consisted of a few parks in the city center as there was a bit of rain forecasted. I started with the "Institute for Nature Study" that supposedly has very nice fall colors in this time of year.
 
 ![5be6a9372a86927dd44231c9](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/institute-for-nature-study/5be6a93c2a86927dd44231ca.jpg "1.5")
+
+[location: Institute for Nature Study]
 
 Unfortunately the predicted rain was a lot heavier then expected and even an umbrella didn't offer much protection.
 

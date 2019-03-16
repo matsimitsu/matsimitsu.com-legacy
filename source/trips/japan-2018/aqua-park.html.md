@@ -6,7 +6,7 @@ end_date: '2018-11-12'
 image: https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/aqua-park/5be936aa2a86927dd4423292.jpg
 trip: japan-2018
 locations:
-- title: Maxell Aqua Park, 4 Chome-10-３０ Takanawa, Minato, Tokyo, Japan
+- title: Maxell Aqua Park, Tokyo, Japan
   lat: 35.6278294
   lng: 139.73508659999993
 ---
@@ -14,6 +14,8 @@ locations:
 With rain predicted yet again I looked for something indoors to do, one of the recommended things to do was the Maxell Aqua Park in Shinagawa. After breakfast I made my way over there, but not before stopping at Yodobashi Camera to browse around. For European people it's like a MediaMarkt, but then imagine seven of those stacked on top of eachother with the most weird stuff you can imagine, like a ton of storm troopers.
 
 ![5be935832a86927dd4423269](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/aqua-park/5be9358b2a86927dd442326a.jpg "1.5")
+
+[location: Maxell Aqua Park, Tokyo, Japan]
 
 After lunch (noodles) I headed to the Aquarium. It also features an indoor carousel.
 

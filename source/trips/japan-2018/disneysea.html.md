@@ -6,12 +6,14 @@ end_date: '2018-11-13'
 image: https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/disneysea/5bebed642a86927dd44232d5.jpg
 trip: japan-2018
 locations:
-- title: Tokyo DisneySea, 1-13 Maihama, Urayasu, Chiba Prefecture, Japan
+- title: Tokyo DisneySea, Chiba Prefecture, Japan
   lat: 35.6267108
   lng: 139.88507789999994
 ---
 
-The alarm went at 07:00 this morning to leave time for a quick breakfast before heading to Tokyo DisneySea, to maximize the day there. The weather wasn't supposed to be that good, hopefully that will keep the crowds out. 
+The alarm went at 07:00 this morning to leave time for a quick breakfast before heading to Tokyo DisneySea, to maximize the day there. The weather wasn't supposed to be that good, hopefully that will keep the crowds out.
+
+[location: Tokyo DisneySea, Chiba Prefecture, Japan]
 
 ![5bebe85e2a86927dd442329a](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/disneysea/5bebe8642a86927dd442329b.jpg "1.698")
 

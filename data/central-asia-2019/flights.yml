@@ -1,0 +1,77 @@
+-
+  name: DUS-IST
+  company: Turkish Airlines
+  duration: 03:20
+  number: TK1528
+  aircraft: Airbus A330-200
+  from:
+    code: DUS
+    time: 2019-04-01 19:05
+  to:
+    code: IST
+    time: 2019-04-01 23:25
+
+-
+  name: IST-FRU
+  company: Turkish Airlines
+  duration: 05:05
+  number: TK344
+  aircraft: Boeing 737-MAX9
+  from:
+    code: IST
+    time: 2019-04-02 00:40
+  to:
+    code: FRU
+    time: 2019-04-01 08:45
+
+-
+  name: FRU-TAS
+  company: Uzbekistan Airways
+  duration: 01:20
+  number: HY780
+  aircraft: Airbus A320
+  from:
+    code: FRU
+    time: 2019-04-04 18:40
+  to:
+    code: TAS
+    time: 2019-04-04 19:00
+
+-
+  name: TAS-UGC
+  company: Uzbekistan Airways
+  duration: 01:30
+  number: HY51
+  aircraft: Airbus A320
+  from:
+    code: TAS
+    time: 2019-04-05 07:25
+  to:
+    code: UGC
+    time: 2019-04-05 08:55
+
+-
+  name: TAS-IST
+  company: Turkish Airlines
+  duration: 05:20
+  number: TK369
+  aircraft: Airbus A330-200
+  from:
+    code: TAS
+    time: 2019-04-13 09:00
+  to:
+    code: IST
+    time: 2019-04-13 12:20
+
+-
+  name: IST-DUS
+  company: Turkish Airlines
+  duration: 05:05
+  number: TK344
+  aircraft: Boeing 737-MAX9
+  from:
+    code: IST
+    time: 2019-04-13 15:20
+  to:
+    code: DUS
+    time: 2019-04-13 17:35

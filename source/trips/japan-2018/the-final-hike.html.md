@@ -5,41 +5,30 @@ date: '2018-11-14'
 end_date: '2018-11-14'
 image: https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/the-final-hike/5bebeeca2a86927dd4423317.jpg
 trip: japan-2018
-locations: []
-flights:
-  HEL-AMS:
-    company: Finnair
-    duration: 02:35
-    number: AY1305
-    aircraft: Airbus 321
-    from:
-      code: HEL
-      name: Helsinki
-      time: 2018-11-15 16:40
-    to:
-      code: AMS
-      name: Amsterdam
-      time: 2018-11-15 18:15
-
-  NRT-HEL:
-    company: Japan Airlines
-    duration: 10:30
-    number: JL0413
-    aircraft: Boeing 787
-    from:
-      code: NRT
-      name: Tokyo Narita
-      time: 2018-11-15 11:30
-    to:
-      code: HEL
-      name: Helsinki
-      time: 2018-11-15 15:00
+locations:
+- title: 'Mt. Hiwada, Saitama, Japan'
+  address: '日和田山, Saitama Prefecture 350-0446, Japan'
+  country: JP
+  lat: 35.8937703
+  lng: 139.3048309
+- title: 'Mt. Takashi, Saitama, Japan'
+  address: '高指山, Saitama Prefecture 350-0446, Japan'
+  country: JP
+  lat: 35.8970471
+  lng: 139.3005243
+- title: 'Mt. Monomi, Saitama, Japan'
+  address: '物見山, Higashimatsuyama, Saitama Prefecture 350-0321, Japan'
+  country: JP
+  lat: 36.0000322
+  lng: 139.3628529
 
 ---
 
 It's the last day already on this trip and with a beautiful day forecasted I headed to the edge of the city again, this time to do a [3-mountain hike](https://en.japantravel.com/saitama/hiwada-takashi-monomi-mtn-trail/8541).
 
 ![5bebedd12a86927dd44232d9](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/the-final-hike/5bebedd72a86927dd44232da.jpg "1.5")
+
+[location: Mt. Hiwada, Saitama, Japan]
 
 There was no map of the route so I had to go by written text only and it was quite sparse at some points, but I managed to find the start of the route and it went uphill immidiately. After a good climb I was greeted with the first views.
 
@@ -62,6 +51,10 @@ It was a clear day and you could see the highrises of downtown Tokyo in the dist
 
 ![5bebee582a86927dd44232f9](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/the-final-hike/5bebee662a86927dd44232fc.jpg "1.5")
 
+[location: Mt. Takashi, Saitama, Japan]
+
+The next mountain wasn't very fancy, just a radio tower.
+
 ![5bebee3d2a86927dd44232f4](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/the-final-hike/5bebee472a86927dd44232f7.jpg "1.5")
 ![5bebee3f2a86927dd44232f5](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/the-final-hike/5bebee432a86927dd44232f6.jpg "0.667")
 
@@ -74,6 +67,8 @@ The route passes through beautifull forests and there was hardly anyone there.
 ![5bebee6f2a86927dd4423302](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/the-final-hike/5bebee7d2a86927dd4423305.jpg "0.667")
 
 ![5bebee992a86927dd442330f](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/the-final-hike/5bebeeaa2a86927dd4423315.jpg "1.5")
+
+[location: Mt. Monomi, Saitama, Japan]
 
 I had no issues finding the route markers.
 

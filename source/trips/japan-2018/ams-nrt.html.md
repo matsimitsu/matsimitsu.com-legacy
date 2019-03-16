@@ -9,33 +9,6 @@ locations:
 - title: Sugamo, Toshima, Tokyo, Japan
   lat: 35.7349923
   lng: 139.73515610000004
-flights:
-  AMS-HEL:
-    company: Finnair
-    duration: 02:20
-    number: AY1302
-    aircraft: Airbus 321
-    from:
-      code: AMS
-      name: Amsterdam
-      time: 2018-10-31 11:45
-    to:
-      code: HEL
-      name: Helsinki
-      time: 2018-10-31 15:05
-  HEL-NRT:
-    company: Japan Airlines
-    duration: 09:35
-    number: JL0414
-    aircraft: Boeing 787
-    from:
-      code: HEL
-      name: Helsinki
-      time: 2018-10-31 17:25
-    to:
-      code: NRT
-      name: Tokyo Narita
-      time: 2018-11-01 10:00
 ---
 
 It's 07:00 when my alarm goes of, time to get up and head to the airport where I"ll be flying to Tokyo through Helsinki with Finnair and Japan Airlines.
@@ -53,6 +26,8 @@ After arriving in Narita airport a good 15 hours later, I headed to my hotel and
 ![5bdad4ff2a86927dd4422fef](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/ams-nrt/5bdad5042a86927dd4422ff2.jpg "1.5")
 ![5bdad4ff2a86927dd4422ff0](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/ams-nrt/5bdad50a2a86927dd4422ff3.jpg "0.667")
 ![5bdad52d2a86927dd4422ffe](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/ams-nrt/5bdad53c2a86927dd4422fff.jpg "1.5")
+
+[location: Sugamo, Toshima, Tokyo, Japan]
 
 On the way back I decided not to take the train but walk through the neighbourhoods and it wouldn't be Japan if you don't stumble upon a temple every now and then.
 

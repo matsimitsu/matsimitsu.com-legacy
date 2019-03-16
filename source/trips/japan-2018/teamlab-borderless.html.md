@@ -1,12 +1,12 @@
 ---
-title: " \n\nteamLab Borderless"
+title: "teamLab Borderless"
 subtitle: A day of rain and a day of ... something
 date: '2018-11-06'
 end_date: '2018-11-07'
 image: https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b5df2a86927dd4423160.jpg
 trip: japan-2018
 locations:
-- title: Odaiba
+- title: Teamlab Borderless, Odaiba, Japan
   lat: 35.6247918
   lng: 139.77670999999998
 ---
@@ -25,6 +25,7 @@ Aaanyway this morning the weather was a lot better, not that it mattered, my act
 
 ![5be2b3652a86927dd442312b](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b36b2a86927dd442312c.jpg "1.5")
 
+[location: Teamlab Borderless, Odaiba, Japan]
 It's a kind of museum with interactive art that you can manipulate and walk through, very cool and popular. Queue's can get up to an hour to get in, but luckily this morning the queue's weren't that bad.
 
 ![5be2b38e2a86927dd442312f](https://d3khpbv2gxh34v.cloudfront.net/p/japan-2018/teamlab-borderless/5be2b3a32a86927dd4423131.jpg "1.646")

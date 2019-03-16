@@ -1,0 +1,162 @@
+---
+layout: false
+---
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.12.2/js-yaml.min.js"></script>
+    <script>
+      (() => {
+        const application = Stimulus.Application.start()
+
+        application.register("geocode", class extends Stimulus.Controller {
+          static get targets() {
+            return ["list", "url", "key"]
+          }
+
+          handleClick(ev) {
+            ev.preventDefault()
+            this.listTarget.textContent = "";
+
+            let query = encodeURIComponent(this.urlTarget.value);
+            let key =this.keyTarget.value;
+            fetch(`https://api.opencagedata.com/geocode/v1/json?q=${query}&key=${key}`)
+            .then(res => res.json())
+            .then(response => {
+              for(var loc of response.results) {
+
+                var locationObject = [{
+                  title: loc.formatted,
+                  address: loc.formatted,
+                  country: loc.components["ISO_3166-1_alpha-2"],
+                  lat: loc.geometry.lat,
+                  lng: loc.geometry.lng
+                }]
+
+                var yaml = jsyaml.dump(locationObject);
+                var template = document.querySelector('#geocode-result-template');
+
+                // Clone template and fill the values
+                var clone = document.importNode(template.content, true);
+
+                // Set the image source and data attributes from the FileReader
+                var title = clone.querySelectorAll("h2")[0];
+                title.textContent = loc.formatted;
+
+                // Textarea
+                var textarea = clone.querySelectorAll("textarea")[0];
+                textarea.value = yaml;
+
+                this.listTarget.appendChild(clone);
+              }
+            })
+          }
+        })
+
+        application.register("geocode-result", class extends Stimulus.Controller {
+          static get targets() {
+            return ["source"]
+          }
+
+          copy(ev) {
+            ev.preventDefault();
+            this.sourceTarget.select();
+            document.execCommand("copy");
+          }
+
+          connect() {
+            if (document.queryCommandSupported("copy")) {
+              this.element.classList.add("polaroid--supported");
+            }
+          }
+        })
+
+      })()
+    </script>
+    <style type="text/css">
+      *, :after, :before {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 40px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        position: relative;
+      }
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+      }
+      header {
+        padding: 40px 0 20px;
+        display: flex;
+      }
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+      .text-input {
+        width: 40vw;
+        font-size: inherit;
+        border: 0;
+        outline: 0;
+        border-bottom: 1px solid;
+        border-color: #bdbdbd;
+        background: transparent;
+      }
+      .text-result {
+        width: 100%;
+        height: 10vh;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .copy-button svg {
+        fill: black;
+        stroke: black;
+        width: 1rem;
+        height: 1rem;
+        margin-left: 5px;
+      }
+
+    </style>
+  <head>
+
+  <body>
+    <div data-controller="geocode">
+      <header>
+        URL: <input class="text-input" data-target="geocode.url" type="text" value="Institute for Nature Study, tokyo">
+        KEY: <input class="text-input" data-target="geocode.key" type="text" value="" name="key">
+        <input data-action="click->geocode#handleClick" type="button" value="get" class="button">
+      </header>
+
+      <ul data-target="geocode.list" class="geocode-list">
+      </ul>
+
+    </div>
+
+    <template id="geocode-result-template">
+      <li class="geocode-result" data-controller="geocode-result">
+        <header>
+          <h2></h2>
+          <a href="#" data-action="geocode-result#copy" class="copy-button">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="copy" class="svg-inline--fa fa-copy fa-w-14"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z">
+              </path>
+            </svg>
+          </a>
+        </header>
+        <textarea class="text-result" data-target="geocode-result.source"></textarea>
+      </li>
+    </template>
+  </body>
+</html>

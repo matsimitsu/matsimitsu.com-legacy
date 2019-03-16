@@ -61,75 +61,11 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
   def preprocess(txt)
     txt.lines.map do |line|
       line.gsub!(/>\[(.+)\]\((\S+)(\s".*")?\)/i) { |_| video($1, $2, $3) }
-      line.gsub!(/^\[flight: ([A-Z-]+)\]/i) { |_| flight($1) }
-      line.gsub!(/^\[hotel: (.+)\]/i) { |_| hotel($1) }
+      line.gsub!(/^\[flight: ([A-Z-]+)\]/i) { |_| @options[:context].flight($1) }
+      line.gsub!(/^\[hotel: (.+)\]/i) { |_| @options[:context].hotel($1) }
+      line.gsub!(/^\[location: (.+)\]/i) { |_| @options[:context].location($1) }
       line
     end.join
-  end
-
-  def hotel(name)
-    trip_slug = @options[:context].current_article.data[:trip]
-    trip = @options[:context].data.trips.find { |t| t.slug == trip_slug }
-    return unless trip
-
-    hotel = @options[:context].data[trip_slug]["hotels"].find { |h| h.name == name }
-    return unless hotel
-
-    formatted_price = format("%.2f", hotel.price).tr(".", ",")
-    <<~HTML
-      <div class="Hotel">
-        <a href="#{hotel.url}">
-          <img src="#{hotel.image}"/>
-          <div>
-            <h2>#{hotel.name}</h2>
-            <small>#{hotel.address}</small>
-            <p>#{trip.solo ? "I" : "We"} paid: <strong>&euro; #{formatted_price}</strong> per night</p>
-            <p>#{hotel.description.strip}</p>
-            <div class="Button secondary">View on Booking.com</div>
-          </div>
-        </a>
-      </div>
-    HTML
-  end
-
-  def flight(from_to)
-    flight = @options[:context].current_article.data[:flights][from_to]
-    return unless flight
-
-    from = flight["from"]
-    to = flight["to"]
-    duration = Time.at(flight.duration).utc
-
-    <<~HTML
-      <div class="Flight Container narrow">
-        <div class="row">
-          <h2 class="row">
-            <span>
-              #{flight.company}
-              <small>flight</small>
-              #{flight.number}
-            </span>
-            <small class="aircraft">
-            #{flight.aircraft}
-          </small>
-          </h2>
-
-        </div>
-        <div class="row">
-          <div class="from">
-            <h3 class="H-Large">#{from.code}</h3>
-            <p>#{from.name}</p>
-            <small>#{Time.parse(from.time).strftime("%H:%M")}</small>
-          </div>
-          <div class="duration"><time>#{duration.strftime("%H:%M")}</time></div>
-          <div class="to">
-            <h3 class="H-Large">#{to.code}</h3>
-            <p>#{to.name}</p>
-            <small>#{Time.parse(to.time).strftime("%H:%M")}</small>
-          </div>
-        </div>
-      </div>
-    HTML
   end
 
   def video(type_and_alt, filename, flex)
