@@ -122,6 +122,18 @@ helpers do
     res
   end
 
+  def countries
+    data[:trips].flat_map { |t| t[:countries] }.uniq.map { |code| country(code) }
+  end
+
+  def continents_with_countries
+    result = Hash.new { |h, k| h[k] = [] }
+    countries.each do |country|
+      result[country.subregion] << country
+    end
+    result
+  end
+
   def current_trip
     return nil unless current_article && current_article.data[:trip]
     data[:trips].find { |t| t[:slug] == current_article.data[:trip] }

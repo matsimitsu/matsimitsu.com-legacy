@@ -4,7 +4,8 @@ summary: Overview of trips I made in the past few years.
 ---
 
 <header class="GenericHeader">
-  <h1 class="H-Medium post-title">Trips I made</h1>
+  <h1 class="H-Large post-title">Trips I made</h1>
+  <p class="T-large">Join me on my travels with Photos and Videos</p>
 </header>
 
 <%- data[:trips].reverse.each do |trip|%>
@@ -46,3 +47,26 @@ summary: Overview of trips I made in the past few years.
     </div>
   </div>
 <% end %>
+<section class="Container full padded contrast">
+<header class="GenericHeader">
+  <h1 class="H-Medium post-title">Countries visited</h1>
+</header>
+  <section class="Container Map">
+    <%= svg_map("world", countries.map{ |c| c.alpha2 }) %>
+  </section>
+
+  <section class="Container narrow Countries">
+    <% continents_with_countries.each do |continent, countries| %>
+      <div>
+      <h3><%= continent %></h3>
+      <ul>
+        <% countries.each do |country| %>
+          <li>
+            <%= country.unofficial_names.first %>
+          </li>
+        <% end %>
+      </ul>
+      </div>
+    <% end %>
+  </section>
+</section>
