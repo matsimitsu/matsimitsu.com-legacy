@@ -52,3 +52,18 @@
   margin-bottom: 0.5rem;
 }
 
+.PostBody table {
+  max-width: var(--narrow);
+
+  thead {
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  tbody td {
+    padding-top: 4px;
+  }
+
+  th {
+    text-align: left;
+  }
+}
