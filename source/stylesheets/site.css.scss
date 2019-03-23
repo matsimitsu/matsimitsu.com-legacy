@@ -186,11 +186,10 @@ figure {
 
 .TripOverview {
   background: var(--bg-shade);
-  padding-bottom: .1rem;
 }
 
 footer {
-  height: var(--header-footer-height);
+  padding: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
