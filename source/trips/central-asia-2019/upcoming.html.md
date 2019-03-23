@@ -1,8 +1,8 @@
 ---
 title: Upcoming trip
 subtitle: Flying from Amsterdam to Tokyo
-date: '2019-04-01'
-end_date: '2019-04-01'
+date: '2019-03-22'
+end_date: '2019-03-22'
 trip: central-asia-2019
 locations:
 ---

@@ -113,6 +113,8 @@ helpers do
   end
 
   def scaled_image(url, alt = nil, class_names = "")
+    return unless url
+
     srcset = SIZES.map do |size|
       ext = File.extname(url)
       "#{url.gsub(ext, "-#{size}#{ext}")} #{size}w"
