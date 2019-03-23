@@ -93,6 +93,7 @@ helpers do
     hierarchy = [page]
     hierarchy.unshift hierarchy.first.parent while hierarchy.first.parent
     hierarchy.shift
+    return unless hierarchy.any?
 
     crumbs = hierarchy.collect do |p|
       link_to(page_title(p), p.url)
