@@ -89,6 +89,28 @@ helpers do
     "/trips/#{trip}"
   end
 
+  def breadcrumbs(page)
+    hierarchy = [page]
+    hierarchy.unshift hierarchy.first.parent while hierarchy.first.parent
+    hierarchy.shift
+
+    crumbs = hierarchy.collect do |p|
+      link_to(page_title(p), p.url)
+    end.join("<small>/</small>")
+
+    %Q(
+      <div class="Breadcrumbs"><i class="fa fa-angle-right"></i>#{crumbs}</div>
+    )
+  end
+
+  def page_title(page)
+    return page.data.breadcrumb if page.data.breadcrumb
+
+    return page.locals[:trip][:title] if page.locals && page.locals[:trip]
+
+    page.data.title
+  end
+
   def scaled_image(url, alt = nil, class_names = "")
     srcset = SIZES.map do |size|
       ext = File.extname(url)
@@ -105,7 +127,7 @@ helpers do
 
   def sized_image(url, size)
     ext = File.extname(url)
-    "#{url.gsub(ext, "-#{size}#{ext}")}"
+    url.gsub(ext, "-#{size}#{ext}").to_s
   end
 
   def trip_articles(trip)
@@ -118,6 +140,7 @@ helpers do
   def trip_image_groups(trip)
     articles = trip_articles(trip)
     return [] if articles.length <= 1
+
     res = articles.each_slice((articles.length / 2).floor).to_a.first(2)
     res
   end
@@ -136,16 +159,22 @@ helpers do
 
   def current_trip
     return nil unless current_article && current_article.data[:trip]
+
     data[:trips].find { |t| t[:slug] == current_article.data[:trip] }
+  end
+
+  def upcoming_trip?(trip, date = Time.zone.today)
+    date < Date.parse(trip[:start])
   end
 
   def trip_article?(article, other_article)
     return false if !article || !other_article
+
     article.data[:trip] == other_article.data[:trip]
   end
 
   def date_range(start_date, end_date = nil, separator = "-")
-    date_string = "#{start_date}"
+    date_string = start_date.to_s
     if end_date.present? && start_date != end_date
       date_string << " #{separator} #{end_date}"
     end

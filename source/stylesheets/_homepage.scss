@@ -7,3 +7,43 @@
 .Homepage > section {
   margin-bottom: 4rem;
 }
+
+.Homepage .location i {
+  animation: anim-beat 2s infinite;
+  border-radius: 50%;
+  color: var(--medium-light);
+}
+
+.Homepage .Social a:hover i {
+  animation: anim-pulse 2s infinite;
+}
+
+@keyframes anim-beat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  90% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes anim-pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

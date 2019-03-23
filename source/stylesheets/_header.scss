@@ -1,17 +1,13 @@
 .Header {
   background: var(--bg);
   padding: 0 1rem;
-  position: relative;
   z-index: 1000;
-  top: 0;
-  width: 100%;
   border-bottom: var(--border)
 }
 .Header > div {
+  padding: 1rem 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: var(--header-footer-height);
+  align-items: baseline;
 }
 
 .Header a {
@@ -32,8 +28,29 @@
 
 .Header .NavigationItems {
   display: flex;
+  margin-left: auto;
 }
 
 .Header .NavigationItems li + li {
   margin-left: 1.2rem
+}
+
+.Header .Breadcrumbs {
+  line-height: 1.2rem;
+  margin-left: 5px;
+  font-weight: normal;
+  a {
+    color: var(--medium-light);
+  }
+  i {
+    color: var(--light);
+    padding: 0 5px 0 0;
+  }
+  small {
+    color: var(--light);
+    padding: 0 5px;
+  }
+  @media (max-width: 800px) {
+    display: none
+  }
 }

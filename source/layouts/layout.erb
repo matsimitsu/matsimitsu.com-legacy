@@ -36,12 +36,13 @@
   <body>
     <nav class="Header">
       <div class="Container">
-      <h1><a href="/">Matsimitsu</a></h1>
-      <ul class="NavigationItems">
-        <li><a href="/blog" class="<%= current_path.start_with?("blog") ? "active" : nil -%>">Blog</a></li>
-        <li><a href="/trips" class="<%= current_path.start_with?("trips") ? "active" : nil -%>">Trips</a></li>
-        <li><a href="/about" class="<%= current_path.start_with?("about") ? "active" : nil -%>">About</a></li>
-      </ul>
+        <h1><a href="/">Matsimitsu</a></h1>
+        <%= breadcrumbs(current_page) %>
+        <ul class="NavigationItems">
+          <li><a href="/blog" class="<%= current_path.start_with?("blog") ? "active" : nil -%>">Blog</a></li>
+          <li><a href="/trips" class="<%= current_path.start_with?("trips") ? "active" : nil -%>">Trips</a></li>
+          <li><a href="/about" class="<%= current_path.start_with?("about") ? "active" : nil -%>">About</a></li>
+        </ul>
       </div>
     </nav>
     <%= yield %>

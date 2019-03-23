@@ -1,5 +1,6 @@
 ---
 title: Trips I made
+breadcrumb: Trips
 summary: Overview of trips I made in the past few years.
 ---
 
@@ -9,43 +10,7 @@ summary: Overview of trips I made in the past few years.
 </header>
 
 <%- data[:trips].reverse.each do |trip|%>
-  <div class="TripCard">
-    <div class="Container">
-      <header>
-        <h1>
-          <a href="<%= trip_url(trip[:slug]) %>">
-            <%= trip[:title] %>
-            <small>
-              <%= days_in_words(trip[:start], trip[:end])%> days
-              —
-              <%= trip_articles(trip[:slug]).length %> posts
-              —
-              <%= trip[:photo_count] %> photos
-            </small>
-          </a>
-        </h1>
-        <p><%= trip[:subtitle] %></p>
-        <a class="Button large secondary" href="<%= trip_url(trip[:slug]) %>">
-          View trip
-        </a>
-      </header>
-      <%- if trip_image_groups(trip[:slug]).any? %>
-        <div class="images">
-          <%- trip_image_groups(trip[:slug]).each do |group| %>
-            <div>
-              <%- group.each do |article| %>
-                <%= scaled_image(article.data[:image], article.data[:title])%>
-              <%- end %>
-            </div>
-          <%- end %>
-        </div>
-      <%- else %>
-        <div class="image">
-          <%= scaled_image(trip_articles(trip[:slug]).first.data[:image], trip_articles(trip[:slug]).first.data[:title])%>
-        </div>
-      <%- end %>
-    </div>
-  </div>
+  <%= partial "trip_card", :locals => { :trip => trip }%>
 <% end %>
 <section class="Container full padded contrast">
 <header class="GenericHeader">
@@ -54,7 +19,6 @@ summary: Overview of trips I made in the past few years.
   <section class="Container Map">
     <%= svg_map("world", countries.map{ |c| c.alpha2 }) %>
   </section>
-
   <section class="Container narrow Countries">
     <% continents_with_countries.each do |continent, countries| %>
       <div>

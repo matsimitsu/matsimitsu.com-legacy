@@ -148,3 +148,13 @@
   photo_count: 212
   countries: [JP]
   solo: true
+- title: Central Asia 2019
+  subtitle: "Discovering cities along the Silk Road."
+  excerpt: |
+    The Silk Road connected Europe with Asia for many centuries and on this trip we visit some of the cities along this road in the countries of Uzbekistan and Kyrgyzstan.
+  start: '2019-04-01'
+  end: '2019-04-13'
+  kind: single
+  slug: central-asia-2019
+  photo_count: 0
+  countries: [KG, UZ]
