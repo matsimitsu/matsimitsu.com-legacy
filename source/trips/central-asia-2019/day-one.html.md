@@ -1,8 +1,8 @@
 ---
 title: Day One
 subtitle: Flying from Amsterdam to <s>Bishkek</s> Istanbul
-date: '2019-03-22'
-end_date: '2019-03-22'
+date: '2019-04-01'
+end_date: '2019-04-01'
 trip: central-asia-2019
 image: https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-one/day-one2.jpg
 locations:

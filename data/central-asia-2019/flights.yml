@@ -15,15 +15,14 @@
   name: IST-FRU
   company: Turkish Airlines
   duration: 05:05
-  number: TK344
-  aircraft: Boeing 737-MAX9
+  number: TK0348
+  aircraft: Airbus A330
   from:
     code: IST
-    time: 2019-04-02 00:40
+    time: 2019-04-02 21:30
   to:
     code: FRU
-    time: 2019-04-01 08:45
-
+    time: 2019-04-01 01:45
 -
   name: FRU-TAS
   company: Uzbekistan Airways
