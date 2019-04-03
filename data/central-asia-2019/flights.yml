@@ -16,7 +16,7 @@
   company: Turkish Airlines
   duration: 05:05
   number: TK0348
-  aircraft: Airbus A330
+  aircraft: Boeing 737-800
   from:
     code: IST
     time: 2019-04-02 9:30
