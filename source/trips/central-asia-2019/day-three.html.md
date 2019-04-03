@@ -1,6 +1,6 @@
 ---
 title: Day Three
-subtitle: Ala Archa National Park
+subtitle: Ala Archa National Park, Kyrgyzstan
 date: '2019-04-03'
 end_date: '2019-04-03'
 trip: central-asia-2019
