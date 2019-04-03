@@ -19,10 +19,10 @@
   aircraft: Airbus A330
   from:
     code: IST
-    time: 2019-04-02 21:30
+    time: 2019-04-02 9:30
   to:
     code: FRU
-    time: 2019-04-01 01:45
+    time: 2019-04-01 5:40
 -
   name: FRU-TAS
   company: Uzbekistan Airways
