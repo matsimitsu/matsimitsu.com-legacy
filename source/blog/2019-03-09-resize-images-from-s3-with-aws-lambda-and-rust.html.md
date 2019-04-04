@@ -218,7 +218,7 @@ With a working binary we now need to (cross)compile it for the right environment
 		softprops/lambda-rust
 ```
 
-This will generate a `boostrap.zip` file in `target/labmda/release`. You can also get the `boostrap.zip` from te [releases page](https://github.com/matsimitsu/lambda-image-resize-rust/releases).
+This will generate a `bootstrap.zip` file in `target/lambda/release`. You can also get the `bootstrap.zip` from te [releases page](https://github.com/matsimitsu/lambda-image-resize-rust/releases).
 
 ### Configuring Lambda
 
