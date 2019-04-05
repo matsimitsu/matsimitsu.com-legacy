@@ -112,3 +112,20 @@ We stopped for a quick lunch, which we thought was a small wrap, but turned out 
 The park turned out to be quite different from the pictures on Google. It was supposed to be a swimming pond, but the water was kind of missing...
 
 ![hero|DSC09442.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-four/DSC09442.jpg "1.5")
+
+Slightly dissapointed we took a taxi back to the hotel to get our bags and head for the airport. During every step of the check-in process people were asking is about our Visa for Uzbekistan and we kept telling them we don't need one anymore since Februari 2019.
+
+[flight: FRU-TAS]
+
+![IMG_20190404_190014.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-four/IMG_20190404_190014.jpg "1.5")
+
+
+Thanks to timezones the flight only cost us 20 minutes and we were right about the Visa, after a few questions the friendly border agent let us into the country. Uzbekistan is a country where credit cards are not generally accepted so we took about 500.000 SOM from the ATM (about 50 Euro's) and headed for the official taxi stand.
+
+Our hotel was about nine minutes away, but our taxi driver decided on a detour. At the hotel he tried to charge us 200.000 SOM (or we could also pay in dollars, $25). This was obviously way to high and I went to the hotel reception where they told me the ride should cost 5.000 to 7.000 SOM. So his markup was only 193.000 SOM and the negotiation began. By negotiation I mean that I just said 7.000 while he tried to do anything including threatening calling the cops to get his price, which dropped and dropped untill he eventually reluctanly agreed to 7.000 SOM.
+
+Now step two of the process began as the ATM only spit out bills of 50.000. We showed him the bill and gestured him to get the change and that we wouldn't give the bill untill we had counted the change. There he tried another trick by counting really quick and giving us an incorrect amount. We caught on though and refused to give the money. A few swearwords later he drove off in anger, which meant a free taxi ride for us. Pro-tip for any Uzbeki taxi drivers out there, don't try to charge 28 times the amount it should cost.
+
+This eventull evening ended with a delicious roadside dinner and a beer at the hotel.
+
+![IMG_20190404_212520.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-four/IMG_20190404_212520.jpg "1.5")
