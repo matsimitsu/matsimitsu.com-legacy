@@ -1,6 +1,6 @@
 ---
 title: Day Six
-subtitle: Khiva > Bukhara, Uzbekistan
+subtitle: Khiva 🚆 Bukhara, Uzbekistan
 date: '2019-04-06'
 end_date: '2019-04-06'
 trip: central-asia-2019
