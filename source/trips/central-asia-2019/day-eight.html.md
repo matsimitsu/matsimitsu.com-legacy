@@ -4,7 +4,7 @@ subtitle: Bukhara 🚆 Samarkand, Uzbekistan
 date: '2019-04-08'
 end_date: '2019-04-08'
 trip: central-asia-2019
-image: https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-seven/DSC09693.jpg
+image: https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09956.jpg
 locations:
   -
     country: UZ
