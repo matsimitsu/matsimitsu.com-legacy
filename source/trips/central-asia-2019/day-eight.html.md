@@ -7,31 +7,42 @@ trip: central-asia-2019
 image: https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09956.jpg
 locations:
   -
+    title: 'Chor Bakr, Bukhara, Uzbekistan'
+    address: 'Chor Bakr, 4N162, Bukhara, Bukhara Region, Uzbekistan, 200100'
     country: UZ
-    lat: 39.7676
-    lng: 64.42309999999998
-    title: Bukhara, Uzbekistan
-    address: Bukhara, Uzbekistan
-  -
+    lat: 39.7745227
+    lng: 64.3333084
+  - title: 'Sitori-i-Mokhi Khosa Palace'
+    address: 'Bukhara, Uzbekistan'
     country: UZ
-    lat: 39.6548
-    lng: 66.97579999999994
-    title: Samarkand, Uzbekistan
-    address: Samarkand, Uzbekistan
+    lat: 39.77472
+    lng: 64.42861
+  - title: 'Sitori-i-Mokhi Khosa Palace'
+    address: 'Bahovuddin Naqshbandiy ziyoratgohi, Каракушхона, Kogon Tumani, Uzbekistan'
+    country: UZ
+    lat: 39.8023752
+    lng: 64.5366073
+  - title: 'Bukhara 1, Kogon, Uzbekistan'
+    address: 'Бухара-1, Buxoro shoh ko''chasi, Kogon, Bukhara Region, Uzbekistan, 200700'
+    country: UZ
+    lat: 39.7224691
+    lng: 64.5484496
+
 ---
 
 Our train leaves at 15:50 in the afternoon, which means we have half a day to spend in Bukhara. We chose to visit a few sites outside the city with a hired driver to fill the time. He'd drop us off at the station at the end of the "tour".
 
+
+[location: Chor Bakr, Bukhara, Uzbekistan]
+
+First up was Chor Bakr Necropolis, the burial place of "Abu-Bakr-Said", one of the descendants of Muhammad.
+
 ![DSC09890.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09890.jpg "1.5")
 
-First up was <location>, a mausoleum. When we were wandering around a man approached us and asked if we would like to climb the mosque to get a better view, for just 10.000 SOM per person. We thought sure, why not and were guided to a staircase and told to have fun. We could walk around everywhere, even up to the edge on the roof.
-
-[location: ]
-
-
 ![DSC09867.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09867.jpg "0.667")
-
 ![DSC09868.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09868.jpg "1.5")
+
+When we were wandering around a man approached us and asked if we would like to climb the mosque to get a better view, for just 10.000 SOM per person. We thought sure, why not and were guided to a staircase and told to have fun. We could walk around everywhere, even up to the edge on the roof.
 
 ![DSC09866.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09866.jpg "1.5")
 
@@ -43,14 +54,13 @@ First up was <location>, a mausoleum. When we were wandering around a man approa
 
 ![DSC09882.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09882.jpg "1.5")
 
-[location: ]
+[location: Sitori-i-Mokhi Khosa Palace]
 
-Next up was the <palace>, the summer palace of the <leader> of Bukhara.
+Next up was "Sitori-i-Mokhi Khosa palace", the summer palace of palace of the Amir of Bukhara.
 
 ![DSC09894.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09894.jpg "1.5")
 
 ![DSC09929.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09929.jpg "0.667")
-
 ![DSC09895.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09895.jpg "1.5")
 ![DSC09902.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09902.jpg "1.5")
 
@@ -66,9 +76,9 @@ Next up was the <palace>, the summer palace of the <leader> of Bukhara.
 ![DSC09920.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09920.jpg "1.5")
 
 
-[location: ]
+[location: Sitori-i-Mokhi Khosa Palace]
 
-Finally we went to <thing>, a <thing it does> that's relatively new.
+Finally we went to "Baha-ud-din Naqshband Bokhari Memorial Complex". He was the founder of what would become one of the largest Sufi Muslim orders, the Naqshbandi.
 
 ![hero|DSC09943.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09943.jpg "1.5")
 
@@ -91,9 +101,9 @@ A curious man wanted to see what I was taking photo's of.
 
 ![DSC09924.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09924.jpg "1.5")
 
-[location: ]
+[location: Bukhara 1, Kogon, Uzbekistan]
 
-Near the station was an old palace, build for a king that never moved in so it was repurposed as a train station. It's surrounded by the obligatury Soviet era fun-fare.
+Near the station was an old palace, build for a king that never moved in so it was repurposed as a train station. It's surrounded by the obligatury Soviet era fun-fare. The Bukhara-1 train station is not actually located in Bukhara, but in a town near the city called Kogon. Bukhara-2 is a train station that _is_ located in the city, but is freight only.
 
 ![DSC09953.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-eight/DSC09953.jpg "1.5")
 
