@@ -1,5 +1,5 @@
 ---
-title: Day Eight
+title: Day Nine
 subtitle: Samarkand, Uzbekistan
 date: '2019-04-09'
 end_date: '2019-04-09'
