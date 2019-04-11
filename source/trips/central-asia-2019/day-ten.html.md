@@ -20,8 +20,8 @@ locations:
     lng: 66.9710819
 
   -
-    title: 'Gur-e Amir Сomplex ,Samarkand, Uzbekistan'
-    address: 'Gur-e Amir Сomplex ,Samarkand, Uzbekistan'
+    title: 'Gur-e Amir Сomplex, Samarkand, Uzbekistan'
+    address: 'Gur-e Amir Сomplex, Samarkand, Uzbekistan'
     country: UZ
     lat: 39.6473209
     lng: 66.9616439
@@ -85,7 +85,7 @@ One of the interior domes was being re-pained, it's all done by hand.
 
 ![hero|DSC00089.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-ten/DSC00089.jpg "1.5")
 
-[location: Gur-e Amir Сomplex ,Samarkand, Uzbekistan]
+[location: Gur-e Amir Сomplex, Samarkand, Uzbekistan]
 
 The last stop of the day was the "Gur-e Amir Сomplex", from the outside it didn't look like anything special, but the interior is beautiful.
 
