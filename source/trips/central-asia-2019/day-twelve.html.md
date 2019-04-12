@@ -44,7 +44,14 @@ Chorsu Market is a huge bazaar in the center of the city. The bazaar is dominate
 
 After visiting the market we had a delicious lunch with traditional Uzbeki food. Pastries filled with meat and soup. The shop owner kept bringing more and more food and with some hand gestures we managed to convince him we really had enough.
 
-![DSC00284.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-twelve/DSC00284.jpg "1.5")
+![DSC00239.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-twelve/DSC00239.jpg "1.5")
+
+
+It took us a while to find the metro station at the bazaar, it's hidden somewhere in the middle.
+
+![DSC00236.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/central-asia-2019/day-twelve/DSC00236.jpg "1.5")
+
+
 
 [location: Palace Druzhby Narodov, Tashkent, Uzbekistan]
 
