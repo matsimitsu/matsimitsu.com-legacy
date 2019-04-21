@@ -47,6 +47,18 @@
   list-style: square;
 }
 
+.BlogPostBody blockquote {
+  border: 1px solid var(--border-color);
+  border-left: 5px solid var(--border-color);
+  margin: 1rem auto;
+  max-width: 40rem;
+  overflow-x: auto;
+
+  p {
+    margin: 0
+  }
+}
+
 .BlogPostBody div.highlight {
   border: 1px solid var(--border-color);
   padding: 10px;
