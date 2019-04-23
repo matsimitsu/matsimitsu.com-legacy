@@ -2,7 +2,6 @@
 title: Extending Protobuf with Traits in Rust
 date: 2019-04-18 10:00:00 UTC
 summary: Extend default behavior of code with Traits and default implementations. In this case we add new functionality to generated Protobuf code.
-published: false
 ---
 
 At AppSignal we use Protobuf to pass messages through Kafka. We picked this because we were already using Protobuf in our Agent and it works great for our use-case.
