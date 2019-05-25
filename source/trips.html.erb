@@ -19,7 +19,7 @@ summary: Overview of trips I made in the past few years.
   <section class="Container Map">
     <%= svg_map("world", countries.map{ |c| c.alpha2 }) %>
   </section>
-  <section class="Container narrow Countries">
+  <section class="Container wide Countries">
     <% continents_with_countries.each do |continent, countries| %>
       <div>
       <h3><%= continent %></h3>
