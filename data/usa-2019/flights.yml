@@ -1,0 +1,25 @@
+-
+  name: AMS-LAS
+  company: KLM
+  duration: 10:40
+  number: KL635
+  aircraft: Boeing 787-9
+  from:
+    code: AMS
+    time: 2019-07-18 12:30
+  to:
+    code: LAS
+    time: 2019-07-18 14:15
+
+-
+  name: LAS-AMS
+  company: KLM
+  duration: 10:00
+  number: KL636
+  aircraft: Boeing 787-9
+  from:
+    code: LAS
+    time: 2019-08-04 16:05
+  to:
+    code: AMS
+    time: 2019-08-05 11:05
