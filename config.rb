@@ -48,6 +48,7 @@ activate :blog do |blog|
   blog.permalink = "{trip}/{title}.html"
   blog.sources = "{trip}/{title}.html"
   blog.layout = "trip"
+  blog.publish_future_dated = true
 end
 
 ## Generate index pages for each trip
