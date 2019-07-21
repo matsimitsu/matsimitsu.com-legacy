@@ -175,7 +175,7 @@
     We're renting the biggest SUV we could find and make a figure-eight from Las Vegas to all the big National Parks back to Vegas and to San Francisco and Los Angeles back to Vegas.
   start: '2019-07-18'
   end: '2019-08-05'
-  kind: single
+  kind: collection
   slug: usa-2019
   photo_count: 0
   countries: [US]
