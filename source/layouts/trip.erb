@@ -4,7 +4,7 @@
       <%= scaled_image(current_article.data[:image], "Header image", "cover") %>
       <hgroup>
           <div class="Dates">
-      <span class="DateRange">2018-10-31<i class="fa fa-angle-right"></i>2018-11-01</span>
+      <span class="DateRange"><%= current_article.data[:date] %><i class="fa fa-angle-right"></i><%= current_article.data[:end_date] %></span>
     </div>
 
       <h1 class="H-Large post-title"><%= current_article.title %></h1>
