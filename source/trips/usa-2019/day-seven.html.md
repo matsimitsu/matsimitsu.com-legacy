@@ -1,5 +1,5 @@
 ---
-title: Day six
+title: Day seven
 date: 2019-07-24
 end_date: 2019-07-24
 subtitle: Zion National Park
