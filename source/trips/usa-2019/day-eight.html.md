@@ -36,7 +36,7 @@ From the dunes we made our way past the salt flats towards the "exit".
 
 ![hero|DSC09174.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/usa-2019/day-eight/DSC09174.jpg "1.5")
 
-The route drops from 4.000 feet to sea level and back up the other side. There are waning signs telling you to turn off the Airconditioning of the car to make sure it doesn't overheat. We ignored the warning and luckily for us the car did just fine. On the other side there's a viewpoint for a final view of Death Valley.
+The route drops from 4.000 feet to sea level and back up the other side. There are warning signs telling you to turn off the Airconditioning of the car to make sure it doesn't overheat. We ignored the warning and luckily for us the car did just fine. On the other side there's a viewpoint for a final view of Death Valley.
 
 ![DSC09213.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/usa-2019/day-eight/DSC09213.jpg "1.5")
 
