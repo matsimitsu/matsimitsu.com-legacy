@@ -16,7 +16,6 @@ locations:
     country: US
     lat: 37.8267213
     lng: -122.4227589
-
 ---
 
 We've past the half-way point of the trip and made it to San Francisco. We took a slight detour to be greeted by the Golden Gate Bridge.
