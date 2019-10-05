@@ -9,10 +9,13 @@ layout: false
     <script>
       (() => {
         const application = Stimulus.Application.start()
-
         application.register("dropzone", class extends Stimulus.Controller {
           static get targets() {
             return ["polaroidList", "baseUrl"]
+          }
+
+          initialize() {
+            this.images = []
           }
 
           acceptDrop(ev) {
@@ -50,26 +53,46 @@ layout: false
           // When loaded it calls renderImage
           addImage(file) {
             var reader = new FileReader();
-            reader.onload = (event =>  this.renderImage(file, event) );
+            reader.onload = (event =>  this.storeImage(file, event) );
             reader.readAsDataURL(file);
+          }
+
+          // Stores the image, so we can order them
+          storeImage(file, event) {
+            var imageObject = {
+              src: event.target.result,
+              name: file.name,
+              url: this.baseUrlTarget.value + file.name,
+              timestamp: file.lastModified
+            }
+
+            this.images.push(imageObject)
+            this.renderImages()
           }
 
           // Gets called when FileReader is done reading
           // Clones the template and fills the fields,
           // rending an image with input containing a markdown image tag.
-          renderImage(file, event) {
+          renderImages() {
+            console.log("render called")
+            // Cleanup old images
+            while (this.polaroidListTarget.firstChild) {
+              this.polaroidListTarget.removeChild(this.polaroidListTarget.firstChild);
+            }
             var template = document.querySelector('#polaroid-template');
 
-            // Clone template and fill the values
-            var clone = document.importNode(template.content, true);
+            // Render images again after sorting
+            for (let image of this.images.sort(function(a, b){return a.timestamp-b.timestamp})) {
+              // Clone template and fill the values
+              var clone = document.importNode(template.content, true);
+              // Set the image source and data attributes from the FileReader
+              var img = clone.querySelectorAll("img")[0];
+              img.src = image.src;
+              img.setAttribute("data-filename", image.name);
+              img.setAttribute("data-url", image.url);
 
-            // Set the image source and data attributes from the FileReader
-            var img = clone.querySelectorAll("img")[0];
-            img.src = event.target.result;
-            img.setAttribute("data-filename", file.name);
-            img.setAttribute("data-url", this.baseUrlTarget.value + file.name);
-
-            this.polaroidListTarget.appendChild(clone);
+              this.polaroidListTarget.appendChild(clone);
+            }
           }
         })
 

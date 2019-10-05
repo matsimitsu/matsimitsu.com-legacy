@@ -1,0 +1,51 @@
+-
+  name: AMS-HEL
+  company: Finnair
+  duration: 02:20
+  number: JL6818
+  aircraft: Airbus 321
+  from:
+    code: AMS
+    time: 2019-10-18 11:55
+  to:
+    code: HEL
+    time: 2019-10-31 15:15
+
+-
+  name: HEL-NRT
+  company: Finnair
+  duration: 09:20
+  number: JL6800
+  aircraft: Airbus A350
+  from:
+    code: HEL
+    time: 2019-10-31 17:45
+  to:
+    code: NRT
+    time: 2019-11-01 09:05
+
+-
+  name: HEL-AMS
+  company: Finnair
+  duration: 02:35
+  number: JL6819
+  aircraft: Airbus 321
+  from:
+    code: HEL
+    time: 2019-10-26 16:15
+  to:
+    code: AMS
+    time: 2019-10-26 17:45
+
+-
+  name: NRT-HEL
+  company: Japan Airlines
+  duration: 10:30
+  number: JL6801
+  aircraft: Airbus A350
+  from:
+    code: NRT
+    time: 2019-10-26 11:00
+  to:
+    code: HEL
+    time: 2019-10-26 15:00

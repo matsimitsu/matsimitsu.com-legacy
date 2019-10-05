@@ -179,3 +179,14 @@
   slug: usa-2019
   photo_count: 0
   countries: [US]
+- title: Japan 2019
+  subtitle: Tokyo with the parents.
+  excerpt: |
+    It seems to become a yearly occurrence, this time with the parents :)
+  start: '2019-10-18'
+  end: '2019-10-26'
+  kind: single
+  slug: japan-2019
+  photo_count: 212
+  countries: [JP]
+  solo: true
