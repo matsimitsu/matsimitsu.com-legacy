@@ -1,10 +1,10 @@
 ---
 title: Day One
 subtitle: Exploring Tokyo on a Jet-lag
-date: 2109-10-18
-end_date: 2109-10-26
+date: 2019-10-19
+end_date: 2019-10-19
 summary: Amsterdam to Tokyo
-image: 'https://d3khpbv2gxh34v.cloudfront.net/p/japan-2015/day-six/59f489ee2a86923bc672cba0.jpg'
+image: 'https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day-1/DSC09851.jpg'
 trip: japan-2019
 locations:
   -
@@ -19,7 +19,6 @@ locations:
     country: JP
     lat: 35.7138053
     lng: 139.7958914
-
 ---
 
 The alarm went at 07:30 in the morning and after two train rides I arrived at Schiphol Airport Amsterdam where my Finnar Flight to Helsinki was delayed for fourty minutes due to fog at Helsinki Airport. Luckily we had a tailwind so the total delay was about 20 minutes.
