@@ -58,6 +58,6 @@ It was a Saturday and the crowds were out in force. Behind the temples where som
 
 ![DSC09854.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day-1/DSC09854.jpg "1.5")
 
-![DSC09855.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day-1/DSC09855.jpg "1.402")
+![hero|DSC09855.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day-1/DSC09855.jpg "1.402")
 
 After these snacks we made our way back to the hotel for some rest and after a quick bite at CoCo's curry we finally made our self-imposed deadline of no sleep before 22:00 to combat Jet-lag.
