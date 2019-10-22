@@ -21,7 +21,6 @@ locations:
     country: JP
     lat: 35.6838097
     lng: 139.7506583
-
 ---
 
 After a good night's sleep we were ready to tackle the second day. We started by making our way to the Shinjuku Gyoen National Garden.
