@@ -3,7 +3,7 @@ title: Day Four
 subtitle: Yokohama Chinatown
 date: 2019-10-22
 end_date: 2019-10-22
-image: 'https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day3/DSC09938.jpg'
+image: 'https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day4/DSC00022.jpg'
 trip: japan-2019
 locations:
   - title: Minatomirai, Yokohama, Japan
