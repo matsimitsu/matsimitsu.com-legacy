@@ -32,6 +32,20 @@ Near the top are a number of Temples/Shrines and from the top you can take a cou
 
 ![hero|DSC09938.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day3/DSC09938.jpg "1.5")
 
+![DSC09940.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day3/DSC09940.jpg "1.5")
+![DSC09945.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day3/DSC09945.jpg "0.667")
+
+![DSC09942.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day3/DSC09942.jpg "0.667")
+![DSC09941.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day3/DSC09941.jpg "1.5")
+
+![DSC09946.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day3/DSC09946.jpg "1.5")
+![DSC09947.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day3/DSC09947.jpg "1.5")
+
 We spent a couple of hours navigating a few trails on the mountain, hardly passing anyone on the way, it was really beautifull and quiet.
 
 ![hero|DSC09914.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day3/DSC09914.jpg "1.5")
+
+What wasn't so quiet was the street in front of the Okonomiyaki place near Shinjuku station. The food was really good though!
+
+![DSC09957.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day3/DSC09957.jpg "1.5")
+![DSC09959.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day3/DSC09959.jpg "1.5")
