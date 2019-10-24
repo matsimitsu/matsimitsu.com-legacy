@@ -2,7 +2,6 @@
 title: Day One
 subtitle: Exploring Tokyo on a Jet-lag
 date: 2019-10-19
-end_date: 2019-10-19
 summary: Amsterdam to Tokyo
 image: 'https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day-1/DSC09851.jpg'
 trip: japan-2019

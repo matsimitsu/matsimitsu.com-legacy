@@ -2,7 +2,6 @@
 title: Day Two
 subtitle: Shinjuku and the Palace
 date: 2019-10-20
-end_date: 2019-10-20
 image: 'https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day2/DSC09910.jpg'
 trip: japan-2019
 locations:

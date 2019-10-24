@@ -2,7 +2,6 @@
 title: Day Four
 subtitle: Yokohama Chinatown
 date: 2019-10-22
-end_date: 2019-10-22
 image: 'https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day4/DSC00022.jpg'
 trip: japan-2019
 locations:
@@ -16,7 +15,6 @@ locations:
     country: JP
     lat: 35.4426638
     lng: 139.6451907
-
 ---
 
 It was supposed to rain a lot today, so we adjusted the goal to just having delicious Chinese food at Chinatown, Yokohama.

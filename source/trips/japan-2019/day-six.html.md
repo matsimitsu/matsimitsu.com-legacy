@@ -2,7 +2,6 @@
 title: Day Six
 subtitle: The two towers
 date: 2019-10-24
-end_date: 2019-10-24
 image: 'https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day6/DSC00151.jpg'
 trip: japan-2019
 locations:

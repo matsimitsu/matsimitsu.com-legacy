@@ -2,7 +2,6 @@
 title: Day Three
 subtitle: Mt. Takao
 date: 2019-10-21
-end_date: 2019-10-21
 image: 'https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day3/DSC09938.jpg'
 trip: japan-2019
 locations:

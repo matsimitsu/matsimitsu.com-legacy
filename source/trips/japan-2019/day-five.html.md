@@ -2,7 +2,6 @@
 title: Day Five
 subtitle: Kamakura and Enoshima Island
 date: 2019-10-23
-end_date: 2019-10-23
 image: 'https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day5/DSC00029.jpg'
 trip: japan-2019
 locations:
