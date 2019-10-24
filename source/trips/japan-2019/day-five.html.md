@@ -32,8 +32,6 @@ Leading up to the island is a shopping street with lots of delicious food and so
 
 ![DSC00025.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day5/DSC00025.jpg "1.5")
 
-The tori gate denounces the entrance, from here you can take a trail around the island.
-
 ![hero|DSC00027.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/japan-2019/day5/DSC00027.jpg "1.5")
 
 The trail will take you past temples/shrines...
