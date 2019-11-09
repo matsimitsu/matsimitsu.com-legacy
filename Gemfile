@@ -15,13 +15,6 @@ gem 'rubocop'
 gem "builder", "~> 3.0"
 gem "pry"
 
-# Temp for import
-gem "graphql-client"
-
-# Upload
-gem "aws-sdk-s3"
-gem "fastimage"
-
 # Countries
 gem "countries"
 gem "airports"

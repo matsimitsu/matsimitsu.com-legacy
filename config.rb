@@ -72,7 +72,9 @@ page "/feed.xml", :layout => false
 
 
 # CSS
-set :css_dir, "stylesheets"
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
 
 # Reload the browser automatically whenever files change
 # configure :development do
@@ -309,3 +311,9 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+activate :external_pipeline,
+  :name => :webpack,
+  :command => build? ? "yarn build" : "yarn dev",
+  :source => ".tmp/dist",
+  :latency => 1
