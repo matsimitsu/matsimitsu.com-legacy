@@ -3,8 +3,8 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: [
-    "./source/assets/javascripts/site.js",
-    "./source/assets/stylesheets/site.css.scss"
+    './source/assets/javascripts/site.js',
+    './source/assets/stylesheets/site.css',
   ],
   output: {
     filename: "bundle.js",
@@ -21,6 +21,7 @@ module.exports = {
         use: [
           "style-loader",
           "css-loader",
+          'postcss-loader',
         ],
       },
       {

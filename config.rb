@@ -25,6 +25,7 @@ page "/*.txt", :layout => false
 ###
 
 activate :syntax
+activate :livereload
 
 ###
 # Blog
