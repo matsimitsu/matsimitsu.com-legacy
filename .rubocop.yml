@@ -40,9 +40,6 @@ Style/HashSyntax:
 Layout/AlignHash:
   EnforcedLastArgumentHashStyle: ignore_implicit
 
-Layout/IndentArray:
-  EnforcedStyle: consistent
-
 Style/EmptyMethod:
   EnforcedStyle: expanded
 
