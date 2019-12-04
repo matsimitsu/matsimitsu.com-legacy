@@ -55,6 +55,4 @@ And of course we use ENV vars in production:
   }
 ```
 
-
 With these two fixes applied and deployed, emails were flowing again \o/.
-
