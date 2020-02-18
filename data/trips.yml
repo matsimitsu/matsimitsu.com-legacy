@@ -189,3 +189,13 @@
   slug: japan-2019
   photo_count: 212
   countries: [JP]
+- title: Taiwan 2020
+  subtitle: Circling the island.
+  excerpt: |
+    Lets see how this goes...
+  start: '2020-02-20'
+  end: '2020-03-04'
+  kind: single
+  slug: taiwan-2020
+  photo_count: 0
+  countries: [TW]
