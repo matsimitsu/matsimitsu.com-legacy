@@ -195,7 +195,7 @@
     Lets see how this goes...
   start: '2020-02-20'
   end: '2020-03-04'
-  kind: single
+  kind: collection
   slug: taiwan-2020
   photo_count: 0
   countries: [TW]
