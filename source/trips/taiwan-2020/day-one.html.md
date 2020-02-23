@@ -1,8 +1,8 @@
 ---
 title: Day One
 subtitle: "Taichung: Temples and colored walls."
-date: '2020-02-22'
-end_date: '2020-03-03'
+date: '2020-02-21'
+end_date: '2020-02-22'
 image: https://d3khpbv2gxh34v.cloudfront.net/r/taiwan-2020/day-one/DSC00276.jpg
 trip: taiwan-2020
 locations:
