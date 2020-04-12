@@ -1,6 +1,6 @@
 <% wrap_layout :layout do %>
-  <article class="Post">
-    <section class="PostHeader">
+  <article class="container">
+    <section class="py-16 max-w-4xl m-auto text-center">
       <%= scaled_image(current_article.data[:image], "Header image", "cover") %>
       <hgroup>
           <div class="Dates">
@@ -11,7 +11,7 @@
       <p class="T-Large post-intro"><%= current_article.data[:subtitle] %></p>
       </hgroup>
     </section>
-    <section class="PostBody">
+    <section class="py-16 max-w-2xl text-center m-auto">
       <%= yield %>
     </section>
   </article>

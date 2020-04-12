@@ -1,6 +1,9 @@
 module.exports = {
   theme: {
-    extend: {}
+    colors: require('tailwindcss-open-color'),
+    container: {
+      center: true,
+    }
   },
   variants: {},
   plugins: []

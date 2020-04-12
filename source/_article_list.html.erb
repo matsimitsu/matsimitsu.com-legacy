@@ -1,19 +1,27 @@
-<section class="Container tiny ">
-  <div class="Articles">
-    <% blog("blog").articles.first(locals[:limit]).each do |article| %>
-      <article>
-        <h1>
-          <%- if article.data[:appsignal] %>
-            <a title="Article appeared on the AppSignal blog" href="<%= article.data[:appsignal] %>" class="appsignal">
-          <%- else %>
-            <a href="<%= article.url %>">
-          <%- end %>
-            <small><time><%= article.date.strftime('%b %e %Y') %></time> - </small>
-            <%= article.title %>
-          </a>
-        </h1>
-        <p><%= article.data.summary %></p>
-      </article>
-    <% end %>
-  </div>
+<section class="container px-2 py-8 max-w-4xl">
+  <% blog("blog").articles.first(locals[:limit]).each.group_by { |a| a.date.year }.each do |year, articles| %>
+    <div class="grid gap-6 grid-cols-6 border-t border-gray-5 mb-12 py-12 relative">
+      <div class="col-span-1 hidden lg:block">
+        <h2 class="text-4xl text-gray-9 font-bold"><%= year %></h2>
+      </div>
+      <div class="col-span-6 lg:col-span-5">
+        <% articles.each do |article| %>
+          <div class="grid grid-cols-10 mb-8">
+            <div class="col-span-1 flex pr-2">
+              <% if article.data[:appsignal] %>
+                <img class="ml-auto justify-end w-8" src="/assets/images/appsignal-logo.svg" alt="AppSignal logo" title="Posted on AppSignal.com" />
+              <% end %>
+            </div>
+            <a class="pb-2 col-span-9  pl-2 border-l-4 block border-white hover:border-yellow-5" href="<%= article.data[:appsignal] ? article.data[:appsignal] : article.url %>">
+              <h2 class="text-xl font-bold text-gray-9 mb-1">
+                <small class="pr-1 text-gray-6 font-normal text-base"><time><%= article.date.strftime('%b %e %Y') %></time></small>
+                <%= article.title %>
+              </h2>
+              <p class="text-gray-8"><%= article.data.summary %></p>
+            </a>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
 </section>

@@ -1,14 +1,14 @@
 <% wrap_layout :layout do %>
-  <article class="Container">
-    <section class="GenericHeader">
+  <article class="container">
+    <section class="py-16 max-w-4xl m-auto text-center">
       <hgroup>
-        <h1 class="H-Large post-title"><%= current_article.title %></h1>
+        <h1 class="text-6xl font-bold text-gray-9"><%= current_article.title %></h1>
         <div class="Dates">
           <span class="DateRange"><%= current_article.date.strftime("%Y-%m-%d") %></span>
         </div>
       </hgroup>
-    </section>
-    <section class="BlogPostBody">
+    </div>
+    <section class="py-16 max-w-2xl text-left m-auto">
       <%= yield %>
     </section>
   </article>

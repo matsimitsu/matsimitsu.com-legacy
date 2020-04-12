@@ -91,9 +91,9 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
     if text.strip.start_with?("<div")
       text
     elsif text.start_with?("<figure")
-      %(<div class="PhotoRow Container">#{text}</div>)
+      %(<div class="flex">#{text}</div>)
     else
-      "<p>#{text.strip}</p>"
+      %(<p class="mb-6 text-gray-8">#{text.strip}</p>)
     end
   end
 end

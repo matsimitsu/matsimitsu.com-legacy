@@ -33,31 +33,23 @@
     <%= javascript_include_tag "bundle" %>
   </head>
   <body>
-<div class="max-w-sm mx-auto flex p-6 bg-white rounded-lg shadow-xl">
-  <div class="flex-shrink-0">
-    <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo">
-  </div>
-  <div class="ml-6 pt-1">
-    <h4 class="text-xl text-gray-900 leading-tight">ChitChat</h4>
-    <p class="text-base text-gray-600 leading-normal">You have a new message!</p>
-  </div>
-</div>
-
-    <nav class="Header">
-      <div class="Container">
+    <header class="border-b border-gray-2 text-gray-8 sticky top-0 z-10 bg-blur bg-white">
+      <div class="w-full mx-auto max-w-6xl flex items-center py-4">
         <h1><a href="/">Matsimitsu</a></h1>
         <%= breadcrumbs(current_page) %>
-        <ul class="NavigationItems">
-          <li><a href="/blog" class="<%= current_path.start_with?("blog") ? "active" : nil -%>">Blog</a></li>
-          <li><a href="/trips" class="<%= current_path.start_with?("trips") ? "active" : nil -%>">Trips</a></li>
-          <li><a href="/about" class="<%= current_path.start_with?("about") ? "active" : nil -%>">About</a></li>
+        <ul class="w-1/5 flex ml-auto items-center justify-end">
+          <li class="ml-4"><a href="/blog" class="<%= current_path.start_with?("blog") ? "active" : nil -%>">Blog</a></li>
+          <li class="ml-4"><a href="/trips" class="<%= current_path.start_with?("trips") ? "active" : nil -%>">Trips</a></li>
+          <li class="ml-4"><a href="/about" class="<%= current_path.start_with?("about") ? "active" : nil -%>">About</a></li>
         </ul>
       </div>
-    </nav>
+    </header>
     <%= yield %>
-    <footer class="Container">
-      <p>&copy; Robert Beekman</p>
-      <%= partial "social" %>
+    <footer class="border-t border-gray-2 text-gray-8 bg-blur">
+      <div class="w-full mx-auto max-w-6xl flex items-center py-4">
+        <p>&copy; Robert Beekman</p>
+        <%= partial "social" %>
+      </div>
     </footer>
   </body>
 </html>

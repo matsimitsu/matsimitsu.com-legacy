@@ -1,0 +1,68 @@
+---
+title: China
+---
+
+<div class="container py-16 max-w-4xl text-center">
+  <hgroup>
+    <h1 class="text-6xl font-bold">Resize images from s3 with AWS Lambda and Rust</h1>
+    <div class="Dates">
+      <span class="DateRange">2019-03-09</span>
+    </div>
+  </hgroup>
+</div>
+
+<div class="container py-16 max-w-2xl text-left">
+  <p class="mb-6 col-span-8 col-start-3 text-2xl opacity-75">
+    The very first iteration of my site didn’t have resized images and always showed the full 2200 pixels wide images, this was great on my local (desktop) machine, but when I tried visiting the site in a hotel in Cambodia, the site took ages to load.
+  </p>
+  <p class="mb-6 col-span-8 col-start-3 text-2xl opacity-75">
+Resizing the images locally worked fine, but took a lot of time and uploading an image in five different sizes on slow Wi-Fi took ages, if it worked at all.
+  </p>
+    <p class="mb-6 col-span-8 col-start-3 text-2xl opacity-75">
+I then switched to using an image resize proxy that took images from disk and re-sized them on the fly, caching the result in Nginx. This worked okay, but there was a tradeoff between server specs and monthly cost. Low specs meant that on an uncached page it took minutes before all images were resized, while high specs meant high monthly cost for a server that was idle 99% of the time.
+  </p>
+    <p class="mb-6 col-span-8 col-start-3 text-2xl opacity-75">
+The solution to not running a server was switching to <a href="https://imgix.com" class="hover:bg-yellow-4 px-2 bg-yellow-2 border-yellow-6 border-b-2">imgix</a>, it’s a great service that resizes images for you and does so with good quality and speed, but there’s a minimum fee of $10,00 a month, wether you use the service or not, and the costs go up pretty quickly as you add more and more photos. This is in addition to the S3 storage costs that imgix uses as the source for its proxy.
+  </p>
+</div>
+
+<div class="bg-gray-5 mb-8">
+  <div class="container py-16 max-w-4xl text-left">
+    <div class="highlight">
+      <pre class="highlight toml"><code>
+        <span class="nn">[package]</span>
+        <span class="py">name</span> <span class="p">=</span> <span class="s">"lambda-image-resize-rust"</span>
+        <span class="py">version</span> <span class="p">=</span> <span class="s">"0.1.0"</span>
+        <span class="py">authors</span> <span class="p">=</span> <span class="p">[</span><span class="s">"Robert Beekman &lt;robert@matsimitsu.nl&gt;"</span><span class="p">]</span>
+
+        <span class="nn">[dependencies]</span>
+        <span class="py">lambda_runtime</span> <span class="p">=</span> <span class="s">"0.1"</span>
+
+        <span class="nn">[[bin]]</span>
+        <span class="py">name</span> <span class="p">=</span> <span class="s">"bootstrap"</span>
+        <span class="py">path</span> <span class="p">=</span> <span class="s">"src/main.rs"</span>
+      </code></pre>
+    </div>
+  </div>
+</div>
+
+<div class="container py-16 max-w-4xl text-center">
+  <hgroup>
+    <h1 class="text-4xl font-bold">Resize images from s3 with AWS Lambda and Rust</h1>
+  </hgroup>
+</div>
+
+<div class="container py-8 max-w-4xl text-left">
+  <p class="mb-6 col-span-8 col-start-3 text-2xl opacity-75">
+    The very first iteration of my site didn’t have resized images and always showed the full 2200 pixels wide images, this was great on my local (desktop) machine, but when I tried visiting the site in a hotel in Cambodia, the site took ages to load.
+  </p>
+  <p class="mb-6 col-span-8 col-start-3 text-2xl opacity-75">
+Resizing the images locally worked fine, but took a lot of time and uploading an image in five different sizes on slow Wi-Fi took ages, if it worked at all.
+  </p>
+    <p class="mb-6 col-span-8 col-start-3 text-2xl opacity-75">
+I then switched to using an image resize proxy that took images from disk and re-sized them on the fly, caching the result in Nginx. This worked okay, but there was a tradeoff between server specs and monthly cost. Low specs meant that on an uncached page it took minutes before all images were resized, while high specs meant high monthly cost for a server that was idle 99% of the time.
+  </p>
+    <p class="mb-6 col-span-8 col-start-3 text-2xl opacity-75">
+The solution to not running a server was switching to <a href="https://imgix.com" class="hover:bg-yellow-4 px-2 bg-yellow-2 border-yellow-6 border-b-2">imgix</a>, it’s a great service that resizes images for you and does so with good quality and speed, but there’s a minimum fee of $10,00 a month, wether you use the service or not, and the costs go up pretty quickly as you add more and more photos. This is in addition to the S3 storage costs that imgix uses as the source for its proxy.
+  </p>
+</div>
