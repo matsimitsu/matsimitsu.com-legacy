@@ -1,5 +1,6 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "./pygments.css";
+@import "./trip.css";
 @import "./markdown.css";
 @import "tailwindcss/utilities";

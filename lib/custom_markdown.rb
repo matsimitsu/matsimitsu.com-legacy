@@ -54,12 +54,11 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
           sizes="360px" />
       </figure>)
 
-    classes = if type == "hero"
-                "c--markdown__hero"
-              else
-                "c--markdown__figurerow"
-              end
-    %(<div class="#{classes}">#{img}</div>)
+    if type == "hero"
+      %(<div class="c--markdown__hero">#{img}</div>)
+    else
+      img
+    end
   end
 
   def preprocess(txt)
@@ -97,6 +96,8 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
   def paragraph(text)
     if text.strip.start_with?("<div")
       text
+    elsif text.start_with?("<figure")
+      %(<div class="c--markdown__figurerow">#{text}</div>)
     else
       %(<p>#{text.strip}</p>)
     end

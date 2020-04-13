@@ -3,19 +3,27 @@
 }
 
 .c--markdown__image, c--markdown__video {
-  @apply w-full;
+  @apply w-full rounded-sm;
 }
 
 .c--markdown__figurerow {
-  @apply flex mb-4 max-w-2xl mx-auto pt-2;
+  @apply flex mb-4 max-w-6xl mx-auto pt-2 overflow-hidden;
+}
+
+.c--markdown__figurerow .c--markdown__figure {
+  @apply ml-4;
+}
+
+.c--markdown__figurerow .c--markdown__figure:first-child {
+  @apply ml-0;
 }
 
 .c--markdown__hero {
-  @apply flex mb-4 w-screen;
+  @apply mb-4;
 }
 
 .c--markdown p {
-  @apply mb-4 text-base text-gray-9 max-w-2xl mx-auto;
+  @apply mb-4 text-base text-gray-7 max-w-2xl mx-auto text-lg;
 }
 
 .c--markdown h1 {
@@ -39,7 +47,7 @@
 }
 
 .c--markdown h6 {
-  @apply text-base font-bold text-gray-9 max-w-4xl mx-auto mb-8 pt-8 text-center;
+  @apply text-lg font-bold text-gray-8 max-w-4xl mx-auto mb-8 pt-8 text-center;
 }
 
 .c--markdown div.highlight {
@@ -68,4 +76,8 @@
 
 .c--markdown a:hover {
   @apply bg-yellow-4;
+}
+
+.c--markdown code {
+  @apply font-mono p-1 bg-gray-0 text-base;
 }

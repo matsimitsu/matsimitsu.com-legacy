@@ -109,7 +109,7 @@ helpers do
     end.join
 
     <<~HTML
-      <nav class="text-gray-6" aria-label="Breadcrumb">
+      <nav class="text-gray-6 hidden lg:block" aria-label="Breadcrumb">
         <ol class="list-none p-0 inline-flex">
           #{crumbs}
         </ol>
@@ -134,6 +134,7 @@ helpers do
     end
     %(<figure class="ScaledImage #{class_names}">
       <img
+        class="w-full"
         alt="#{alt || "Hero Header"}"
         src="#{srcset[0]}"
         srcset="#{srcset.join(", ")}"
@@ -189,16 +190,14 @@ helpers do
     article.data[:trip] == other_article.data[:trip]
   end
 
-  def date_range(start_date, end_date = nil, separator = "-")
-    date_string = start_date.to_s
+  def date_range(start_date, end_date = nil, separator = "-", classes ="")
+    date_string = start_date.clone
     if end_date.present? && start_date != end_date
       date_string << " #{separator} #{end_date}"
     end
 
     %(
-      <div class="Dates">
-        <span class="DateRange">#{date_string}</span>
-      </div>
+      <div class="#{classes}">#{date_string}</div>
     )
   end
 

@@ -4,10 +4,7 @@ breadcrumb: Trips
 summary: Overview of trips I made in the past few years.
 ---
 
-<header class="GenericHeader">
-  <h1 class="H-Large post-title">Trips I made</h1>
-  <p class="T-large">Join me on my travels with Photos and Videos</p>
-</header>
+<%= partial "header", :locals => { :title => "Trips I made", :subtitle => "Join me on my travels with Photos and Videos" } %>
 
 <%- data[:trips].reverse.each do |trip|%>
   <%= partial "trip_card", :locals => { :trip => trip }%>

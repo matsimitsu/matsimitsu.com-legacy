@@ -1,46 +1,36 @@
 <%- trip = locals[:trip] -%>
-<div class="TripCard">
-  <div class="Container">
-    <header>
-      <h1>
-        <a href="<%= trip_url(trip[:slug]) %>">
-          <%= trip[:title] %>
-          <%- if upcoming_trip?(trip) -%>
-            <small>
-              Starting soon!
-            </small>
-          <% else -%>
-            <small>
-              <%= days_in_words(trip[:start], trip[:end])%> days
-              —
-              <%= pluralize(trip_articles(trip[:slug]).length, "post") %>
-              <% if trip[:photo_count] > 0 -%>
-                —
-                <%= trip[:photo_count] %> photos
-              <% end -%>
-            </small>
+<div class="grid grid-cols-2 w-full overflow-hidden py-16 border-t border-gray-2">
+  <header class="px-8 col-span-2 md:col-span-1">
+    <a href="<%= trip_url(trip[:slug]) %>" class="container mx-auto text-left">
+      <h1 class="text-6xl font-bold text-gray-9 leading-tight"><%= trip[:title] %></h1>
+      <small class="text-base text-gray-5 mb-2">
+        <%- if upcoming_trip?(trip) -%>
+          Starting soon!
+        <% else -%>
+          <%= days_in_words(trip[:start], trip[:end])%> days
+          —
+          <%= pluralize(trip_articles(trip[:slug]).length, "post") %>
+          <% if trip[:photo_count] > 0 -%>
+            —
+            <%= trip[:photo_count] %> photos
           <% end -%>
-        </a>
-      </h1>
-      <p><%= trip[:subtitle] %></p>
-      <a class="Button large secondary" href="<%= trip_url(trip[:slug]) %>">
-        View trip
-      </a>
-    </header>
-    <%- if trip_image_groups(trip[:slug]).any? %>
-      <div class="images">
-        <%- trip_image_groups(trip[:slug]).each do |group| %>
-          <div>
-            <%- group.each do |article| %>
-              <%= scaled_image(article.data[:image], article.data[:title])%>
-            <%- end %>
-          </div>
-        <%- end %>
-      </div>
-    <%- elsif trip_articles(trip[:slug]).first && trip_articles(trip[:slug]).first.data[:image] %>
-      <div class="image">
-        <%= scaled_image(trip_articles(trip[:slug]).first.data[:image], trip_articles(trip[:slug]).first.data[:title])%>
-      </div>
-    <%- end %>
-  </div>
+        <% end -%>
+      </small>
+    </a>
+    <p class="mb-4 text-lg text-gray-7"><%= trip[:subtitle] %></p>
+    <a class="bg-transparent hover:border-gray-9 hover:text-gray-9 text-gray-8 font-semibold  py-2 px-4 border border-gray-4 rounded" href="<%= trip_url(trip[:slug]) %>">
+      View trip
+    </a>
+  </header>
+  <%- if trip_articles(trip[:slug]).length > 1 %>
+    <div class="grid-rows-3 lg:grid-rows-2 grid-flow-col gap-4 hidden md:grid">
+      <%- trip_articles(trip[:slug]).each do |article| %>
+        <%= scaled_image(article.data[:image], article.data[:title], "w-40")%>
+      <%- end %>
+    </div>
+  <%- elsif trip_articles(trip[:slug]).first && trip_articles(trip[:slug]).first.data[:image] %>
+    <div class="image">
+      <%= scaled_image(trip_articles(trip[:slug]).first.data[:image], trip_articles(trip[:slug]).first.data[:title])%>
+    </div>
+  <%- end %>
 </div>

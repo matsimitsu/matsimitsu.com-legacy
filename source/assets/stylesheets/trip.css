@@ -1,0 +1,7 @@
+.c--trip > div, .c--trip > p {
+  @apply my-16;
+}
+
+.c--trip p + p {
+  @apply mt-4;
+}
