@@ -45,17 +45,21 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
       "#{new_url} #{size}w"
     end
 
-    img = %(<figure class="ScaledImage" style="flex: #{flex || "1.5"} 1 0%;">
+    img = %(<figure class="c--markdown__figure" style="flex: #{flex || "1.5"} 1 0%;">
         <img
+          class="c--markdown__image"
           alt="#{alt || "image"}"
           src="#{srcset[0]}"
           srcset="#{srcset.join(", ")}"
           sizes="360px" />
       </figure>)
 
-    return %(<div class="Hero Container full">#{img}</div>) if type == "hero"
-
-    img
+    classes = if type == "hero"
+                "c--markdown__hero"
+              else
+                "c--markdown__figurerow"
+              end
+    %(<div class="#{classes}">#{img}</div>)
   end
 
   def preprocess(txt)
@@ -74,26 +78,27 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
     type, alt = type_and_alt.split("|")
     flex = flex ? flex.tr('"', "").strip : "1.5"
 
-    video = %(<figure class="ScaledImage" style="flex: #{flex} 1 0%;">
-      <video alt="#{alt}" width="100%" poster="#{base_url}.jpg" playsinline autoplay muted loop>
+    video = %(<figure class="c--markdown__figure" style="flex: #{flex} 1 0%;">
+      <video class="c--markdown__video" alt="#{alt}" width="100%" poster="#{base_url}.jpg" playsinline autoplay muted loop>
         <source src="#{base_url}.mp4" type="video/mp4" />
         <source src="#{base_url}.ogv" type="video/ogg" />
         <source src="#{base_url}.webm" type="video/webm" />
       </video>
     </figure>)
 
-    return %(<div class="Hero Container full">#{video}</div>) if type == "hero"
-
-    video
+    classes = if type == "hero"
+                "c--markdown__hero"
+              else
+                "c--markdown__figurerow"
+              end
+    %(<div class="#{classes}">#{video}</div>)
   end
 
   def paragraph(text)
     if text.strip.start_with?("<div")
       text
-    elsif text.start_with?("<figure")
-      %(<div class="flex">#{text}</div>)
     else
-      %(<p class="mb-6 text-gray-8">#{text.strip}</p>)
+      %(<p>#{text.strip}</p>)
     end
   end
 end

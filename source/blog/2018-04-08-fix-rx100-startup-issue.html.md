@@ -83,4 +83,4 @@ Now wiggle the lens unit back into the body and re-attach the three ribbons (top
 
 Then snap the LCD back on and the two covers. Re-do all the screws and if all went well your camera should start up without the pesky "Turn camera off then on" message.
 
-![image](https://d3khpbv2gxh34v.cloudfront.net/p/blog/rx100/DSC00660.jpg)
+![hero|rx100](https://d3khpbv2gxh34v.cloudfront.net/p/blog/rx100/DSC00660.jpg)
