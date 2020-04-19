@@ -1,47 +1,36 @@
-<div class="TripOverview">
-  <section class="GenericHeader">
-    <hgroup>
-    <div class="Dates">
-      <span class="DateRange">
-      <%= trip[:start] %><i class="fa fa-angle-right"></i><%= trip[:end] %>
-      </span>
-    </div>
-    <h1 class="H-Large post-title"><%= trip[:title] %></h1>
-    <div class="Container narrow">
-      <p class="T-Medium post-intro"><%= trip[:excerpt] %></p>
-    </div>
-    </hgroup>
-  </section>
-  <%- if trip[:map]  %>
-    <section class="Container Map">
+<%= partial "header", :locals => { :pretitle => "#{trip[:start]} - #{trip[:end]}", :title => trip[:title], :subtitle => trip[:excerpt] } %>
+
+<%- if trip[:map]  %>
+  <section class="py-16 container text-center">
+    <div class="m-auto inline-block">
       <%= svg_map(trip[:map]) %>
-    </section>
-  <%- elsif trip[:countries] && trip[:countries].any? %>
-    <section class="Container Map">
+    </div>
+  </section>
+<%- elsif trip[:countries] && trip[:countries].any? %>
+  <section class="py-16 container text-center">
+    <div class="m-auto inline-block">
       <%= svg_map("world", trip[:countries]) %>
-    </section>
-  <%- end %>
-  <%- if trip[:kind] == "single" %>
-    <article class="SingleTrip">
-      <section class="PostBody">
-        <%= trip_articles(trip[:slug]).first.body %>
-      </section>
-    </article>
-  <%- else %>
-    <section class="Container">
-      <%- trip_articles(trip[:slug]).each do |article| %>
-        <div class="PostCard">
-          <a href="<%= article.url %>">
-            <%= scaled_image(article.data[:image], "#{article.data[:title]} image", "cover") %>
-            <hgroup>
-              <%= date_range(article.data[:date], article.data[:end_date]) %>
-              <h1 class="H-Medium"><%= article.data[:title] %></h1>
-              <p class="T-Medium"><%= article.data[:subtitle] %></p>
-              <span class="Button secondary">View post</span>
-            </hgroup>
-          </a>
-        </div>
-      <%- end %>
-    </section>
-  <%- end %>
-</div>
+    </div>
+  </section>
+<%- end %>
+<%- if trip[:kind] == "single" %>
+  <article class="c--trip c--markdown px-4 lg:px-0">
+    <%= trip_articles(trip[:slug]).first.body %>
+  </article>
+<%- else %>
+  <section class="Container">
+    <%- trip_articles(trip[:slug]).each do |article| %>
+      <div class="PostCard">
+        <a href="<%= article.url %>">
+          <%= scaled_image(article.data[:image], "#{article.data[:title]} image", "cover") %>
+          <hgroup>
+            <%= date_range(article.data[:date], article.data[:end_date]) %>
+            <h1 class="H-Medium"><%= article.data[:title] %></h1>
+            <p class="T-Medium"><%= article.data[:subtitle] %></p>
+            <span class="Button secondary">View post</span>
+          </hgroup>
+        </a>
+      </div>
+    <%- end %>
+  </section>
+<%- end %>

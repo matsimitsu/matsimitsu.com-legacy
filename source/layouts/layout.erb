@@ -38,9 +38,9 @@
         <h1><a href="/">Matsimitsu</a></h1>
         <%= breadcrumbs(current_page) %>
         <ul class="w-1/5 flex ml-auto items-center justify-end">
-          <li class="ml-4"><a href="/blog" class="<%= current_path.start_with?("blog") ? "active" : nil -%>">Blog</a></li>
-          <li class="ml-4"><a href="/trips" class="<%= current_path.start_with?("trips") ? "active" : nil -%>">Trips</a></li>
-          <li class="ml-4"><a href="/about" class="<%= current_path.start_with?("about") ? "active" : nil -%>">About</a></li>
+          <li class="ml-4"><a href="/blog" class="<%= current_path.start_with?("blog") ? "border-yellow-6 border-b-2" : nil -%>">Blog</a></li>
+          <li class="ml-4"><a href="/trips" class="<%= current_path.start_with?("trips") ? "border-yellow-6 border-b-2" : nil -%>">Trips</a></li>
+          <li class="ml-4"><a href="/about" class="<%= current_path.start_with?("about") ? "border-yellow-6 border-b-2" : nil -%>">About</a></li>
         </ul>
       </div>
     </header>

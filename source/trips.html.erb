@@ -6,28 +6,32 @@ summary: Overview of trips I made in the past few years.
 
 <%= partial "header", :locals => { :title => "Trips I made", :subtitle => "Join me on my travels with Photos and Videos" } %>
 
+<div class="mt-8">
 <%- data[:trips].reverse.each do |trip|%>
   <%= partial "trip_card", :locals => { :trip => trip }%>
 <% end %>
-<section class="Container full padded contrast">
-<header class="GenericHeader">
-  <h1 class="H-Medium post-title">Countries visited</h1>
-</header>
-  <section class="Container Map">
-    <%= svg_map("world", countries.map{ |c| c.alpha2 }) %>
+</div>
+<% if false %>
+  <section class="Container full padded contrast">
+    <header class="GenericHeader">
+      <h1 class="H-Medium post-title">Countries visited</h1>
+    </header>
+    <section class="Container Map">
+      <%= svg_map("world", countries.map{ |c| c.alpha2 }) %>
+    </section>
+    <section class="Container wide Countries">
+      <% continents_with_countries.each do |continent, countries| %>
+        <div>
+        <h3><%= continent %></h3>
+        <ul>
+          <% countries.each do |country| %>
+            <li>
+              <%= country.unofficial_names.first %>
+            </li>
+          <% end %>
+        </ul>
+        </div>
+      <% end %>
+    </section>
   </section>
-  <section class="Container wide Countries">
-    <% continents_with_countries.each do |continent, countries| %>
-      <div>
-      <h3><%= continent %></h3>
-      <ul>
-        <% countries.each do |country| %>
-          <li>
-            <%= country.unofficial_names.first %>
-          </li>
-        <% end %>
-      </ul>
-      </div>
-    <% end %>
-  </section>
-</section>
+<% end %>

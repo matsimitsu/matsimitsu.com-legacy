@@ -190,7 +190,7 @@ helpers do
     article.data[:trip] == other_article.data[:trip]
   end
 
-  def date_range(start_date, end_date = nil, separator = "-", classes ="")
+  def date_range(start_date, end_date = nil, separator = "-", classes = "")
     date_string = start_date.clone
     if end_date.present? && start_date != end_date
       date_string << " #{separator} #{end_date}"
@@ -213,15 +213,21 @@ helpers do
     ISO3166::Country[short]
   end
 
-  def svg_map(wanted, highlight = [])
+  def svg_map(wanted, highlight = [], default_class = "fill-gray", highlight_class = "fill-yellow")
     svg = File.read("./data/#{wanted}.svg")
-    hightlight_selectors = Array(highlight).map do |hl|
-      ".Map svg path.sm_state_#{hl}"
+    highlight = Array(highlight)
+    regex = /class=\"sm_state_(?<state>\w+)\"/
+    new_svg = svg.lines.map do |line|
+      match = line.match(regex)
+      if match && highlight.include?(match[:state])
+        line.gsub(regex, %(class="sm_state_#{match[:state]} #{highlight_class}))
+      elsif match
+        line.gsub(regex, %(class="sm_state_#{match[:state]} #{default_class}))
+      else
+        line
+      end
     end
-    %(
-      #{svg}
-      <style>#{hightlight_selectors.join(", ")} { fill: var(--medium); }</style>
-    )
+    new_svg.join
   end
 
   def trip_data(name)
