@@ -18,19 +18,15 @@
     <%= trip_articles(trip[:slug]).first.body %>
   </article>
 <%- else %>
-  <section class="Container">
+  <section class="py-16 container">
     <%- trip_articles(trip[:slug]).each do |article| %>
-      <div class="PostCard">
-        <a href="<%= article.url %>">
-          <%= scaled_image(article.data[:image], "#{article.data[:title]} image", "cover") %>
-          <hgroup>
-            <%= date_range(article.data[:date], article.data[:end_date]) %>
-            <h1 class="H-Medium"><%= article.data[:title] %></h1>
-            <p class="T-Medium"><%= article.data[:subtitle] %></p>
-            <span class="Button secondary">View post</span>
-          </hgroup>
-        </a>
-      </div>
+      <a href="<%= article.url %>" class="relative block my-10 bg-black">
+        <%= scaled_image(article.data[:image], "#{article.data[:title]} image", "object-cover opacity-50 duration-200 ease-in-out hover:opacity-100 transition-opacity") %>
+        <hgroup class="absolute right-0 bottom-0 text-white m-2">
+          <%= date_range(article.data[:date], article.data[:end_date], "", "text-lg text-right") %>
+          <h1 class="text-right font-light leading-none text-4xl"><span class="font-extrabold"><%= article.data[:title] %></span><span class="font-normal mx-2">/</span><%= article.data[:subtitle] %></h1>
+        </hgroup>
+      </a>
     <%- end %>
   </section>
 <%- end %>

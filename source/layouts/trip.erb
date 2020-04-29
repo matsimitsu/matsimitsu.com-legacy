@@ -3,10 +3,10 @@
     <div class="relative bg-black">
       <%= scaled_image(current_article.data[:image], "Header image", "opacity-50") %>
       <section class="absolute inset-0 text-center w-full flex">
-        <hgroup class="py-16 max-w-4xl m-auto">
+        <hgroup class="py-16 max-w-4xl m-auto text-white">
           <%= date_range(current_article.data[:date], current_article.data[:end_date], " - ", "text-gray-4 text-base mb-0") %>
-          <h1 class="text-6xl font-bold text-gray-0 leading-tight"><%= current_article.title %></h1>
-          <p class="text-gray-1 text-lg"><%= current_article.data[:subtitle] %></p>
+          <h1 class="text-6xl font-extrabold  leading-tight"><%= current_article.title %></h1>
+          <p class="font-light text-4xl"><%= current_article.data[:subtitle] %></p>
         </hgroup>
       </section>
     </div>
