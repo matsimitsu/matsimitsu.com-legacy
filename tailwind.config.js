@@ -10,5 +10,8 @@ module.exports = {
     })
   },
   variants: {},
-  plugins: []
+  plugins: [],
+  purge: [
+    './source/**/*.html.erb'
+  ]
 }
