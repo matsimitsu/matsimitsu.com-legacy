@@ -73,4 +73,4 @@ After a shower I walked a "small" (5km) walk towards the south in the Wanhua dis
 
 ![DSC01041.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/taiwan-2020/day-ten/DSC01041.jpg "1.5")
 
-![DSC01042.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/taiwan-2020/day-ten/DSC01042.jpg "NaN")
+![DSC01042.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/taiwan-2020/day-ten/DSC01042.jpg "1.5")

@@ -38,7 +38,7 @@ The river park wasn't as nice as I thought it would be and I headed back for som
 ![DSC00750.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/taiwan-2020/day-seven-eight/DSC00750.jpg "1.5")
 ![DSC00753.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/taiwan-2020/day-seven-eight/DSC00753.jpg "1.5")
 
-![hero|DSC00761.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/taiwan-2020/day-seven-eight/DSC00761.jpg "NaN")
+![hero|DSC00761.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/taiwan-2020/day-seven-eight/DSC00761.jpg "1.5")
 
 ![DSC00759.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/taiwan-2020/day-seven-eight/DSC00759.jpg "1.5")
 ![DSC00760.jpg](https://d3khpbv2gxh34v.cloudfront.net/r/taiwan-2020/day-seven-eight/DSC00760.jpg "1.5")

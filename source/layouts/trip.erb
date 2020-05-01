@@ -15,19 +15,18 @@
     </section>
   </article>
   <% if trip_article?(current_article, current_article.article_previous) || trip_article?(current_article, current_article.article_next) %>
-    <div class="PostNavigation">
-      <h1 class="H-Large">
+    <div class="text-center w-full border-t-2 border-gray-2 pt-16">
+      <h1 class="text-4xl font-bold mb-4">
         More posts from <%= current_trip[:title] %>
       </h1>
-      <div class="Container">
+      <div class="grid grid-cols-2 gap-4">
         <% if trip_article?(current_article, current_article.article_previous) %>
-          <%= partial :post_card, :locals => {:article => current_article.article_previous, :next_or_prev => "previous"} %>
+          <%= partial :day_card, :locals => {:article => current_article.article_previous} %>
         <% end %>
         <% if trip_article?(current_article, current_article.article_next) %>
-          <%= partial :post_card, :locals => {:article => current_article.article_next, :next_or_prev => "next"} %>
+          <%= partial :day_card, :locals => {:article => current_article.article_next} %>
         <% end %>
       </div>
     </div>
   <% end %>
 <% end %>
-

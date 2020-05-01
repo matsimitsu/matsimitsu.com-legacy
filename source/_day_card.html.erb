@@ -1,0 +1,10 @@
+<div>
+  <link rel="prefetch" href="<%= locals[:article].url %>" />
+  <a rel="prefetch" href="<%= locals[:article].url %>" class="relative block my-10 bg-black">
+    <%= scaled_image(locals[:article].data[:image], "#{locals[:article].data[:title]} image", "object-cover opacity-50 duration-200 ease-in-out hover:opacity-100 transition-opacity") %>
+    <hgroup class="absolute right-0 bottom-0 text-white m-2">
+      <%= date_range(locals[:article].data[:date], locals[:article].data[:end_date], "", "text-lg text-right") %>
+      <h1 class="text-right font-light leading-none text-4xl"><span class="font-extrabold"><%= article.data[:title] %></span><span class="font-normal mx-2">/</span><%= article.data[:subtitle] %></h1>
+    </hgroup>
+  </a>
+</div>
