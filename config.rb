@@ -125,7 +125,7 @@ helpers do
     page.data.title
   end
 
-  def scaled_image(url, alt = nil, class_names = "", image_class_names = "")
+  def scaled_image(url, alt = nil, class_names = "", image_class_names = "w-full")
     return unless url
 
     srcset = SIZES.map do |size|
@@ -191,7 +191,7 @@ helpers do
   end
 
   def date_range(start_date, end_date = nil, separator = "-", classes = "")
-    date_string = start_date.clone
+    date_string = start_date.clone.to_s
     if end_date.present? && start_date != end_date
       date_string << " #{separator} #{end_date}"
     end
