@@ -75,7 +75,7 @@
 }
 
 .c--markdown a:hover {
-  @apply bg-yellow-4;
+  @apply ;
 }
 
 .c--markdown code {

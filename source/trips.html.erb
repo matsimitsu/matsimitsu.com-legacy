@@ -4,9 +4,9 @@ breadcrumb: Trips
 summary: Overview of trips I made in the past few years.
 ---
 
-<%= partial "header", :locals => { :title => "Trips I made", :subtitle => "Join me on my travels with Photos and Videos" } %>
+<%= partial "header", :locals => { :title => "Trips I made" } %>
 
-<div class="mt-8">
+<div class="container px-2 py-8 max-w-4xl">
 <%- data[:trips].reverse.each do |trip|%>
   <%= partial "trip_card", :locals => { :trip => trip }%>
 <% end %>

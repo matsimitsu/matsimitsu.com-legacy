@@ -125,7 +125,7 @@ helpers do
     page.data.title
   end
 
-  def scaled_image(url, alt = nil, class_names = "")
+  def scaled_image(url, alt = nil, class_names = "", image_class_names = "")
     return unless url
 
     srcset = SIZES.map do |size|
@@ -134,7 +134,7 @@ helpers do
     end
     %(<figure class="ScaledImage #{class_names}">
       <img
-        class="w-full"
+        class="#{image_class_names}"
         alt="#{alt || "Hero Header"}"
         src="#{srcset[0]}"
         srcset="#{srcset.join(", ")}"

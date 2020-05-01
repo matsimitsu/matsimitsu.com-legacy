@@ -1,46 +1,36 @@
 ---
 title: "Personal weblog of Robert Beekman"
 summary: "Personal weblog of developer Robert Beekman covering Technology and Photography"
-current_trip: "central-asia-2019"
-current_location:
 ---
 
-<div class="Homepage">
-  <header class="GenericHeader">
-      <h1 class="H-Large post-title">Robert Beekman</h1>
-      <div class="Container narrow">
-        <% if current_page.data.current_location %>
-          <p class="T-Medium post-intro location">
-            <i class="far fa-dot-circle"></i>
-            Current location:
-            <%= link_to current_page.data.current_location, trip_url(current_page.data.current_trip) %>
-          </p>
-        <% else %>
-          <p class="T-Medium post-intro">
-            Software developer at
-            <a href="https://appsignal.com" target="_blank" rel="”noopener" noreferrer”="">AppSignal.com</a>.
-          </p>
-        <% end %>
-      </div>
-  </header>
+<header class="text-center py-16">
+  <h1 class="text-6xl font-bold text-gray-9 leading-tight">Robert Beekman</h1>
+  <div class="Container narrow">
+    <p class="T-Medium post-intro">
+      Software developer at
+      <a href="https://appsignal.com" target="_blank" rel="”noopener" noreferrer”="" class="px-1 border-yellow-6 border-b-2 hover:bg-yellow-4">AppSignal.com</a>.
+    </p>
+  </div>
+</header>
 
-  <section class="Container narrow">
-    <%= partial "social" %>
-  </section>
+<section class="Container narrow">
+  <%= partial "social" %>
+</section>
 
-  <section class="Container full contrast">
-    <header class="GenericHeader">
-        <h1 class="H-Medium post-title">From the blog</h1>
-    </header>
-    <%= partial "article_list", :locals => {:limit => 2, :title => "From the blog"} %>
-  </section>
+<section class="w-full pt-16">
+  <h1 class="text-center  text-4xl font-bold mb-4">
+    From the <a class="px-1 border-yellow-6 border-b-4 hover:bg-yellow-4" href="/blog">blog</a>
+  </h1>
+  <%= partial "article_list", :locals => {:limit => 2, :title => "From the blog"} %>
+</section>
 
-  <section>
-    <header class="GenericHeader">
-      <h1 class="H-Medium post-title">During my travels</h1>
-    </header>
+<section class="w-full pt-16">
+  <h1 class="text-center text-4xl font-bold mb-4">
+    From my <a class="px-1 border-yellow-6 border-b-4 hover:bg-yellow-4" href="/blog">trips</a>
+  </h1>
+  <div class="container px-2 py-8 max-w-4xl">
     <%- data[:trips].reverse.each do |trip|%>
       <%= partial "trip_card", :locals => { :trip => trip }%>
     <% end %>
-  </section>
-</div>
+  </div>
+</section>
