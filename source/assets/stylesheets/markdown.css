@@ -70,14 +70,6 @@
   @apply mb-2;
 }
 
-.c--markdown a {
-  @apply border-yellow-6 border-b-2;
-}
-
-.c--markdown a:hover {
-  @apply ;
-}
-
 .c--markdown code {
   @apply font-mono p-1 bg-gray-0 text-base;
 }

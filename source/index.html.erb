@@ -8,7 +8,7 @@ summary: "Personal weblog of developer Robert Beekman covering Technology and Ph
   <div class="Container narrow">
     <p class="T-Medium post-intro">
       Software developer at
-      <a href="https://appsignal.com" target="_blank" rel="”noopener" noreferrer”="" class="px-1 border-yellow-6 border-b-2 hover:bg-yellow-4">AppSignal.com</a>.
+      <a href="https://appsignal.com" target="_blank" rel="noopener noreferrer" class="px-1 c-bold-link">AppSignal.com</a>.
     </p>
   </div>
 </header>
@@ -19,14 +19,14 @@ summary: "Personal weblog of developer Robert Beekman covering Technology and Ph
 
 <section class="w-full pt-16">
   <h1 class="text-center  text-4xl font-bold mb-4">
-    From the <a class="px-1 border-yellow-6 border-b-4 hover:bg-yellow-4" href="/blog">blog</a>
+    From the <a class="px-1 c-bold-link" href="/blog">blog</a>
   </h1>
   <%= partial "article_list", :locals => {:limit => 2, :title => "From the blog"} %>
 </section>
 
 <section class="w-full pt-16">
   <h1 class="text-center text-4xl font-bold mb-4">
-    From my <a class="px-1 border-yellow-6 border-b-4 hover:bg-yellow-4" href="/blog">trips</a>
+    From my <a class="px-1 c-bold-link" href="/blog">trips</a>
   </h1>
   <div class="container px-2 py-8 max-w-4xl">
     <%- data[:trips].reverse.each do |trip|%>
