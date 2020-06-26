@@ -5,6 +5,7 @@ module.exports = {
   entry: [
     './source/assets/javascripts/site.js',
     './source/assets/stylesheets/site.css',
+    './source/assets/stylesheets/photoswipe.scss',
   ],
   output: {
     filename: "bundle.js",
@@ -16,6 +17,20 @@ module.exports = {
   ],
   module: {
     rules: [
+      {
+        test: /\.js/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env'
+            ],
+            plugins: [
+              '@babel/plugin-proposal-class-properties'
+            ]
+          }
+        }
+      },
       {
         test: /\.css$/,
         use: [

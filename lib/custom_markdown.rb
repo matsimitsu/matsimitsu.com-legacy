@@ -46,12 +46,14 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
     end
 
     img = %(<figure class="c--markdown__figure" style="flex: #{flex || "1.5"} 1 0%;">
+    <a href="#{srcset.last.split(" ").first}" data-action="gallery#onImageClick" data-target="gallery.picture">
         <img
           class="c--markdown__image"
           alt="#{alt || "image"}"
           src="#{srcset[0]}"
           srcset="#{srcset.join(", ")}"
           sizes="360px" />
+        </a>
       </figure>)
 
     if type == "hero"
