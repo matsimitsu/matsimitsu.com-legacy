@@ -5,7 +5,7 @@ module.exports = {
   entry: [
     './source/assets/javascripts/site.js',
     './source/assets/stylesheets/site.css',
-    './source/assets/stylesheets/photoswipe.scss',
+    './source/assets/stylesheets/photoswipe.scsss',
   ],
   output: {
     filename: "bundle.js",
@@ -40,7 +40,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.s[ac]sss$/i,
         use: [
           "style-loader",
           "css-loader",
