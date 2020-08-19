@@ -1,11 +1,12 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: [
     './source/assets/javascripts/site.js',
     './source/assets/stylesheets/site.css',
-    './source/assets/stylesheets/photoswipe.scsss',
+    './source/assets/stylesheets/photoswipe.scsss'
   ],
   output: {
     filename: "bundle.js",
@@ -13,7 +14,8 @@ module.exports = {
     publicPath: "/"
   },
   plugins: [
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin()
   ],
   module: {
     rules: [
@@ -34,7 +36,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           "css-loader",
           'postcss-loader',
         ],
@@ -42,7 +44,7 @@ module.exports = {
       {
         test: /\.s[ac]sss$/i,
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           "css-loader",
           "sass-loader",
         ],

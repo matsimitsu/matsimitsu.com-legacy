@@ -11,7 +11,13 @@ module.exports = {
   },
   variants: {},
   plugins: [],
-  purge: [
-    './source/**/*.html.erb'
-  ]
+  purge: {
+    enabled: true,
+    content: [
+      './source/**/*.erb',
+      './source/**/*.md',
+      './lib/custom_markdown.rb',
+      './config.rb'
+    ]
+  }
 }

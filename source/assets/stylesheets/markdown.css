@@ -51,7 +51,7 @@
 }
 
 .c--markdown div.highlight {
-  @apply w-full mx-auto bg-gray-0 py-4 mb-8 overflow-auto;
+  @apply max-w-2xl mx-auto bg-gray-0 py-4 mb-8 overflow-auto;
 }
 
 .c--markdown pre.highlight {
@@ -72,4 +72,8 @@
 
 .c--markdown code {
   @apply font-mono p-1 bg-gray-0 text-base;
+}
+
+.c--markdown .gist, .c--markdown iframe {
+  @apply max-w-2xl mx-auto mb-8 overflow-auto;
 }

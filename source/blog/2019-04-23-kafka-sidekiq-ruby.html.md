@@ -1,7 +1,7 @@
 ---
-title: Kafka and Ruby, a Sidekiq lovestory
-date: 2019-04-23 10:00:00 UTC
+title: Identifying and Resolving a Kafka Issue With AppSignal
+date: 2020-08-17 10:00:00 UTC
 tags:
-summary: "In today's article, we’ll cover performance from a different angle: The choices we made in our stack for AppSignal."
-appsignal: https://blog.appsignal.com/2019/04/23/kafka-sidekiq-ruby.html
+summary: "In this post, I'll tell you how we used AppSignal to detect and resolve an issue we had last week with our Kafka brokers."
+appsignal: https://blog.appsignal.com/2020/08/17/identifying-and-resolving-a-kafka-issue-with-appsignal.html
 ---
