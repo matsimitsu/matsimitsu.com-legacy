@@ -15,3 +15,18 @@
 .c-bold-link:active, .c--markdown a:active {
   background-size: 100% 40%;
 }
+
+.c-social {
+  @apply ml-auto;
+}
+
+.c-social li {
+  @apply inline ml-2 text-gray-6;
+}
+
+.c-social li a {
+  transition: all 75ms cubic-bezier(0.4, 0, 1, 1);
+}
+.c-social li a:hover {
+  @apply text-gray-9;
+}
