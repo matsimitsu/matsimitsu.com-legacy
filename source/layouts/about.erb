@@ -1,0 +1,12 @@
+<% wrap_layout :layout do %>
+  <article class="Container">
+    <%= partial "header", :locals => { :title => current_page.data[:title], :subtitle => current_page.data[:subtitle] } %>
+    <ul class="container text-center">
+      <li class="inline-block px-1"><%= link_to "About me", "/about", { :class => current_path.start_with?("about") ? "border-yellow-6 border-b-2" : nil } %></li>
+      <li class="inline-block px-1"><%= link_to "Tech I use", "/uses", { :class => current_path.start_with?("uses") ? "border-yellow-6 border-b-2" : nil } %></li>
+    </ul>
+    <section class="c--markdown px-4 lg:px-0">
+      <%= yield %>
+    </section>
+  </article>
+<% end %>

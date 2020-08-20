@@ -2,9 +2,8 @@
 title: "The tech I use"
 subtitle: Inspired by Wes Bos's project <a href="https://uses.tech" class="c-bold-link">uses.tech</a>, here's a list with my (tech) stack.
 summary: "Inspired by Wes Bos's project uses.tech, this page is about my (tech) stack."
-layout: page
+layout: about
 ---
-
 
 ## Hardware
 

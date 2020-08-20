@@ -2,10 +2,11 @@
 title: "About me"
 subtitle: I'm a developer at AppSignal
 summary: "About me, Robert Beekman, a software developer at AppSignal who loves to travel."
-layout: page
+layout: about
 ---
 
-I develop software at [AppSignal](https://appsignal.com) and in my spare time I like to [travel and take photos](/trips).
+
+## This blog
 
 I believe this is the 5th incarnation of this site, but the core concept has always been the same to write about my travels as they happen, so I can enjoy them again at a later date.
 
