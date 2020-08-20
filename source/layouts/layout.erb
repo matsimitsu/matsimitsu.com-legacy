@@ -9,6 +9,9 @@
 
     <title><%= current_page.data.title || current_page.locals.try(:[], :trip).try(:[], :title)%> | Matsimitsu</title>
     <meta name="google-site-verification" content="RAuW_ocX_H8rkhEzePDpKWk_GgzEXJ48rG1fvncuqnA" />
+    <link rel="alternate" type="application/rss+xml"
+          title="RSS Feed for matsimitsu.com"
+          href="/feed.xml" />
     <link href="https://twitter.com/matsimitsu" rel="me"/>
     <link rel="webmention" href="https://webmention.io/matsimitsu.com/webmention" />
     <link rel="pingback" href="https://webmention.io/matsimitsu.com/xmlrpc" />
