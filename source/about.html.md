@@ -34,7 +34,7 @@ The kit-lens was okay, but I wanted a better image quality, so I took a good loo
 
 This setup has stayed the same for the last few years, for me it has the perfect combination of range and quality in a compact package. It only takes up a small portion of my **Boundary Supply** [prima system backpack.](https://www.boundarysupply.com/products/prima-system).
 
-![Me in Zhanjiejie](https://d3khpbv2gxh34v.cloudfront.net/r/about/me-zhanjiejie.jpg "1.5")
+![small| Me in Zhanjiejie](https://d3khpbv2gxh34v.cloudfront.net/r/about/me-zhanjiejie.jpg "1.5")
 
 ## This site
 

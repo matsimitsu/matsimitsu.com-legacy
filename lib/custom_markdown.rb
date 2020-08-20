@@ -58,6 +58,8 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
 
     if type == "hero"
       %(<div class="c--markdown__hero">#{img}</div>)
+    elsif type == "small"
+        %(<div class="c--markdown__small">#{img}</div>)
     else
       img
     end

@@ -22,6 +22,10 @@
   @apply mb-4;
 }
 
+.c--markdown__small {
+  @apply mb-4 max-w-2xl mx-auto;
+}
+
 .c--markdown p {
   @apply mb-4 text-base text-gray-7 max-w-2xl mx-auto text-lg;
 }
