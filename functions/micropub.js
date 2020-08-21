@@ -1,5 +1,5 @@
 /* code from functions/todos-create.js */
-import faunadb from 'faunadb' /* Import faunaDB sdk */
+const faunadb = require('faunadb'); /* Import faunaDB sdk */
 
 /* export our lambda function as named "handler" export */
 exports.handler = (event, context, callback) => {
@@ -11,7 +11,7 @@ exports.handler = (event, context, callback) => {
     })
   }
 
-  if (event.httpMethod !== 'GET') {
+  if (event.httpMethod === 'GET') {
     return callback(null, {
       statusCode: 200,
       body: "{}"
@@ -36,7 +36,8 @@ exports.handler = (event, context, callback) => {
     }
   }
   /* construct the fauna query */
-  return client.query(q.Create(q.Ref("matsimitsu/microblog"), post))
+  return client.query(
+    q.Create(q.Collection('microblog'),post))
   .then((response) => {
     console.log("success", response)
     /* Success! return the response with statusCode 200 */
