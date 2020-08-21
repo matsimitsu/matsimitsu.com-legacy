@@ -28,6 +28,7 @@ exports.handler = (event, context, callback) => {
   /* parse the string body into a useable JS object */
   const data = JSON.parse(event.body)
   console.log("Function `microblog-create` invoked", data)
+  console.log("Content: ", data["properties"]["content"])
   const post = {
     data: {
       title: data["properties"]["name"][0],
