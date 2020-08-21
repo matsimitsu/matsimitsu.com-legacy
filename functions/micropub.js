@@ -1,5 +1,6 @@
 /* code from functions/todos-create.js */
 const faunadb = require('faunadb'); /* Import faunaDB sdk */
+const request = require('request');
 
 /* export our lambda function as named "handler" export */
 exports.handler = (event, context, callback) => {
@@ -39,12 +40,9 @@ exports.handler = (event, context, callback) => {
   return client.query(
     q.Create(q.Collection('microblog'),post))
   .then((response) => {
-    console.log("success", response)
-    /* Success! return the response with statusCode 200 */
-    return callback(null, {
-      statusCode: 200,
-      body: JSON.stringify(response)
-    })
+    console.log("success", response);
+    request.post(process.env.DEPLOY_HOOK, {});
+    callback(null, {statusCode: 201});
   }).catch((error) => {
     console.log("error", error)
     /* Error! return the error with statusCode 400 */
