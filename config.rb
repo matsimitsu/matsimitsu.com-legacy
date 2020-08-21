@@ -1,7 +1,11 @@
 require "lib/custom_markdown"
+require "rest-client"
 
 SIZES = CustomMarkdown::SIZES
 BASE_URL = "https://matsimitsu.com".freeze
+MICROBLOG_URL = "https://matsimitsu.com/.netlify/functions/microblog".freeze
+TOKEN = ENV["TOKEN"].freeze
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -89,6 +93,11 @@ end
 
 # Methods defined in the helpers block are available in templates
 helpers do
+
+  def microblog_articles
+    @microblog_articles ||= RestClient.get(MICROBLOG_URL, { :Authorization => "Bearer #{TOKEN}" })
+  end
+
   def trip_url(trip)
     "/trips/#{trip}"
   end

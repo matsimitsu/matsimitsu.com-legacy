@@ -11,6 +11,7 @@ gem "redcarpet", "~> 3.3", ">= 3.3.3"
 gem "middleman-syntax"
 
 gem "rubocop"
+gem "rest-client"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"

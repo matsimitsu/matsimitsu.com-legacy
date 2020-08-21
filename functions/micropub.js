@@ -42,7 +42,12 @@ exports.handler = (event, context, callback) => {
   .then((response) => {
     console.log("success", response);
     request.post(process.env.DEPLOY_HOOK, {});
-    callback(null, {statusCode: 201});
+    callback(null, {
+      statusCode: 201,
+      headers: {
+        Location: "https://matsimitsu.com/microblog",
+      }
+    });
   }).catch((error) => {
     console.log("error", error)
     /* Error! return the error with statusCode 400 */
