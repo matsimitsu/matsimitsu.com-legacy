@@ -1,0 +1,16 @@
+
+.c--note {
+  @apply mx-8 max-w-2xl mx-auto border-b border-gray-2;
+}
+
+.c--note p {
+  @apply mb-4 text-base text-gray-7 text-lg;
+}
+
+.c--note h1 {
+  @apply text-xl font-bold text-gray-9 mb-2 text-left;
+}
+
+.c--note small {
+  @apply block text-sm text-gray-6 -mt-2 mb-4;
+}

@@ -4,5 +4,6 @@
 @import "./pygments.css";
 @import "./trip.css";
 @import "./markdown.css";
+@import "./note.css";
 @import "./global.css";
 @import "tailwindcss/utilities";

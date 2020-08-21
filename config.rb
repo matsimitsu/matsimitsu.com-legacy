@@ -94,8 +94,8 @@ end
 # Methods defined in the helpers block are available in templates
 helpers do
 
-  def microblog_articles
-    @microblog_articles ||= RestClient.get(MICROBLOG_URL, { :Authorization => "Bearer #{TOKEN}" })
+  def microblog_notes
+    @microblog_notes ||= JSON.parse(RestClient.get(MICROBLOG_URL, { :Authorization => "Bearer #{TOKEN}" }).body)
   end
 
   def trip_url(trip)

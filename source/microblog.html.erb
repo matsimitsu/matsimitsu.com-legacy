@@ -1,1 +1,9 @@
-<pre><code><%= microblog_articles.inspect %></code></pre>
+---
+title: "Microblog"
+subtitle: Another place to post nothing ;)
+summary: "Another place to post nothing ;)"
+layout: "page"
+---
+<%- microblog_notes.each do |note| %>
+  <%= partial :note, :locals => {:note => note }%>
+<% end %>
