@@ -27,19 +27,16 @@ exports.handler = (event, context, callback) => {
 
   /* parse the string body into a useable JS object */
   const data = JSON.parse(event.body)
-  console.log("Function `microblog-create` invoked", data)
-  console.log("Content: ", data["properties"]["content"])
   const title = data["properties"]["name"][0]
   const date = new Date()
   const filename = [date.toISOString().split('T')[0], title.replace(/[\W]+/g,"-")].join("-")
-  const extension = valueOrDefault(data["properties"], "format", "html")
   const fileContent =
    ['---',
     'date: ' + date.toISOString(),
     'title: ' + title,
     'category: ' + valueOrDefault(data["properties"], "category", "note"),
     '---',
-    data["properties"]["content"][0]["html"]
+    data["properties"]["content"][0]
    ].join('\n');
 
   /* construct the fauna query */
@@ -47,10 +44,9 @@ exports.handler = (event, context, callback) => {
     owner: "matsimitsu",
     repo: "matsimitsu.com",
     message: ("Adding note: " + title),
-    path: "source/notes/" + filename + "." + extension + ".erb",
+    path: "source/notes/" + filename + ".html.md",
     content: Buffer.from(fileContent).toString("base64")
   }).then((response) => {
-    console.log("success", response);
     callback(null, {
       statusCode: 201,
       headers: {

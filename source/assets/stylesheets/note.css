@@ -26,3 +26,11 @@
 .c--note blockquote p {
   @apply text-gray-6;
 }
+
+.c--note figure {
+  @apply mb-4;
+}
+
+.c--note figure figcaption {
+  @apply text-center text-sm text-gray-6 mt-1 pb-2;
+}

@@ -9,7 +9,7 @@ const s3 = new AWS.S3({
 
 module.exports.handler = async (event, context) => {
   const body = JSON.parse(event.body)
-  const { fileName, fileType, token } = body
+  const { fileName, token } = body
 
   if (!token && token != TOKEN) {
     return {
