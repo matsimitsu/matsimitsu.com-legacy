@@ -1,6 +1,0 @@
-<article>
-  <section class="c--note px-4 lg:px-0">
-    <%= note["content"]["html"].html_safe %>
-    <small>Published on <time datetime="<%=Time.parse(note["created_at"]).to_date %>"><%= Time.parse(note["created_at"]).to_date %></time>
-  </section>
-</article>

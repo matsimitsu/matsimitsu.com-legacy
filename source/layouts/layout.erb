@@ -46,6 +46,7 @@
         <ul class="w-1/5 flex ml-auto items-center justify-end">
           <li class="ml-4"><a href="/blog" class="<%= current_path.start_with?("blog") ? "border-yellow-6 border-b-2" : nil -%>">Blog</a></li>
           <li class="ml-4"><a href="/trips" class="<%= current_path.start_with?("trips") ? "border-yellow-6 border-b-2" : nil -%>">Trips</a></li>
+          <li class="ml-4"><a href="/notes" class="<%= current_path.start_with?("notes") ? "border-yellow-6 border-b-2" : nil -%>">Notes</a></li>
           <li class="ml-4"><a href="/about" class="<%= current_path.start_with?("about") || current_path.start_with?("now") || current_path.start_with?("uses") ? "border-yellow-6 border-b-2" : nil -%>">About</a></li>
         </ul>
       </div>

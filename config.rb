@@ -65,7 +65,7 @@ activate :blog do |blog|
   blog.prefix = "notes"
   blog.permalink = "{title}.html"
   blog.sources = "{title}.html"
-  blog.layout = "blog"
+  blog.layout = "notes"
 end
 
 ## Generate index pages for each trip

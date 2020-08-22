@@ -3,13 +3,18 @@ title: Notes
 breadcrumb: Notes
 blog: notes
 ---
+<%= partial "header", :locals => { :title => "Notes", :subtitle => "Another place to not post anything ;)" } %>
 
 <section class="c--markdown px-4 lg:px-0">
-<% blog("notes").articles.sort_by(&:date).each do |note| %>
-  <article class="c--note px-4 lg:px-0">
-    <%= note.body%>
-    <small>Published on <time datetime="<%= note.date.strftime("%Y-%m-%d") %>"><%= note.date.strftime("%Y-%m-%d %hh:%mm") %></time>
-  </small>
-  </article>
-<% end %>
+  <% blog("notes").articles.sort_by(&:date).reverse.each do |note| %>
+    <article class="c--note px-4 lg:px-0">
+      <%= note.body%>
+      <small>
+      Published on
+      <a href="<%= url_for(note) %>">
+        <time datetime="<%= note.date.strftime("%Y-%m-%d") %>"><%= note.date.strftime("%Y-%m-%d @ %H:%M") %></time>
+      </a>
+    </small>
+    </article>
+  <% end %>
 </section>

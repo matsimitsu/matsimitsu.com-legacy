@@ -14,3 +14,7 @@
 .c--note small {
   @apply block text-sm text-gray-6 -mt-2 mb-4;
 }
+
+.c--note small a, .c--note small a:hover {
+  background: none
+}
