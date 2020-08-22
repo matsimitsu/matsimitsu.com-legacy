@@ -27,6 +27,7 @@ exports.handler = (event, context, callback) => {
 
   /* parse the string body into a useable JS object */
   const data = JSON.parse(event.body)
+  console.log("Data: ", data);
   const title = data["properties"]["name"][0]
   const date = new Date()
   const filename = [date.toISOString().split('T')[0], title.replace(/[\W]+/g,"-")].join("-")
