@@ -27,7 +27,7 @@ jobs:
     # Runs commands using the runners shell
     - name: Create the file
       run: |
-        echo "${{ github.event.inputs.content }}" >> ./source/${{ github.event.inputs.filename }}
+        echo '${{ github.event.inputs.content }}' | base64 --decode >> ./source/${{ github.event.inputs.filename }}
     - name: Commit files # transfer the new html files back into the repository
       run: |
         git config --global user.email "robert@matsimitsu.nl"
