@@ -30,6 +30,8 @@ jobs:
         echo "${{ github.event.inputs.content }}" >> ./source/${{ github.event.inputs.filename }}
     - name: Commit files # transfer the new html files back into the repository
       run: |
+        git config --global user.email "robert@matsimitsu.nl"
+        git config --global user.name "Robert Beekman"
         git add ./source
         git commit -m "Adding source/${{ github.event.inputs.filename }} by through webhook"
     - name: Push changes # push the output folder to your repo
