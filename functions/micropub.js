@@ -1,10 +1,11 @@
 /* code from functions/todos-create.js */
-const faunadb = require('faunadb'); /* Import faunaDB sdk */
-const request = require('request');
+const { Octokit } = require("@octokit/rest");
+const octokit = new Octokit({
+  auth: process.env.GITHUB_ACCESS_TOKEN,
+})
 
 /* export our lambda function as named "handler" export */
 exports.handler = (event, context, callback) => {
-
   if (!event.headers["authorization"] || event.headers["authorization"] != "Bearer " + process.env.TOKEN){
     return callback(null, {
       statusCode: 401,
@@ -19,30 +20,30 @@ exports.handler = (event, context, callback) => {
     })
   }
 
-  /* configure faunaDB Client with our secret */
-  const q = faunadb.query
-  const client = new faunadb.Client({
-    secret: process.env.FAUNADB_SECRET
-  })
-
   /* parse the string body into a useable JS object */
   const data = JSON.parse(event.body)
   console.log("Function `microblog-create` invoked", data)
   console.log("Content: ", data["properties"]["content"])
-  const post = {
-    data: {
-      title: data["properties"]["name"][0],
-      content: data["properties"]["content"][0],
-      created_at: new Date().toISOString(),
-      category: "post"
-    }
-  }
+  const date = new Date()
+  const filename = [date.strftime("%Y-%m-%d"), title.replace(/[\W]+/g,"-")].join("-")
+  const fileContent =
+   ['---',
+    'created_at: ' + date.toISOString(),
+    'title: ' + data["properties"]["name"][0],
+    'category: note',
+    '---',
+    data["properties"]["content"][0]
+   ].join('\n');
+
   /* construct the fauna query */
-  return client.query(
-    q.Create(q.Collection('microblog'),post))
-  .then((response) => {
+  return octokit.repos.createOrUpdateFileContents({
+    owner: "matsimitsu",
+    repo: "matsimitsu.com",
+    message: ("Adding microblog article: " + title),
+    path: "source/microblog/" + filename + ".html.erb",
+    content: Buffer.from(fileContent).toString("base64")
+  }).then((response) => {
     console.log("success", response);
-    request.post(process.env.DEPLOY_HOOK, {});
     callback(null, {
       statusCode: 201,
       headers: {
