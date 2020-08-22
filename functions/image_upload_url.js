@@ -20,7 +20,7 @@ module.exports.handler = async (event, context) => {
     }
   }
 
-  if (!fileName && !fileType) {
+  if (!fileName) {
     return {
       statusCode: 400,
       body: JSON.stringify({
@@ -31,8 +31,8 @@ module.exports.handler = async (event, context) => {
 
   const s3Params = {
     Bucket: MY_S3_BUCKET_NAME,
-    Key: "/original-rust/notes/" + fileName,
-    ContentType: fileType,
+    Key: "original-rust/notes/" + fileName,
+    ContentType: "image/jpeg",
     ACL: 'public-read'
   }
 

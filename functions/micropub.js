@@ -29,7 +29,7 @@ exports.handler = (event, context, callback) => {
   const data = JSON.parse(event.body)
   console.log("Function `microblog-create` invoked", data)
   console.log("Content: ", data["properties"]["content"])
-  const title = valueOrDefaultdata["properties"]["name"][0]
+  const title = data["properties"]["name"][0]
   const date = new Date()
   const filename = [date.toISOString().split('T')[0], title.replace(/[\W]+/g,"-")].join("-")
   const extension = valueOrDefault(data["properties"], "format", "html")
