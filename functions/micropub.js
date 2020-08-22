@@ -24,12 +24,13 @@ exports.handler = (event, context, callback) => {
   const data = JSON.parse(event.body)
   console.log("Function `microblog-create` invoked", data)
   console.log("Content: ", data["properties"]["content"])
+  const title = data["properties"]["name"][0]
   const date = new Date()
-  const filename = [date.strftime("%Y-%m-%d"), title.replace(/[\W]+/g,"-")].join("-")
+  const filename = [date.toISOString().split('T')[0], title.replace(/[\W]+/g,"-")].join("-")
   const fileContent =
    ['---',
-    'created_at: ' + date.toISOString(),
-    'title: ' + data["properties"]["name"][0],
+    'date: ' + date.toISOString(),
+    'title: ' + title,
     'category: note',
     '---',
     data["properties"]["content"][0]
@@ -39,15 +40,15 @@ exports.handler = (event, context, callback) => {
   return octokit.repos.createOrUpdateFileContents({
     owner: "matsimitsu",
     repo: "matsimitsu.com",
-    message: ("Adding microblog article: " + title),
-    path: "source/microblog/" + filename + ".html.erb",
+    message: ("Adding note: " + title),
+    path: "source/notes/" + filename + ".html.erb",
     content: Buffer.from(fileContent).toString("base64")
   }).then((response) => {
     console.log("success", response);
     callback(null, {
       statusCode: 201,
       headers: {
-        Location: "https://matsimitsu.com/microblog",
+        Location: "https://matsimitsu.com/notes",
       }
     });
   }).catch((error) => {

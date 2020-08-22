@@ -56,6 +56,18 @@ activate :blog do |blog|
   blog.publish_future_dated = true
 end
 
+###
+# Notes
+###
+
+activate :blog do |blog|
+  blog.name = "notes"
+  blog.prefix = "notes"
+  blog.permalink = "{title}.html"
+  blog.sources = "{title}.html"
+  blog.layout = "blog"
+end
+
 ## Generate index pages for each trip
 data[:trips].each do |trip|
   proxy(
@@ -93,10 +105,6 @@ end
 
 # Methods defined in the helpers block are available in templates
 helpers do
-
-  def microblog_notes
-    @microblog_notes ||= JSON.parse(RestClient.get(MICROBLOG_URL, { :Authorization => "Bearer #{TOKEN}" }).body)
-  end
 
   def trip_url(trip)
     "/trips/#{trip}"

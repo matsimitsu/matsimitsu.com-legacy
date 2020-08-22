@@ -1,0 +1,15 @@
+---
+title: Notes
+breadcrumb: Notes
+blog: notes
+---
+
+<section class="c--markdown px-4 lg:px-0">
+<% blog("notes").articles.sort_by(&:date).each do |note| %>
+  <article class="c--note px-4 lg:px-0">
+    <%= note.body%>
+    <small>Published on <time datetime="<%= note.date.strftime("%Y-%m-%d") %>"><%= note.date.strftime("%Y-%m-%d %hh:%mm") %></time>
+  </small>
+  </article>
+<% end %>
+</section>
