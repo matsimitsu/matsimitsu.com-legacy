@@ -20,4 +20,4 @@ end
 width, height = FastImage.size(path)
 ratio = (width.to_f / height.to_f).round(2)
 
-puts "[#{filename}](#{PUBLIC_URL}#{filename.gsub(".jpg", "-720.jpg")} #{ratio})"
+puts %Q(![#{filename}](#{PUBLIC_URL}#{filename.gsub(".jpg", "-720.jpg")} "#{ratio}"))
