@@ -3,6 +3,7 @@
 name: Add GitHub page
 
 on:
+  repository_dispatch:
   workflow_dispatch:
     inputs:
       filename:
