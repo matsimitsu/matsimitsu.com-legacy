@@ -28,13 +28,13 @@ jobs:
     # Runs commands using the runners shell
     - name: Create the file
       run: |
-        echo '${{ github.event.inputs.content }}' | base64 --decode >> ./source/${{ github.event.inputs.filename }}
+        echo '${{ github.event.client_payload.content }}' | base64 --decode >> ./source/${{ github.event.client_payload.path }}
     - name: Commit files # transfer the new html files back into the repository
       run: |
         git config --global user.email "robert@matsimitsu.nl"
         git config --global user.name "Robert Beekman"
         git add ./source
-        git commit -m "Adding source/${{ github.event.inputs.filename }} by through webhook"
+        git commit -m "Adding source/${{ github.event.client_payload.path }} by through webhook"
     - name: Push changes # push the output folder to your repo
       uses: ad-m/github-push-action@master
       with:
