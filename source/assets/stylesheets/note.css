@@ -18,3 +18,11 @@
 .c--note small a, .c--note small a:hover {
   background: none
 }
+
+.c--note blockquote {
+  @apply border-l-2 pl-4 border-gray-6 ;
+}
+
+.c--note blockquote p {
+  @apply text-gray-6;
+}
