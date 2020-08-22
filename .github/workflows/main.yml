@@ -25,9 +25,9 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs commands using the runners shell
-    - name: Run the build php script
+    - name: Create the file
       run: |
-        echo "${{ github.event.inputs.content }} >> ./source/${{ github.event.inputs.filename }}
+        echo "${{ github.event.inputs.content }}" >> ./source/${{ github.event.inputs.filename }}
     - name: Commit files # transfer the new html files back into the repository
       run: |
         git add ./source
