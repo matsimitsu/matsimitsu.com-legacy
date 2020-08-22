@@ -33,7 +33,7 @@ exports.handler = (event, context, callback) => {
     'title: ' + title,
     'category: note',
     '---',
-    data["properties"]["content"][0]
+    data["properties"]["content"][0]["html"]
    ].join('\n');
 
   /* construct the fauna query */
