@@ -35,6 +35,11 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
   # Override the default image tag to emit a <figure>
   # with a srcset containing SIZES sizes
   def image(url, flex, type_and_alt = "")
+
+    if !url.end_with?("jpg") && !url.end_with?(".jpeg")
+      return super
+    end
+
     type, alt = (type_and_alt.presence || "").split("|")
 
     srcset = SIZES.map do |size|
