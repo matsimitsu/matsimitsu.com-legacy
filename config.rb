@@ -1,10 +1,13 @@
 require "lib/custom_markdown"
 require "rest-client"
+require "json"
 
 SIZES = CustomMarkdown::SIZES
 BASE_URL = "https://matsimitsu.com".freeze
 MICROBLOG_URL = "https://matsimitsu.com/.netlify/functions/microblog".freeze
 TOKEN = ENV["TOKEN"].freeze
+WEBMENTIONS_URL = "https://webmention.io/api/mentions?token=#{ENV["WEBMENTIONS_TOKEN"]}&per-page=1000"
+WEBMENTIONS = JSON.parse(RestClient.get(WEBMENTIONS_URL))
 
 ###
 # Page options, layouts, aliases and proxies
@@ -108,6 +111,13 @@ helpers do
 
   def trip_url(trip)
     "/trips/#{trip}"
+  end
+
+  def likes(page)
+    WEBMENTIONS["links"].select { |w|
+      %(like repost).include?(w["activity"]["type"]) &&
+      w["target"].end_with?(page.url)
+    }
   end
 
   def breadcrumbs(page)

@@ -1,6 +1,6 @@
 <section class="container px-2 py-8 max-w-4xl">
   <% blog("blog").articles.first(locals[:limit]).each.group_by { |a| a.date.year }.each do |year, articles| %>
-    <div class="grid gap-6 grid-cols-6 border-t border-gray-2 mb-12 py-12 relative">
+    <div class="grid gap-6 grid-cols-6 mb-12 py-12 relative">
       <div class="col-span-1 hidden lg:block">
         <h2 class="text-4xl text-gray-9 font-bold"><%= year %></h2>
       </div>

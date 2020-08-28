@@ -6,12 +6,27 @@
     </section>
   </article>
 
-  <section class="w-full border-t border-gray-2 pt-32 mt-16">
-    <h1 class="text-center text-4xl font-bold mb-4">
+  <section class="max-w-2xl mx-auto border-t border-gray-2 pt-6" id="webmentions">
+    <h2 class="text-center text-2xl font-bold mb-12">Webmentions</h2>
+    <p class="mb-6">
+      Wondering how to drop a like, re­post my ar­ti­cle, or com­ment? Participate in the <a class="c-bold-link" href="https://indiewebify.me/">IndieWeb move­ment</a>, write a note on your own site, and send me a web­men­tion.
+    </p>
+    <%- if likes(current_page).any? %>
+      <h3 class="text-left text-xl font-bold mb-4">Likes &amp; Retweets</h3>
+      <div class="flex flex-row flex-wrap mb-6 ml-3">
+        <%- likes(current_page).each do |like| %>
+          <a rel="noopener noreferrer" title="Liked by: <%= like["data"]["author"]["name"] %>" href="<%= like["data"]["url"] %>%" class="avatar-container no-underline relative w-12 h-12 rounded-full overflow-hidden -ml-3">
+            <img class="object-cover w-full h-full" src="<%= like["data"]["author"]["photo"] %>" loading="lazy" />
+          </a>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <section class="w-full border-t border-gray-2 pt-6 mt-16">
+    <h2 class="text-center text-2xl font-bold">
       More posts from the blog
-    </h1>
+    </h2>
 
     <%= partial "article_list", :locals => {:limit => 99, :title => "More from the blog"} %>
   </section>
 <% end %>
-
