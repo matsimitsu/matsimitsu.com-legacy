@@ -7,7 +7,7 @@ BASE_URL = "https://matsimitsu.com".freeze
 MICROBLOG_URL = "https://matsimitsu.com/.netlify/functions/microblog".freeze
 TOKEN = ENV["TOKEN"].freeze
 WEBMENTIONS_URL = "https://webmention.io/api/mentions?token=#{ENV["WEBMENTIONS_TOKEN"]}&per-page=1000"
-WEBMENTIONS = JSON.parse(RestClient.get(WEBMENTIONS_URL))
+WEBMENTIONS = JSON.parse(RestClient.get(WEBMENTIONS_URL)) rescue {"links" => []}
 
 ###
 # Page options, layouts, aliases and proxies

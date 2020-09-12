@@ -5,7 +5,7 @@ blog: notes
 ---
 <%= partial "header", :locals => { :title => "Notes", :subtitle => "Another place to not post anything ;)" } %>
 
-<section class="c--markdown px-4 lg:px-0">
+<section class="c--markdown px-4 lg:px-0" data-controller="gallery">
   <% blog("notes").articles.sort_by(&:date).reverse.each do |note| %>
     <article class="c--note px-4 lg:px-0">
       <%= note.body%>
