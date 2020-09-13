@@ -2,8 +2,8 @@
 title: Day Five
 subtitle: Gyeongbokgung Palace - Bukchon Village - The War Memorial of Korea  Bongeunsa
   - Gangnam - Banpo Bridge
-date: '2015-05-19'
-end_date: '2015-05-19'
+date: '2014-05-19'
+end_date: '2014-05-19'
 image: https://d3khpbv2gxh34v.cloudfront.net/p/asia-2014/day-five/59d8ae8c2a869236802abf85.jpg
 trip: asia-2014
 locations:
@@ -100,4 +100,3 @@ Last on our list was the Banpo Bridge. It has a light and light and water show m
 ![59d8b01b2a869236802abfe3](https://d3khpbv2gxh34v.cloudfront.net/p/asia-2014/day-five/59d8b01e2a869236802abfe5.jpg "1.593")
 
 ![59d8b0272a869236802abfe7](https://d3khpbv2gxh34v.cloudfront.net/p/asia-2014/day-five/59d8b02a2a869236802abfe8.jpg "1.506")
-

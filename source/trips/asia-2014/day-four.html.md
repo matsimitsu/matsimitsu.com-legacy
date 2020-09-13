@@ -1,8 +1,8 @@
 ---
 title: Day Four
 subtitle: kwangjang market - Cheonggyecheon
-date: '2015-05-18'
-end_date: '2015-05-18'
+date: '2014-05-18'
+end_date: '2014-05-18'
 image: https://d3khpbv2gxh34v.cloudfront.net/p/asia-2014/day-four/59d8ad5a2a869236802abf4a.jpg
 trip: asia-2014
 locations:
@@ -52,4 +52,3 @@ We took a few back alleys back to the hotel.
 ![59d8ae412a869236802abf7d](https://d3khpbv2gxh34v.cloudfront.net/p/asia-2014/day-four/59d8ae432a869236802abf7e.jpg "1.506")
 
 ![59d8ae492a869236802abf80](https://d3khpbv2gxh34v.cloudfront.net/p/asia-2014/day-four/59d8ae4a2a869236802abf81.jpg "1.506")
-
