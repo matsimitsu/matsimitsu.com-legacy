@@ -199,3 +199,13 @@
   slug: taiwan-2020
   photo_count: 0
   countries: [TW]
+- title: Netherlands & Germany 2020
+  subtitle: Seven themeparks in eight days.
+  excerpt: |
+    With travel restrictions still in full effect, it was time to think outside of the box. We could still travel to Germany and there happen to be a lot of great themeparks there...
+  start: '2020-10-18'
+  end: '2020-10-26'
+  kind: single
+  slug: germany-2020
+  photo_count: 0
+  countries: [NL, DE]
