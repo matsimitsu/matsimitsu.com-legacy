@@ -66,8 +66,8 @@ end
 activate :blog do |blog|
   blog.name = "notes"
   blog.prefix = "notes"
-  blog.permalink = "{title}.html"
-  blog.sources = "{title}.html"
+  blog.permalink = "{slug}.html"
+  blog.sources = "{slug}.html"
   blog.layout = "notes"
 end
 
