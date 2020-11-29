@@ -1,7 +1,7 @@
 ---
 date: 2020-08-28T16:09:22.674Z
 title: Webmentions
-category: note
+category: notes
 ---
 # Webmentions
 

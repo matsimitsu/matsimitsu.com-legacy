@@ -7,9 +7,9 @@ blog: notes
 
 <section class="c--markdown px-4 lg:px-0" data-controller="gallery">
   <% blog("notes").articles.sort_by(&:date).reverse.each do |note| %>
-    <article class="c--note px-4 lg:px-0">
+    <article class="c--note c--note__<%= note.data["category"] %> px-4 lg:px-0">
       <%= note.body%>
-      <small>
+      <small class="metadata">
       Published on
       <a href="<%= url_for(note) %>">
         <time datetime="<%= note.date.strftime("%Y-%m-%d") %>"><%= note.date.strftime("%Y-%m-%d @ %H:%M") %></time>

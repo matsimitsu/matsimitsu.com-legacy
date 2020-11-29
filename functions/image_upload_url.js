@@ -9,7 +9,7 @@ const s3 = new AWS.S3({
 
 module.exports.handler = async (event, context) => {
   const body = JSON.parse(event.body)
-  const { fileName, token } = body
+  const { fileName, token, dirName } = body
 
   if (!token && token != TOKEN) {
     return {
@@ -31,7 +31,7 @@ module.exports.handler = async (event, context) => {
 
   const s3Params = {
     Bucket: MY_S3_BUCKET_NAME,
-    Key: "original-rust/notes/" + fileName,
+    Key: ["original-rust", dirName, fileName].join("/"),
     ContentType: "image/jpeg",
     ACL: 'public-read'
   }

@@ -76,6 +76,7 @@ class CustomMarkdown < Middleman::Renderers::MiddlemanRedcarpetHTML
       line.gsub!(/^\[flight: ([A-Z-]+)\]/i) { |_| @options[:context].flight($1) }
       line.gsub!(/^\[hotel: (.+)\]/i) { |_| @options[:context].hotel($1) }
       line.gsub!(/^\[location: (.+)\]/i) { |_| @options[:context].location($1) }
+      line.gsub!(/^\[exif: (.+)\]/i) { |_| @options[:context].exif($1) }
       line
     end.join
   end

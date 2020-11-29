@@ -9,7 +9,7 @@ PRESIGN_URL = "https://matsimitsu.com/.netlify/functions/image_upload_url"
 path = ARGV[0]
 filename = File.basename(path)
 
-url = JSON.parse(RestClient.post(PRESIGN_URL, {:fileName => filename, :fileType => "image/jpeg", :token => TOKEN }.to_json, {content_type: :json, accept: :json}).body)["uploadURL"]
+url = JSON.parse(RestClient.post(PRESIGN_URL, {:dirName => "notes", :fileName => filename, :fileType => "image/jpeg", :token => TOKEN }.to_json, {content_type: :json, accept: :json}).body)["uploadURL"]
 puts url
 begin
   RestClient.put(url, File.new(path, "rb"), :headers => {:content_type=>"image/jpeg"})

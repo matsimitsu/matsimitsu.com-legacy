@@ -1,9 +1,7 @@
 <% wrap_layout :layout do %>
   <section class="c--markdown px-4 lg:px-0">
-    <article class="c--note px-4 lg:px-0">
+    <article>
       <%= yield %>
-
-      <small><time datetime="<%= current_article.date.strftime("%Y-%m-%d") %>"><%= current_article.date.strftime("%Y-%m-%d @ %H:%M") %></time></small>
     </article>
   </section>
 <% end %>

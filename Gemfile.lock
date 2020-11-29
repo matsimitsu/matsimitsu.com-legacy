@@ -32,6 +32,10 @@ GEM
     erubis (2.7.0)
     eventmachine (1.2.7)
     execjs (2.7.0)
+    exiftool (1.2.2)
+      json
+    exiftool_vendored (12.10.0)
+      exiftool (>= 0.7.0)
     fast_blank (1.0.0)
     fastimage (2.1.5)
     ffi (1.9.25)
@@ -49,6 +53,7 @@ GEM
       concurrent-ruby (~> 1.0)
     i18n_data (0.8.0)
     jaro_winkler (1.5.2)
+    json (2.3.1)
     kramdown (1.17.0)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -166,6 +171,8 @@ DEPENDENCIES
   airports
   builder (~> 3.0)
   countries
+  exiftool
+  exiftool_vendored
   middleman (~> 4.1)
   middleman-blog
   middleman-livereload

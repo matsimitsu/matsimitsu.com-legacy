@@ -20,3 +20,5 @@ gem "pry"
 # Countries
 gem "countries"
 gem "airports"
+gem "exiftool"
+gem "exiftool_vendored"

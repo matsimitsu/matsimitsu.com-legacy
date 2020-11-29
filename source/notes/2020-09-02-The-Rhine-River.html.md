@@ -1,7 +1,7 @@
 ---
 date: 2020-09-02T17:24:02.648Z
 title: The Rhine River
-category: note
+category: notes
 ---
 # The Rhine River
 

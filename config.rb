@@ -160,13 +160,16 @@ helpers do
       "#{url.gsub(ext, "-#{size}#{ext}")} #{size}w"
     end
     %(<figure class="ScaledImage #{class_names}">
-      <img
-        class="#{image_class_names}"
-        alt="#{alt || "Hero Header"}"
-        src="#{srcset[0]}"
-        srcset="#{srcset.join(", ")}"
-        sizes="360px" />
-    </figure>)
+        <a href="#{srcset.last.split(" ").first}" data-action="gallery#onImageClick" data-target="gallery.picture">
+          <img
+            class="#{image_class_names}"
+            alt="#{alt || "Hero Header"}"
+            src="#{srcset[0]}"
+            srcset="#{srcset.join(", ")}"
+            sizes="360px" />
+        </a>
+    </figure>
+    )
   end
 
   def sized_image(url, size)
@@ -339,6 +342,27 @@ helpers do
             <p>#{to_airport.city}</p>
             <small>#{to_time}</small>
           </div>
+        </div>
+      </div>
+    HTML
+  end
+
+  def exif(exif_json)
+    exif = JSON.parse(exif_json)
+    exif_string = [].tap do |exif_arr|
+      exif_arr.push("#{exif["make"]} #{exif["model"]}".strip)
+      exif_arr.push(exif["lens_info"]) if exif["lens_info"].present?
+      exif_arr.push(exif["focal_length"]) if exif["focal_length"].present?
+      exif_arr.push("f#{exif["aperture"]}")
+      exif_arr.push("#{exif["shutter_speed"]} sec")
+      exif_arr.push("ISO #{exif["iso"]}")
+    end.join(" | ")
+    date_string = Time.parse(exif['created']).strftime("%Y-%m-%d @ %H:%M")
+    <<~HTML
+      <div class="c--note-exif">
+        <time datetime="#{date_string}">Taken on #{date_string}</time>
+        <div>
+          #{exif_string}
         </div>
       </div>
     HTML

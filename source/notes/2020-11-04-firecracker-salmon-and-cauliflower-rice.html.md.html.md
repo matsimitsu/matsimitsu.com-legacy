@@ -1,7 +1,7 @@
 ---
 date: 2020-11-04T12:23:02.648Z
 title: Firecracker Salmon & Cauliflower Rice
-category: food
+category: recipes
 ---
 
 # Firecracker Salmon & Cauliflower Rice

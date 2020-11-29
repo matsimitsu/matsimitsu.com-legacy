@@ -26,7 +26,7 @@ exports.handler = (event, context, callback) => {
   const title = data["properties"]["name"][0]
   const content = data["properties"]["content"][0]
   const date = new Date()
-  const filename = [date.toISOString().split('T')[0], title.replace(/[\W]+/g,"-")].join("-")
+  const filename = event.QueryStringParameters["filename"] ? event.QueryStringParameters["filename"] : [date.toISOString().split('T')[0], title.replace(/[\W]+/g,"-")].join("-")
   var fileContent = []
 
   // If we've written a post without fontmatter, insert default forntmatter
@@ -34,7 +34,7 @@ exports.handler = (event, context, callback) => {
     fileContent.push("---")
     fileContent.push('date: ' + date.toISOString())
     fileContent.push('title: ' + title)
-    fileContent.push('category: note')
+    fileContent.push('category: notes')
     fileContent.push('---')
   }
   fileContent.push(content)
