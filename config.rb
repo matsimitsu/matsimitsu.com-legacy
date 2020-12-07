@@ -152,24 +152,28 @@ helpers do
     page.data.title
   end
 
-  def scaled_image(url, alt = nil, class_names = "", image_class_names = "w-full")
+  def scaled_image(url, alt = nil, class_names = "", image_class_names = "w-full", gallery=true)
     return unless url
 
     srcset = SIZES.map do |size|
       ext = File.extname(url)
       "#{url.gsub(ext, "-#{size}#{ext}")} #{size}w"
     end
-    %(<figure class="ScaledImage #{class_names}">
-        <a href="#{srcset.last.split(" ").first}" data-action="gallery#onImageClick" data-target="gallery.picture">
-          <img
-            class="#{image_class_names}"
-            alt="#{alt || "Hero Header"}"
-            src="#{srcset[0]}"
-            srcset="#{srcset.join(", ")}"
-            sizes="360px" />
-        </a>
-    </figure>
+
+    result = []
+    result << %(<figure class="ScaledImage #{class_names}">)
+    result << %(<a href="#{srcset.last.split(" ").first}" data-action="gallery#onImageClick" data-target="gallery.picture">) if gallery
+    result << %(
+      <img
+      class="#{image_class_names}"
+      alt="#{alt || "Hero Header"}"
+      src="#{srcset[0]}"
+      srcset="#{srcset.join(", ")}"
+      sizes="360px" />
     )
+    result << %(</a>) if gallery
+    result << "</figure>"
+    result.join("\n")
   end
 
   def sized_image(url, size)
